@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Radiohead</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/musicas.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+     <section class="bloco">
+        <table class="table-dark">
+            <thead>
+                <tr>
+                    <th class="populares">Populares - Teste</th>
+                </tr>
+            </thead>
+            <tbody class="music-radiohead">
+                <!-- 5 Músicas populares aqui -->
+            </tbody>
+        </table>
+     </section>
+    </main>
+
+    <script>
+        // DEBUG: Verificar se o elemento existe
+        console.log("Teste iniciado");
+        const listradio = document.querySelector(".music-radiohead");
+        console.log("Elemento .music-radiohead encontrado?", listradio !== null);
+        
+        if (listradio) {
+            const tr = document.createElement("tr");
+            tr.innerHTML = "<td>Teste Manual</td>";
+            listradio.appendChild(tr);
+            console.log("Linha de teste adicionada manualmente");
+        } else {
+            console.log("ERRO: Elemento .music-radiohead não encontrado!");
+        }
+    </script>
+    
+    <script src="js/musicas.js"></script>
+</body>
+</html>
