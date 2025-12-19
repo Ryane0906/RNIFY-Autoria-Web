@@ -20,7 +20,7 @@ const albumsDataclassic = [
     { name: 'Blur', artist: 'Blur', Image: './img/albuns/blur.jpg'},
     { name: 'The Queen Is Dead', artist: 'The Smiths', Image: './img/albuns/thesmithsqueen.jpg'},
     { name: 'Grace', artist: 'Jeff Buckley', Image: './img/albuns/jeffbuckleygrace.jpg'},
-    { name: 'In Rainbows', artist: 'Radiohead', Image: './img/albuns/radioheadinrainbows.jpg'},
+    { name: 'In Rainbows', artist: 'Radiohead', Image: './img/radiohead/inrainbows.jpg'},
     { name: 'Meteora', artist: 'Linkin Park', Image: './img/albuns/linkinparkmeteora.jpg'},
     { name: 'The Bends', artist: 'Radiohead', Image: './img/albuns/radioheadthebends.jpg'}
 ];
