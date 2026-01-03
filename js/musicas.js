@@ -320,6 +320,38 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// TOP 5 ELLIOTT SMITH
+
+document.addEventListener('DOMContentLoaded', () => {
+  const albumsData = [
+    { name: 'Clementine', Image: './img/katebush/houndsoflove.jpg', year: 1997},
+    { name: 'Son of Sam', Image: './img/katebush/thesensualworld.jpg', year: 1993}, 
+    { name: 'Somebody That I Used To Know', Image: './img/katebush/thekickinside.jpg', year: 1987},
+    { name: 'Say Yes', Image: './img/katebush/neverforever.jpg', year: 1991},
+    { name: 'Lion Heart', Image: './img/katebush/lionheart.jpg', year: 1995 },
+    { name: 'The Dreaming', Image: './img/katebush/thedreaming.jpg', year: 2001},
+    { name: 'The Red Shoes', Image: './img/katebush/theredshoes.jpg', year: 2003}
+  ];
+
+  const albumsGridelliott = document.querySelector('.albums-gridelliott');
+
+  if (albumsGridelliott) {
+    albumsData.forEach(albums => {
+      const albumsCardelliott = document.createElement('div');
+      albumsCardelliott.classList.add('albums-cardelliott');
+
+      albumsCardelliott.innerHTML = `
+        <img src="${albums.Image}" alt="Álbum ${albums.name}">
+        <div>
+          <h3>${albums.name}</h3>
+          <p>${albums.year}</p>
+        </div>
+      `;
+      albumsGridelliott.appendChild(albumsCardelliott);
+    });
+  }
+});
+
 // PLAYER DE MÚSICAS (GIT HUB Copilot)
 
 let audio = new Audio();
