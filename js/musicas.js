@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const artistDataclassic = [
   {name: 'Kate Bush', Image: './img/artistas/katebush2.jpg', link: 'katebush.html' },
   {name: 'Jeff Buckley', Image: './img/artistas/jeffbuckley2.jpg', link: 'index.html'},
-  {name: 'Elliott Smith', Image: './img/artistas/elliottsmith.jpg', link: 'index.html'},
+  {name: 'Elliott Smith', Image: './img/artistas/elliottsmith.jpg', link: 'elliottsmith.html'},
   {name: 'Queen', Image: './img/artistas/queen2.jpg', link: 'index.html'},
   {name: 'Michael Jackson', Image: './img/artistas/michaeljackson2.jpg', link: 'index.html'},
   {name: 'The Smiths', Image: './img/artistas/thesmiths.jpg', link: 'index.html'},
