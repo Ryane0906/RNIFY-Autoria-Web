@@ -293,7 +293,12 @@ main {
 }
 
 
-.albums-cardclassic img, .albums-cardmpb img, .albums-cardlinkin img, .albums-gridradiohead img, .albums-gridkatebush img {
+.albums-cardclassic img,
+.albums-cardmpb img,
+.albums-cardlinkin img, 
+.albums-gridradiohead img, 
+.albums-gridkatebush img, 
+.albums-cardelliott img {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -301,16 +306,28 @@ main {
     display: flex;
 }
 
-.artist-gridclassic, .albums-gridclassic,
-.artist-gridmpb, .albums-gridmpb, .albums-gridlinkin, .albums-gridradiohead, .albums-gridkatebush {
+.artist-gridclassic,
+.albums-gridclassic,
+.artist-gridmpb,
+.albums-gridmpb,
+.albums-gridlinkin,
+.albums-gridradiohead,
+.albums-gridkatebush,
+.albums-gridelliott {
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 gap: 24px;
 margin-bottom: 40px;
 }
 
-.artist-cardclassic, .albums-cardclassic,
-.artist-cardmpb, .albums-cardmpb, .albums-cardlinkin, .albums-cardradiohead, .albums-cardkatebush {
+.artist-cardclassic,
+.albums-cardclassic,
+.artist-cardmpb,
+.albums-cardmpb,
+.albums-cardlinkin,
+.albums-cardradiohead,
+.albums-cardkatebush,
+.albums-cardelliott {
     background-color: #111111;
     padding: 16px;
     border-radius: 8px;
@@ -322,8 +339,14 @@ margin-bottom: 40px;
     justify-content: space-between;
 }
 
-.artist-cardclassic:hover, .albums-cardclassic:hover, 
-.artist-cardmpb:hover, .albums-cardmpb:hover, .albums-cardlinkin:hover, .albums-cardradiohead:hover, .albums-cardkatebush:hover {
+.artist-cardclassic:hover,
+.albums-cardclassic:hover, 
+.artist-cardmpb:hover,
+.albums-cardmpb:hover,
+.albums-cardlinkin:hover,
+.albums-cardradiohead:hover,
+.albums-cardkatebush:hover,
+.albums-cardelliott:hover {
     background-color: #151515;
 }
 
@@ -338,7 +361,7 @@ margin-bottom: 40px;
     
 }
 .artist-cardclassic h3, .albums-cardclassic h3,
-.artist-cardmpb h3, .albums-cardmpb h3, .albums-cardlinkin h3, .albums-cardradiohead h3, .albums-cardkatebush h3 {
+.artist-cardmpb h3, .albums-cardmpb h3, .albums-cardlinkin h3, .albums-cardradiohead h3, .albums-cardkatebush h3, .albums-cardelliott h3 {
     margin: 0;
     font-size: 18px;
     color: #8c041c;
@@ -346,7 +369,7 @@ margin-bottom: 40px;
 }
 
 .artist-cardclassic p, .albums-cardclassic p,
-.artist-cardmpb p, .albums-cardmpb p, .albums-cardlinkin p, .albums-cardradiohead p, .albums-cardkatebush p {
+.artist-cardmpb p, .albums-cardmpb p, .albums-cardlinkin p, .albums-cardradiohead p, .albums-cardkatebush p, .albums-cardelliott p {
     margin: 4px 0 0 0;
     font-size: 14px;
     color: #b7b3b6;
@@ -365,8 +388,6 @@ margin-bottom: 40px;
     background-repeat: no-repeat;
     background-size: cover;
   
-   
-    
 }
 
 .katebush-header {

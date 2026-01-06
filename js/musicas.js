@@ -9,7 +9,8 @@ const artistDataclassic = [
   {name: 'The Smiths', Image: './img/artistas/thesmiths.jpg', link: 'index.html'},
   {name: 'Radiohead', Image: './img/artistas/radiohead.jpg', link: 'radiohead.html'},
   {name: 'Linkin Park', Image: './img/artistas/linkinpark.jpg', link: 'linkinpark.html'},
-  {name: 'Pink Floyd', Image: './img/artistas/pinkfloyd.jpg', link: 'index.html'}
+  {name: 'Pink Floyd', Image: './img/artistas/pinkfloyd.jpg', link: 'index.html'},
+  {name: 'Tame Impala', Image: './img/artistas/tameimpala.jpg', link: 'index.html'}
 ];
 
 
@@ -22,7 +23,8 @@ const albumsDataclassic = [
     { name: 'Grace', artist: 'Jeff Buckley', Image: './img/albuns/jeffbuckleygrace.jpg'},
     { name: 'In Rainbows', artist: 'Radiohead', Image: './img/radiohead/inrainbows.jpg'},
     { name: 'Meteora', artist: 'Linkin Park', Image: './img/albuns/linkinparkmeteora.jpg'},
-    { name: 'The Bends', artist: 'Radiohead', Image: './img/albuns/radioheadthebends.jpg'}
+    { name: 'The Bends', artist: 'Radiohead', Image: './img/albuns/radioheadthebends.jpg'},
+    
 ];
 
 
@@ -322,34 +324,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // TOP 5 ELLIOTT SMITH
 
+
 document.addEventListener('DOMContentLoaded', () => {
-  const albumsData = [
-    { name: 'Clementine', Image: './img/katebush/houndsoflove.jpg', year: 1997},
-    { name: 'Son of Sam', Image: './img/katebush/thesensualworld.jpg', year: 1993}, 
-    { name: 'Somebody That I Used To Know', Image: './img/katebush/thekickinside.jpg', year: 1987},
-    { name: 'Say Yes', Image: './img/katebush/neverforever.jpg', year: 1991},
-    { name: 'Lion Heart', Image: './img/katebush/lionheart.jpg', year: 1995 },
-    { name: 'The Dreaming', Image: './img/katebush/thedreaming.jpg', year: 2001},
-    { name: 'The Red Shoes', Image: './img/katebush/theredshoes.jpg', year: 2003}
-  ];
+  elliott5 = [
+    { name: 'Clementine', Image: './img/katebush/houndsoflove.jpg', audio: './musicas/clementine.mp3'},
+    { name: 'Son of Sam', Image: './img/katebush/thesensualworld.jpg', audio: './musicas/sonofsam.mp3'}, 
+    { name: 'Somebody That I Used To Know', Image: './img/katebush/thekickinside.jpg', audio: './musicas/somebodythatiusedtoknowwlliott.mp3'},
+    { name: 'Say Yes', Image: './img/katebush/neverforever.jpg', audio: './musicas/sayyes.mp3'},
+    { name: 'Better Be Quiet Now', Image: './img/katebush/lionheart.jpg', audio: './musicas/betterbequietnow.mp3' },
+];
 
-  const albumsGridelliott = document.querySelector('.albums-gridelliott');
+const listelliott = document.querySelector(".music-elliott");
 
-  if (albumsGridelliott) {
-    albumsData.forEach(albums => {
-      const albumsCardelliott = document.createElement('div');
-      albumsCardelliott.classList.add('albums-cardelliott');
+elliott5.forEach((musica, i) => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-elliott"); 
+    tr.dataset.audio = musica.audio;
+    tr.style.cursor = "pointer";
 
-      albumsCardelliott.innerHTML = `
-        <img src="${albums.Image}" alt="Álbum ${albums.name}">
-        <div>
-          <h3>${albums.name}</h3>
-          <p>${albums.year}</p>
-        </div>
-      `;
-      albumsGridelliott.appendChild(albumsCardelliott);
-    });
-  }
+    tr.innerHTML = `
+    <td>
+    <img src="${musica.Image}" alt="Imagem da música ${musica.name}"> <span>${musica.name}</span>
+    </td>
+    `;
+
+    if (listelliott) listelliott.appendChild(tr);
+});
 });
 
 // PLAYER DE MÚSICAS (GIT HUB Copilot)
