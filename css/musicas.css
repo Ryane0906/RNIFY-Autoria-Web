@@ -103,12 +103,6 @@ main {
     overflow-y: auto;  
 }
 
-.music-linkinpark div, .music-radiohead div, .music-katebush div {
-    size: 10px 10px;
-}
-.music-linkinpark td, .music-radiohead td, .music-katebush td {
-  padding: 8px 8px   
-}
 
 .table-dark img {
     width: 40px;
@@ -348,6 +342,13 @@ margin-bottom: 40px;
 
 .music-item-linkinpark td, .music-item-radiohead td, .music-item-katebush td, .music-item-elliott td {
     padding: 10px 8px;
+}
+
+.music-linkinpark div, .music-radiohead div, .music-katebush div, .music-elliott {
+    size: 10px 10px;
+}
+.music-linkinpark td, .music-radiohead td, .music-katebush td, .music-elliott td{
+  padding: 8px 8px   
 }
 
 .linkin-header {

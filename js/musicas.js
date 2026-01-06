@@ -15,15 +15,15 @@ const artistDataclassic = [
 
 
 const albumsDataclassic = [
-    { name: 'Stories From The City, Stories From The Sea', artist: 'Elis Regina', Image: './img/albuns/pjharveystories.jpg'},
-    { name: 'The Colour And The Shape', artist: 'Foo Fighters', Image: './img/albuns/foofighterscolornshape.jpg'},
-    { name: 'Use Your Illusion I', artist: 'Guns N Roses', Image: './img/albuns/gnraillusion.jpg'},
-    { name: 'Blur', artist: 'Blur', Image: './img/albuns/blur.jpg'},
-    { name: 'The Queen Is Dead', artist: 'The Smiths', Image: './img/albuns/thesmithsqueen.jpg'},
-    { name: 'Grace', artist: 'Jeff Buckley', Image: './img/albuns/jeffbuckleygrace.jpg'},
-    { name: 'In Rainbows', artist: 'Radiohead', Image: './img/radiohead/inrainbows.jpg'},
-    { name: 'Meteora', artist: 'Linkin Park', Image: './img/albuns/linkinparkmeteora.jpg'},
-    { name: 'The Bends', artist: 'Radiohead', Image: './img/albuns/radioheadthebends.jpg'},
+    { name: 'Stories From The City, Stories From The Sea', artist: 'Pj Harvey', Image: './img/albuns/pjharveystories.jpg', link:'storiesfromthecityalbum.html'},
+    { name: 'The Colour And The Shape', artist: 'Foo Fighters', Image: './img/albuns/foofighterscolornshape.jpg', link:'thecolourandtheshapealbum.html'},
+    { name: 'Use Your Illusion I', artist: 'Guns N Roses', Image: './img/albuns/gnraillusion.jpg', link:'useryoutillusioni.html'},
+    { name: 'Blur', artist: 'Blur', Image: './img/albuns/blur.jpg', link:'Bluralbum.html'},
+    { name: 'The Queen Is Dead', artist: 'The Smiths', Image: './img/albuns/thesmithsqueen.jpg', link:'thequeenisdead.html'},
+    { name: 'Grace', artist: 'Jeff Buckley', Image: './img/albuns/jeffbuckleygrace.jpg', link:''},
+    { name: 'In Rainbows', artist: 'Radiohead', Image: './img/radiohead/inrainbows.jpg', link:'inrainbows.html'},
+    { name: 'Meteora', artist: 'Linkin Park', Image: './img/albuns/linkinparkmeteora.jpg', link:'meteora.html'},
+    { name: 'The Bends', artist: 'Radiohead', Image: './img/albuns/radioheadthebends.jpg', link:'thebends.html'},
     
 ];
 
@@ -57,6 +57,7 @@ if (albumsGridclassic) {
                 albumsCardclassic.classList.add('albums-cardclassic')
 
                 albumsCardclassic.innerHTML = `
+                 <a href="${albums.link}">
                  <img src="${albums.Image}" alt= "imagem do ${albums.name}">
                  <div>
                  <h3>${albums.name}</h3>
