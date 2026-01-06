@@ -154,25 +154,6 @@ main {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.music-linkinpark button, .music-radiohead button, .music-katebush button {
-    background: none;
-    border: none;
-    color: #b7b3b6;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 5px 0;
-    text-align: left;
-    width: 100%;
-
-}   
-.music-linkinpark span:hover, .music-radiohead span:hover, .music-katebush span:hover {
-    color: #8c041c;
-    text-decoration: underline;
-}
-
-.music-item-linkinpark td, .music-item-radiohead td, .music-item-katebush td {
-    padding: 10px 8px;
-}
 .music-container h2 {
     font-size: 20px;
     flex-grow: 1;
@@ -242,8 +223,8 @@ main {
     flex-direction: column;
    }
 .progress-container {
-    flex: 1;                /* SEM ISSO SUME */
-    min-width: 420px;       /* GARANTE VISIBILIDADE */
+    flex: 1;                
+    min-width: 420px;      
     height: 4px;
     background: #404040;
     border-radius: 4px;
@@ -293,12 +274,7 @@ main {
 }
 
 
-.albums-cardclassic img,
-.albums-cardmpb img,
-.albums-cardlinkin img, 
-.albums-gridradiohead img, 
-.albums-gridkatebush img, 
-.albums-cardelliott img {
+.albums-cardclassic img, .albums-cardmpb img, .albums-cardlinkin img, .albums-gridradiohead img, .albums-gridkatebush img, .albums-gridelliott img {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -306,28 +282,14 @@ main {
     display: flex;
 }
 
-.artist-gridclassic,
-.albums-gridclassic,
-.artist-gridmpb,
-.albums-gridmpb,
-.albums-gridlinkin,
-.albums-gridradiohead,
-.albums-gridkatebush,
-.albums-gridelliott {
+.artist-gridclassic, .albums-gridclassic, .artist-gridmpb, .albums-gridmpb, .albums-gridlinkin, .albums-gridradiohead, .albums-gridkatebush, .albums-gridelliott {
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 gap: 24px;
 margin-bottom: 40px;
 }
 
-.artist-cardclassic,
-.albums-cardclassic,
-.artist-cardmpb,
-.albums-cardmpb,
-.albums-cardlinkin,
-.albums-cardradiohead,
-.albums-cardkatebush,
-.albums-cardelliott {
+.artist-cardclassic, .albums-cardclassic, .artist-cardmpb, .albums-cardmpb, .albums-cardlinkin, .albums-cardradiohead, .albums-cardkatebush, .albums-cardelliott {
     background-color: #111111;
     padding: 16px;
     border-radius: 8px;
@@ -339,14 +301,7 @@ margin-bottom: 40px;
     justify-content: space-between;
 }
 
-.artist-cardclassic:hover,
-.albums-cardclassic:hover, 
-.artist-cardmpb:hover,
-.albums-cardmpb:hover,
-.albums-cardlinkin:hover,
-.albums-cardradiohead:hover,
-.albums-cardkatebush:hover,
-.albums-cardelliott:hover {
+.artist-cardclassic:hover,.albums-cardclassic:hover, .artist-cardmpb:hover, .albums-cardmpb:hover, .albums-cardlinkin:hover, .albums-cardradiohead:hover, .albums-cardkatebush:hover, .albums-cardelliott:hover {
     background-color: #151515;
 }
 
@@ -374,6 +329,27 @@ margin-bottom: 40px;
     font-size: 14px;
     color: #b7b3b6;
 }
+
+.music-linkinpark button, .music-radiohead button, .music-katebush button, .music-elliott button {
+    background: none;
+    border: none;
+    color: #b7b3b6;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 0;
+    text-align: left;
+    width: 100%;
+
+}   
+.music-linkinpark span:hover, .music-radiohead span:hover, .music-katebush span:hover, .music-elliott span:hover {
+    color: #8c041c;
+    text-decoration: underline;
+}
+
+.music-item-linkinpark td, .music-item-radiohead td, .music-item-katebush td, .music-item-elliott td {
+    padding: 10px 8px;
+}
+
 .linkin-header {
     background-image: url(../img/banners/linkinpark.jpg);
     background-repeat: no-repeat;

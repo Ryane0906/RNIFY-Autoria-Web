@@ -2,15 +2,15 @@
 document.addEventListener('DOMContentLoaded', () => {
 const artistDataclassic = [
   {name: 'Kate Bush', Image: './img/artistas/katebush2.jpg', link: 'katebush.html' },
-  {name: 'Jeff Buckley', Image: './img/artistas/jeffbuckley2.jpg', link: 'index.html'},
+  {name: 'Jeff Buckley', Image: './img/artistas/jeffbuckley2.jpg', link: 'jeffbuckley.html'},
   {name: 'Elliott Smith', Image: './img/artistas/elliottsmith.jpg', link: 'elliottsmith.html'},
-  {name: 'Queen', Image: './img/artistas/queen2.jpg', link: 'index.html'},
-  {name: 'Michael Jackson', Image: './img/artistas/michaeljackson2.jpg', link: 'index.html'},
-  {name: 'The Smiths', Image: './img/artistas/thesmiths.jpg', link: 'index.html'},
+  {name: 'Queen', Image: './img/artistas/queen2.jpg', link: 'queen.html'},
+  {name: 'Michael Jackson', Image: './img/artistas/michaeljackson2.jpg', link: 'michaeljackson.html'},
+  {name: 'The Smiths', Image: './img/artistas/thesmiths.jpg', link: 'thesmiths.html'},
   {name: 'Radiohead', Image: './img/artistas/radiohead.jpg', link: 'radiohead.html'},
   {name: 'Linkin Park', Image: './img/artistas/linkinpark.jpg', link: 'linkinpark.html'},
-  {name: 'Pink Floyd', Image: './img/artistas/pinkfloyd.jpg', link: 'index.html'},
-  {name: 'Tame Impala', Image: './img/artistas/tameimpala.jpg', link: 'index.html'}
+  {name: 'Pink Floyd', Image: './img/artistas/pinkfloyd.jpg', link: 'pinkfloyd.html'},
+  {name: 'Tame Impala', Image: './img/artistas/tameimpala.jpg', link: 'tameimpala.html'}
 ];
 
 
@@ -85,7 +85,7 @@ const artistDatampb = [
 const albumsDatampb = [
     { name: '2 É Demais', artist: 'Elis Regina', Image: './img/albuns/2edemais.jpg'},
     { name: 'Rita Lee', artist: 'Rita Lee', Image: './img/albuns/ritalee.jpg'},
-    { name: 'O Que Você Quer Saber de Verdade', artist: 'Marisa Monte', Image: './img/img/albuns/oquevocequersaber.jpg'},
+    { name: 'O Que Você Quer Saber de Verdade', artist: 'Marisa Monte', Image: './img/albuns/oquevocequersaber.jpg'},
     { name: 'Ideologia', artist: 'Cazuza', Image: './img/albuns/ideologia.jpg'},
     { name: 'Falso Brilhante', artist: 'Elis Regina', Image: './img/albuns/falsobrilhante.jpg'},
     { name: 'Construção', artist: 'Chico Buarque', Image: './img/albuns/construcao.jpg'},
