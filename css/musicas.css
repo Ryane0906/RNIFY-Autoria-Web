@@ -416,10 +416,11 @@ margin-bottom: 40px;
 
 
 
-.album-meteora-title {
+.album-title {
   font-size: 64px;
   font-weight: 900;
   margin: 8px 0;
+  color: #fff
 }
 
 .album-meteora-meta {
@@ -448,20 +449,6 @@ margin-bottom: 40px;
   display: flex;
   align-items: center;
   gap: 8px;
-}
-.album-play-artist {
-  background: #8c041c;
-  color: #000;
-  border: none;
-  padding: 12px 28px;
-  border-radius: 50px;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: 30px;
 }
 
 .album-meteora-play:hover {
