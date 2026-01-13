@@ -414,12 +414,7 @@ margin-bottom: 40px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.6);
 }
 
-.album-meteora-type {
-  font-size: 12px;
-  font-weight: 600;
 
-  opacity: 0.8;
-}
 
 .album-meteora-title {
   font-size: 64px;
@@ -441,7 +436,7 @@ margin-bottom: 40px;
   gap: 16px;
 }
 
-.album-meteora-play {
+.album-play {
   background: #8c041c;
   color: #000;
   border: none;
@@ -453,6 +448,20 @@ margin-bottom: 40px;
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.album-play-artist {
+  background: #8c041c;
+  color: #000;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 30px;
 }
 
 .album-meteora-play:hover {

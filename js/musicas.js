@@ -386,27 +386,54 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // PLAYER DE MÚSICAS (GIT HUB Copilot)
-
 let audio = new Audio();
 let tocando = false;
 
-// elementos de controle do player (topo e bottom)
-const topPlayerBtn = document.querySelector('.icon-player');
-const topPlayerIcon = topPlayerBtn ? topPlayerBtn.querySelector('i') : null;
+// ===============================
+// ELEMENTOS DE CONTROLE
+// ===============================
+
+// botão play do álbum (header)
+const topPlayerBtn = document.querySelector('.album-play');
+const topPlayerIcon = topPlayerBtn
+  ? topPlayerBtn.querySelector('i')
+  : null;
+
+// bottom player
 const bottomPlayerWrap = document.querySelector('.icon-playerbottomnav');
-// selecionar especificamente o ícone de play/pause dentro do bottom nav
-const bottomPlayIcon = bottomPlayerWrap ? bottomPlayerWrap.querySelector('.bottombav-icons i.fa-circle-play, .bottombav-icons i.fa-circle-pause') : null;
+const bottomPlayIcon = bottomPlayerWrap
+  ? bottomPlayerWrap.querySelector(
+      '.bottombav-icons i.fa-circle-play, .bottombav-icons i.fa-circle-pause'
+    )
+  : null;
+
+// ===============================
+// ATUALIZAR ÍCONES
+// ===============================
 
 function updatePlayIcons(playing) {
+  // header (álbum)
   if (topPlayerIcon) {
-    if (playing) topPlayerIcon.classList.replace('fa-circle-play', 'fa-circle-pause');
-    else topPlayerIcon.classList.replace('fa-circle-pause', 'fa-circle-play');
+    if (playing) {
+      topPlayerIcon.classList.replace('fa-play', 'fa-pause');
+    } else {
+      topPlayerIcon.classList.replace('fa-pause', 'fa-play');
+    }
   }
+
+  // bottom player
   if (bottomPlayIcon) {
-    if (playing) bottomPlayIcon.classList.replace('fa-circle-play', 'fa-circle-pause');
-    else bottomPlayIcon.classList.replace('fa-circle-pause', 'fa-circle-play');
+    if (playing) {
+      bottomPlayIcon.classList.replace('fa-circle-play', 'fa-circle-pause');
+    } else {
+      bottomPlayIcon.classList.replace('fa-circle-pause', 'fa-circle-play');
+    }
   }
 }
+
+// ===============================
+// PLAY / PAUSE
+// ===============================
 
 function togglePlay() {
   if (audio.paused) {
@@ -420,10 +447,14 @@ function togglePlay() {
   }
 }
 
-// clique nas linhas de música: troca de faixa e atualiza ícones (mantém comportamento existente)
+// ===============================
+// CLIQUE NAS MÚSICAS
+// ===============================
+
 document.addEventListener('click', e => {
   const tr = e.target.closest('.music-item');
   if (!tr) return;
+
   const novoAudio = tr.dataset.audio;
 
   if (audio.src !== novoAudio) {
@@ -432,48 +463,63 @@ document.addEventListener('click', e => {
     tocando = true;
     updatePlayIcons(true);
   } else {
-    // mesma música: alterna play/pause
     togglePlay();
   }
 });
 
-// clique no botão superior
-if (topPlayerBtn) topPlayerBtn.addEventListener('click', togglePlay);
+// ===============================
+// BOTÃO PLAY DO ÁLBUM
+// ===============================
 
-// controles do bottom nav: play/pause e prev/next (salto de 10s)
+if (topPlayerBtn) {
+  topPlayerBtn.addEventListener('click', togglePlay);
+}
+
+// ===============================
+// CONTROLES DO BOTTOM PLAYER
+// ===============================
+
 if (bottomPlayerWrap) {
   bottomPlayerWrap.addEventListener('click', (e) => {
     const target = e.target;
-    if (target.closest('.fa-circle-play') || target.closest('.fa-circle-pause')) {
+
+    if (
+      target.closest('.fa-circle-play') ||
+      target.closest('.fa-circle-pause')
+    ) {
       togglePlay();
       return;
     }
+
     if (target.closest('.fa-backward-step')) {
-      // voltar 10 segundos
       audio.currentTime = Math.max(0, (audio.currentTime || 0) - 10);
       return;
     }
+
     if (target.closest('.fa-forward-step')) {
-      // avançar 10 segundos
-      audio.currentTime = Math.min(audio.duration || Infinity, (audio.currentTime || 0) + 10);
-      return;
+      audio.currentTime = Math.min(
+        audio.duration || Infinity,
+        (audio.currentTime || 0) + 10
+      );
     }
   });
 }
+
+// ===============================
+// BARRA DE PROGRESSO
+// ===============================
 
 const progressContainer = document.querySelector('.progress-container');
 const progress = document.querySelector('.progress');
 const currentTimeEl = document.getElementById('currentTime');
 const durationEl = document.getElementById('duration');
 
-// formatar tempo mm:ss
 function formatTime(time) {
   const minutes = Math.floor(time / 60);
   const seconds = Math.floor(time % 60).toString().padStart(2, '0');
   return `${minutes}:${seconds}`;
 }
 
-// atualizar barra e tempo
 audio.addEventListener('timeupdate', () => {
   if (!audio.duration) return;
 
@@ -484,13 +530,10 @@ audio.addEventListener('timeupdate', () => {
   durationEl.textContent = formatTime(audio.duration);
 });
 
-// clicar na barra para avançar/voltar
 progressContainer.addEventListener('click', (e) => {
   const width = progressContainer.clientWidth;
   const clickX = e.offsetX;
-  const duration = audio.duration;
-
-  audio.currentTime = (clickX / width) * duration;
+  audio.currentTime = (clickX / width) * audio.duration;
 });
 
 let isDragging = false;
@@ -511,8 +554,6 @@ document.addEventListener('mousemove', (e) => {
 
   offsetX = Math.max(0, Math.min(offsetX, rect.width));
 
-  const percent = (offsetX / rect.width) * 100;
-  progress.style.width = percent + '%';
-
+  progress.style.width = (offsetX / rect.width) * 100 + '%';
   audio.currentTime = (offsetX / rect.width) * audio.duration;
 });
