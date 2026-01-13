@@ -387,6 +387,89 @@ margin-bottom: 40px;
    
     
 }
+.album-meteora-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.album-meteora-header {
+  background: linear-gradient(180deg, #3a3a3a 0%, #121212 80%);
+  padding: 40px 32px;
+  color: #fff;
+}
+
+.album-meteora-content {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.album-meteora-cover {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+.album-meteora-type {
+  font-size: 12px;
+  font-weight: 600;
+
+  opacity: 0.8;
+}
+
+.album-meteora-title {
+  font-size: 64px;
+  font-weight: 900;
+  margin: 8px 0;
+}
+
+.album-meteora-meta {
+  font-size: 14px;
+  opacity: 0.8;
+  padding-top: 30px;
+  
+}
+
+.album-meteora-actions {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.album-meteora-play {
+  background: #8c041c;
+  color: #000;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.album-meteora-play:hover {
+  transform: scale(1.05);
+}
+
+.album-meteora-icon {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.album-meteora-icon:hover {
+  color: #fff;
+}
 
 
 

@@ -330,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
   elliott5 = [
     { name: 'Clementine', Image: './img/katebush/houndsoflove.jpg', audio: './musicas/clementine.mp3'},
     { name: 'Son of Sam', Image: './img/katebush/thesensualworld.jpg', audio: './musicas/sonofsam.mp3'}, 
-    { name: 'Somebody That I Used To Know', Image: './img/katebush/thekickinside.jpg', audio: './musicas/somebodythatiusedtoknowwlliott.mp3'},
+    { name: 'Somebody That I Used To Know', Image: './img/katebush/thekickinside.jpg', audio: './musicas/somebodythatiusedtoknowelliott.mp3'},
     { name: 'Say Yes', Image: './img/katebush/neverforever.jpg', audio: './musicas/sayyes.mp3'},
     { name: 'Better Be Quiet Now', Image: './img/katebush/lionheart.jpg', audio: './musicas/betterbequietnow.mp3' },
 ];
@@ -351,6 +351,38 @@ elliott5.forEach((musica, i) => {
 
     if (listelliott) listelliott.appendChild(tr);
 });
+});
+
+// DISCOGRAFIA ELLIOTT SMITH
+
+document.addEventListener('DOMContentLoaded', () => {
+  const albumsData = [
+    { name: '?????', Image: './img/katebush/houndsoflove.jpg', year: 1997},
+    { name: '?????', Image: './img/katebush/thesensualworld.jpg', year: 1993}, 
+    { name: '?????', Image: './img/katebush/thekickinside.jpg', year: 1987},
+    { name: '?????', Image: './img/katebush/neverforever.jpg', year: 1991},
+    { name: '?????', Image: './img/katebush/lionheart.jpg', year: 1995 },
+    { name: '?????', Image: './img/katebush/thedreaming.jpg', year: 2001},
+    { name: '?????', Image: './img/katebush/theredshoes.jpg', year: 2003}
+  ];
+
+  const albumsGridelliott = document.querySelector('.albums-gridelliott');
+
+  if (albumsGridelliott) {
+    albumsData.forEach(albums => {
+      const albumsCardelliott = document.createElement('div');
+      albumsCardelliott.classList.add('albums-cardelliott');
+
+      albumsCardelliott.innerHTML = `
+        <img src="${albums.Image}" alt="Álbum ${albums.name}">
+        <div>
+          <h3>${albums.name}</h3>
+          <p>${albums.year}</p>
+        </div>
+      `;
+      albumsGridelliott.appendChild(albumsCardelliott);
+    });
+  }
 });
 
 // PLAYER DE MÚSICAS (GIT HUB Copilot)
