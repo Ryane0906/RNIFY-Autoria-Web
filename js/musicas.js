@@ -385,6 +385,43 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Album meteora - Linkin Park
+
+document.addEventListener('DOMContentLoaded', () => {
+  meteora = [
+    { name: 'Foreword', audio: './musicas/meteora/foreword.mp3' },
+    { name: 'Don\'t Stay', audio: './musicas/meteora/dontstay.mp3' },
+    { name: 'Somewhere I Belong', audio: './musicas/meteora/somewhereibelong.mp3' },
+    { name: 'Lying From You', audio: './musicas/meteora/lyingfromyou.mp3' },
+    { name: 'Hit the Floor', audio: './musicas/meteora/hitthefloor.mp3' },
+    { name: 'Easier to Run', audio: './musicas/meteora/easiertorun.mp3' },
+    { name: 'Faint', audio: './musicas/meteora/faint.mp3' },
+    { name: 'Figure.09', audio: './musicas/meteora/figure09.mp3' },
+    { name: 'Breaking the Habit', audio: './musicas/meteora/breakingthehabit.mp3' },
+    { name: 'From the Inside', audio: './musicas/meteora/fromtheinside.mp3' },
+    { name: 'Nobody\'s Listening', audio: './musicas/meteora/nobodyslistening.mp3' },
+    { name: 'Session', audio: './musicas/meteora/session.mp3' },
+    { name: 'Numb', audio: './musicas/meteora/numb.mp3' }
+  ];
+
+  const listMeteora = document.querySelector(".music-meteora");
+
+  meteora.forEach((musica) => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-meteora");
+    tr.dataset.audio = musica.audio;
+    tr.style.cursor = "pointer";
+
+    tr.innerHTML = `
+      <td>
+        <span>${musica.name}</span>
+      </td>
+    `;
+
+    if (listMeteora) listMeteora.appendChild(tr);
+  });
+});
+
 // PLAYER DE MÚSICAS (GIT HUB Copilot)
 let audio = new Audio();
 let tocando = false;
