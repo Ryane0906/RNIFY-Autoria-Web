@@ -389,26 +389,32 @@ margin-bottom: 40px;
    
     
 }
-.album-meteora-img {
+.album-img {
     width: 200px;
     height: 200px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-.album-meteora-header {
+.album-header {
   background: linear-gradient(180deg, #3a3a3a 0%, #121212 80%);
   padding: 40px 32px;
   color: #fff;
 }
 
-.album-meteora-content {
+.album-radiohead-header {
+  background: linear-gradient(180deg, #500810FF 0%, #121212 90%);
+  padding: 40px 32px;
+  color: #fff;
+}
+
+.album-content {
   display: flex;
   align-items: flex-end;
   gap: 24px;
 }
 
-.album-meteora-cover {
+.album-cover {
   width: 220px;
   height: 220px;
   object-fit: cover;
@@ -425,14 +431,14 @@ margin-bottom: 40px;
   color: #fff
 }
 
-.album-meteora-meta {
+.album-meta {
   font-size: 14px;
   opacity: 0.8;
   padding-top: 30px;
   
 }
 
-.album-meteora-actions {
+.albumactions {
   margin-top: 24px;
   display: flex;
   align-items: center;
