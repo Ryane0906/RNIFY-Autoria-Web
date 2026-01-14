@@ -10,17 +10,18 @@ const artistDataclassic = [
   {name: 'Radiohead', Image: './img/artistas/radiohead.jpg', link: 'radiohead.html'},
   {name: 'Linkin Park', Image: './img/artistas/linkinpark.jpg', link: 'linkinpark.html'},
   {name: 'Pink Floyd', Image: './img/artistas/pinkfloyd.jpg', link: 'pinkfloyd.html'},
-  {name: 'Tame Impala', Image: './img/artistas/tameimpala.jpg', link: 'tameimpala.html'}
+  {name: 'Tame Impala', Image: './img/artistas/tameimpala.jpg', link: 'tameimpala.html'},
+  {name: 'The beatles', Image: './img/artistas/thebeatles.jpg', link: 'thebeatles.html'}
 ];
 
 
 const albumsDataclassic = [
-    { name: 'Stories From The City, Stories From The Sea', artist: 'Pj Harvey', Image: './img/albuns/pjharveystories.jpg', link:'storiesfromthecityalbum.html'},
+    { name: 'Stories From The City, Stories From The Sea', artist: 'Pj Harvey', Image: './img/albuns/pjharveystories.jpg', link:'storiespjharvey.html'},
     { name: 'The Colour And The Shape', artist: 'Foo Fighters', Image: './img/albuns/foofighterscolornshape.jpg', link:'thecolourandtheshapealbum.html'},
     { name: 'Use Your Illusion I', artist: 'Guns N Roses', Image: './img/albuns/gnraillusion.jpg', link:'useryoutillusioni.html'},
-    { name: 'Blur', artist: 'Blur', Image: './img/albuns/blur.jpg', link:'Bluralbum.html'},
+    { name: 'Blur', artist: 'Blur', Image: './img/albuns/blur.jpg', link:'bluralbum.html'},
     { name: 'The Queen Is Dead', artist: 'The Smiths', Image: './img/albuns/thesmithsqueen.jpg', link:'thequeenisdead.html'},
-    { name: 'Grace', artist: 'Jeff Buckley', Image: './img/albuns/jeffbuckleygrace.jpg', link:''},
+    { name: 'Grace', artist: 'Jeff Buckley', Image: './img/albuns/jeffbuckleygrace.jpg', link:'grace.html'},
     { name: 'In Rainbows', artist: 'Radiohead', Image: './img/radiohead/inrainbows.jpg', link:'inrainbows.html'},
     { name: 'Meteora', artist: 'Linkin Park', Image: './img/albuns/linkinparkmeteora.jpg', link:'meteora.html'},
     { name: 'The Bends', artist: 'Radiohead', Image: './img/albuns/radioheadthebends.jpg', link:'thebends.html'},
@@ -168,14 +169,14 @@ if (list) {
 
 document.addEventListener('DOMContentLoaded', () => {
 const albumsData = [
-    { name: 'Meteora', Image: './img/linkinpark/meteora.jpg', year: 2003},
-    { name: 'Reanimation', Image: './img/linkinpark/reanimation.jpg', year: 2002}, 
-    { name: 'A Thousand Suns', Image: './img/linkinpark/athousandsuns.jpg', year: 2010},
-    { name: 'Hybrid Theory', Image: './img/linkinpark/hybridtheory.jpg', year: 2000},
-    { name: 'One More Light', Image: './img/linkinpark/onemorelight.jpg', year: 2017},
-    { name: 'Minutes To Midnight', Image: './img/linkinpark/minutestomidnight.jpg', year: 2007},
-    { name: 'From Zero', Image: './img/linkinpark/fromzero.jpg', year: 2024},
-    { name: 'Living Things', Image: './img/linkinpark/livingthings.jpg', year: 2012},
+    { name: 'Meteora', Image: './img/linkinpark/meteora.jpg', year: 2003, link:'meteora.html'},
+    { name: 'Reanimation', Image: './img/linkinpark/reanimation.jpg', year: 2002, link:'reanimation.html'}, 
+    { name: 'A Thousand Suns', Image: './img/linkinpark/athousandsuns.jpg', year: 2010, link:'athousandsuns.html'},
+    { name: 'Hybrid Theory', Image: './img/linkinpark/hybridtheory.jpg', year: 2000, link:'hybridtheory.html'},
+    { name: 'One More Light', Image: './img/linkinpark/onemorelight.jpg', year: 2017, link:'onemorelight.html'},
+    { name: 'Minutes To Midnight', Image: './img/linkinpark/minutestomidnight.jpg', year: 2007, link:'minutestomidnight.html'},
+    { name: 'From Zero', Image: './img/linkinpark/fromzero.jpg', year: 2024, link:'fromzero.html'},
+    { name: 'Living Things', Image: './img/linkinpark/livingthings.jpg', year: 2012, link:'livingthings.html'},
 ];
 
 
@@ -187,6 +188,7 @@ if (albumsGridlinkin) {
         albumsCardlinkin.classList.add('albums-cardlinkin')
 
         albumsCardlinkin.innerHTML = `
+        <a href="${albums.link}">
         <img src="${albums.Image}" alt= "Álbum ${albums.name}">
         <div>
             <h3>${albums.name}</h3>
@@ -384,6 +386,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// TOP 5 QUEEN
+
+document.addEventListener('DOMContentLoaded', () => {
+  const queen5 = [ 
+    {name: 'Bohemian Rhapsody', Image: './img/queen/anightattheopera.jpg', audio: './musicas/queen/bohemianrhapsody.mp3'},
+    {name: 'Don\'t Stop Me Now', Image: './img/queen/jazz.jpg', audio: './musicas/queen/dontstopmenow.mp3'},
+    {name: 'Another One Bites the Dust', Image: './img/queen/thegame.jpg',audio: './musicas/queen/anotheronebitesthedust.mp3'},
+    {name: 'We Will Rock You', Image: './img/queen/newssoftheworld.jpg', audio: './musicas/queen/wewillrockyou.mp3'},
+    {name: 'Somebody to Love', Image: './img/queen/anightattheopera.jpg', audio: './musicas/queen/somebodytolove.mp3'}
+  ];
+
+  const listQueen = document.querySelector('.music-queen');
+
+  queen5.forEach((musica) => {
+    const tr = document.createElement('tr');
+    tr.classList.add('music-item', 'music-item-queen');
+    tr.dataset.audio = musica.audio;
+    tr.style.cursor = 'pointer';
+
+    tr.innerHTML = `
+      <td>
+        <img src="${musica.Image}" alt="Imagem da música ${musica.name}">
+        <span>${musica.name}</span>
+      </td>
+    `;
+
+    if (listQueen) listQueen.appendChild(tr);
+  });
+});
+
 
 // Album meteora - Linkin Park
 
