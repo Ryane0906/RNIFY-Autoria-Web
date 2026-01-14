@@ -335,7 +335,7 @@ margin-bottom: 40px;
     width: 100%;
 
 }   
-.music-linkinpark span:hover, .music-radiohead span:hover, .music-katebush span:hover, .music-elliott span:hover, .music-queen:hover {
+.music-linkinpark span:hover, .music-radiohead span:hover, .music-katebush span:hover, .music-elliott span:hover, .music-queen span:hover, .music-meteora span:hover {
     color: #8c041c;
     text-decoration: underline;
 }
@@ -347,9 +347,11 @@ margin-bottom: 40px;
 .music-linkinpark div, .music-radiohead div, .music-katebush div, .music-elliott div, .music-queen div {
     size: 10px 10px;
 }
-.music-linkinpark td, .music-radiohead td, .music-katebush td, .music-elliott td, .music-queen td {
+.music-linkinpark td, .music-radiohead td, .music-katebush td, .music-elliott td, .music-queen td, .music-meteora td {
   padding: 8px 8px   
 }
+
+
 
 .linkin-header {
     background-image: url(../img/banners/linkinpark.jpg);

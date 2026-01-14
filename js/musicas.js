@@ -385,85 +385,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// TOP 5 QUEEN
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  queen5 = [
-    { name: 'Clementine', Image: './img/katebush/houndsoflove.jpg', audio: './musicas/clementine.mp3'},
-    { name: 'Son of Sam', Image: './img/katebush/thesensualworld.jpg', audio: './musicas/sonofsam.mp3'}, 
-    { name: 'Somebody That I Used To Know', Image: './img/katebush/thekickinside.jpg', audio: './musicas/somebodythatiusedtoknowelliott.mp3'},
-    { name: 'Say Yes', Image: './img/katebush/neverforever.jpg', audio: './musicas/sayyes.mp3'},
-    { name: 'Better Be Quiet Now', Image: './img/katebush/lionheart.jpg', audio: './musicas/betterbequietnow.mp3' },
-];
-
-const listqueen = document.querySelector(".music-queen");
-
-queen5.forEach((musica, i) => {
-    const tr = document.createElement("tr");
-    tr.classList.add("music-item", "music-item-queen"); 
-    tr.dataset.audio = musica.audio;
-    tr.style.cursor = "pointer";
-
-    tr.innerHTML = `
-    <td>
-    <img src="${musica.Image}" alt="Imagem da música ${musica.name}"> <span>${musica.name}</span>
-    </td>
-    `;
-
-    if (listqueen) listqueen.appendChild(tr);
-});
-});
-
-// DISCOGRAFIA QUEEN
-
-document.addEventListener('DOMContentLoaded', () => {
-  const albumsData = [
-    { name: '?????', Image: './img/katebush/houndsoflove.jpg', year: 1997},
-    { name: '?????', Image: './img/katebush/thesensualworld.jpg', year: 1993}, 
-    { name: '?????', Image: './img/katebush/thekickinside.jpg', year: 1987},
-    { name: '?????', Image: './img/katebush/neverforever.jpg', year: 1991},
-    { name: '?????', Image: './img/katebush/lionheart.jpg', year: 1995 },
-    { name: '?????', Image: './img/katebush/thedreaming.jpg', year: 2001},
-    { name: '?????', Image: './img/katebush/theredshoes.jpg', year: 2003}
-  ];
-
-  const albumsGridqueen = document.querySelector('.albums-gridqueen');
-
-  if (albumsGridqueen) {
-    albumsData.forEach(albums => {
-      const albumsCardqueen = document.createElement('div');
-      albumsCardqueen.classList.add('albums-cardqueen');
-
-      albumsCardqueen.innerHTML = `
-        <img src="${albums.Image}" alt="Álbum ${albums.name}">
-        <div>
-          <h3>${albums.name}</h3>
-          <p>${albums.year}</p>
-        </div>
-      `;
-      albumsGridqueen.appendChild(albumsCardqueen);
-    });
-  }
-});
-
 // Album meteora - Linkin Park
 
 document.addEventListener('DOMContentLoaded', () => {
-  meteora = [
-    { name: 'Foreword', audio: './musicas/meteora/foreword.mp3' },
-    { name: 'Don\'t Stay', audio: './musicas/meteora/dontstay.mp3' },
-    { name: 'Somewhere I Belong', audio: './musicas/meteora/somewhereibelong.mp3' },
-    { name: 'Lying From You', audio: './musicas/meteora/lyingfromyou.mp3' },
-    { name: 'Hit the Floor', audio: './musicas/meteora/hitthefloor.mp3' },
-    { name: 'Easier to Run', audio: './musicas/meteora/easiertorun.mp3' },
-    { name: 'Faint', audio: './musicas/meteora/faint.mp3' },
-    { name: 'Figure.09', audio: './musicas/meteora/figure09.mp3' },
-    { name: 'Breaking the Habit', audio: './musicas/meteora/breakingthehabit.mp3' },
-    { name: 'From the Inside', audio: './musicas/meteora/fromtheinside.mp3' },
-    { name: 'Nobody\'s Listening', audio: './musicas/meteora/nobodyslistening.mp3' },
-    { name: 'Session', audio: './musicas/meteora/session.mp3' },
-    { name: 'Numb', audio: './musicas/meteora/numb.mp3' }
+  const meteora = [
+    { name: 'Foreword', audio: './musicas/foreword.mp3', time: '0:13' },
+    { name: "Don't Stay", audio: './musicas/dontstay.mp3', time: '3:07' },
+    { name: 'Somewhere I Belong', audio: './musicas/somewhereibelong.mp3', time: '3:33' },
+    { name: 'Lying From You', audio: './musicas/lyingfromyou.mp3', time: '2:55' },
+    { name: 'Hit the Floor', audio: './musicas/hitthefloor.mp3', time: '2:44' },
+    { name: 'Easier to Run', audio: './musicas/easiertorun.mp3', time: '3:24' },
+    { name: 'Faint', audio: './musicas/faint.mp3', time: '2:42' },
+    { name: 'Figure.09', audio: './musicas/figure09.mp3', time: '3:17' },
+    { name: 'Breaking the Habit', audio: './musicas/breakingthehabit.mp3', time: '3:16' },
+    { name: 'From the Inside', audio: './musicas/fromtheinside.mp3', time: '2:55' },
+    { name: "Nobody's Listening", audio: './musicas/nobodyslistening.mp3', time: '3:00' },
+    { name: 'Session', audio: './musicas/session.mp3', time: '2:23' },
+    { name: 'Numb', audio: './musicas/numb.mp3', time: '3:07' }
   ];
 
   const listMeteora = document.querySelector(".music-meteora");
