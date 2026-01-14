@@ -385,6 +385,68 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// TOP 5 QUEEN
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  queen5 = [
+    { name: 'Clementine', Image: './img/katebush/houndsoflove.jpg', audio: './musicas/clementine.mp3'},
+    { name: 'Son of Sam', Image: './img/katebush/thesensualworld.jpg', audio: './musicas/sonofsam.mp3'}, 
+    { name: 'Somebody That I Used To Know', Image: './img/katebush/thekickinside.jpg', audio: './musicas/somebodythatiusedtoknowelliott.mp3'},
+    { name: 'Say Yes', Image: './img/katebush/neverforever.jpg', audio: './musicas/sayyes.mp3'},
+    { name: 'Better Be Quiet Now', Image: './img/katebush/lionheart.jpg', audio: './musicas/betterbequietnow.mp3' },
+];
+
+const listqueen = document.querySelector(".music-queen");
+
+queen5.forEach((musica, i) => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-queen"); 
+    tr.dataset.audio = musica.audio;
+    tr.style.cursor = "pointer";
+
+    tr.innerHTML = `
+    <td>
+    <img src="${musica.Image}" alt="Imagem da música ${musica.name}"> <span>${musica.name}</span>
+    </td>
+    `;
+
+    if (listqueen) listqueen.appendChild(tr);
+});
+});
+
+// DISCOGRAFIA QUEEN
+
+document.addEventListener('DOMContentLoaded', () => {
+  const albumsData = [
+    { name: '?????', Image: './img/katebush/houndsoflove.jpg', year: 1997},
+    { name: '?????', Image: './img/katebush/thesensualworld.jpg', year: 1993}, 
+    { name: '?????', Image: './img/katebush/thekickinside.jpg', year: 1987},
+    { name: '?????', Image: './img/katebush/neverforever.jpg', year: 1991},
+    { name: '?????', Image: './img/katebush/lionheart.jpg', year: 1995 },
+    { name: '?????', Image: './img/katebush/thedreaming.jpg', year: 2001},
+    { name: '?????', Image: './img/katebush/theredshoes.jpg', year: 2003}
+  ];
+
+  const albumsGridqueen = document.querySelector('.albums-gridqueen');
+
+  if (albumsGridqueen) {
+    albumsData.forEach(albums => {
+      const albumsCardqueen = document.createElement('div');
+      albumsCardqueen.classList.add('albums-cardqueen');
+
+      albumsCardqueen.innerHTML = `
+        <img src="${albums.Image}" alt="Álbum ${albums.name}">
+        <div>
+          <h3>${albums.name}</h3>
+          <p>${albums.year}</p>
+        </div>
+      `;
+      albumsGridqueen.appendChild(albumsCardqueen);
+    });
+  }
+});
+
 // Album meteora - Linkin Park
 
 document.addEventListener('DOMContentLoaded', () => {
