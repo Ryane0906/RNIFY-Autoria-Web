@@ -328,14 +328,16 @@ document.addEventListener('DOMContentLoaded', () => {
 // TOP 5 ELLIOTT SMITH
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  elliott5 = [
-    { name: 'Clementine', Image: './img/katebush/houndsoflove.jpg', audio: './musicas/clementine.mp3'},
-    { name: 'Son of Sam', Image: './img/katebush/thesensualworld.jpg', audio: './musicas/sonofsam.mp3'}, 
-    { name: 'Somebody That I Used To Know', Image: './img/katebush/thekickinside.jpg', audio: './musicas/somebodythatiusedtoknowelliott.mp3'},
-    { name: 'Say Yes', Image: './img/katebush/neverforever.jpg', audio: './musicas/sayyes.mp3'},
-    { name: 'Better Be Quiet Now', Image: './img/katebush/lionheart.jpg', audio: './musicas/betterbequietnow.mp3' },
+const albumsData = [
+  { name: 'Roman Candle', Image: './img/katebush/houndsoflove.jpg', year: 1994 },
+  { name: 'Elliott Smith', Image: './img/katebush/thesensualworld.jpg', year: 1995 },
+  { name: 'Either/Or', Image: './img/katebush/thekickinside.jpg', year: 1997 },
+  { name: 'XO', Image: './img/katebush/neverforever.jpg', year: 1998 },
+  { name: 'Figure 8', Image: './img/katebush/lionheart.jpg', year: 2000 },
+  { name: 'From a Basement on the Hill', Image: './img/katebush/thedreaming.jpg', year: 2004 },
+  { name: 'New Moon', Image: './img/katebush/theredshoes.jpg', year: 2007 }
 ];
+
 
 const listelliott = document.querySelector(".music-elliott");
 
