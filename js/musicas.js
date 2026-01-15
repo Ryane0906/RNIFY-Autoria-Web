@@ -18,9 +18,9 @@ const artistDataclassic = [
 const albumsDataclassic = [
     { name: 'Stories From The City, Stories From The Sea', artist: 'Pj Harvey', Image: './img/albuns/pjharveystories.jpg', link:'storiespjharvey.html'},
     { name: 'The Colour And The Shape', artist: 'Foo Fighters', Image: './img/albuns/foofighterscolornshape.jpg', link:'thecolourandtheshapealbum.html'},
-    { name: 'Use Your Illusion I', artist: 'Guns N Roses', Image: './img/albuns/gnraillusion.jpg', link:'useryoutillusioni.html'},
+    { name: 'Use Your Illusion I', artist: 'Guns N Roses', Image: './img/albuns/gnraillusion.jpg', link:'useryourillusioni.html'},
     { name: 'Blur', artist: 'Blur', Image: './img/albuns/blur.jpg', link:'bluralbum.html'},
-    { name: 'The Queen Is Dead', artist: 'The Smiths', Image: './img/albuns/thesmithsqueen.jpg', link:'thequeenisdead.html'},
+    { name: 'The Queen Is Dead', artist: 'The Smiths', Image: './img/albuns/thequeen.jpg', link:'thequeenisdead.html'},
     { name: 'Grace', artist: 'Jeff Buckley', Image: './img/albuns/jeffbuckleygrace.jpg', link:'grace.html'},
     { name: 'In Rainbows', artist: 'Radiohead', Image: './img/radiohead/inrainbows.jpg', link:'inrainbows.html'},
     { name: 'Meteora', artist: 'Linkin Park', Image: './img/albuns/linkinparkmeteora.jpg', link:'meteora.html'},
