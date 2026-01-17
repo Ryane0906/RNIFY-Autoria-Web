@@ -457,6 +457,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Album in rainbows - Radiohead
+document.addEventListener('DOMContentLoaded', () => {
+  const inrainbows = [
+    { name: '15 Step', audio: './musicas/15step.mp4' },
+    { name: 'Bodysnatchers', audio: './musicas/bodysnatchers.mp4' },
+    { name: 'Nude', audio: './musicas/nude.mp4' },
+    { name: 'Weird Fishes Arpeggi', audio: './musicas/weirdfishesarpeggi.mp4' },
+    { name: 'All I Need', audio: './musicas/allineed.mp4' },
+    { name: 'Faust Arp', audio: './musicas/faustarp.mp4' },
+    { name: 'Reckoner', audio: './musicas/reckoner.mp4' },
+    { name: 'House of Cards', audio: './musicas/houseofcards.mp4' },
+    { name: 'Jigsaw Falling Into Place', audio: './musicas/jigsawfallingintoplace.mp4' },
+    { name: 'Videotape', audio: './musicas/videotape.mp4' }
+  ];
+
+  const list = document.querySelector(".music-inrainbows");
+
+  inrainbows.forEach(musica => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-inrainbows");
+    tr.dataset.audio = musica.audio;
+    tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+    if (list) list.appendChild(tr);
+  });
+});
+
+
+
 // Album blur - Blur
 
 document.addEventListener('DOMContentLoaded', () => {
