@@ -457,6 +457,203 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Album blur - Blur
+
+document.addEventListener('DOMContentLoaded', () => {
+  const blur = [
+    { name: 'Beetlebum', audio: './musicas/beetlebum.mp4' },
+    { name: 'Song 2', audio: './musicas/song2.mp4' },
+    { name: 'Country Sad Ballad Man', audio: './musicas/countrysadballadman.mp4' },
+    { name: 'M O R', audio: './musicas/mor.mp4' },
+    { name: 'On Your Own', audio: './musicas/onyourown.mp4' },
+    { name: 'Theme from Retro', audio: './musicas/themefromretro.mp4' },
+    { name: 'Youre So Great', audio: './musicas/youresogreat.mp4' },
+    { name: 'Death of a Party', audio: './musicas/deathofaparty.mp4' },
+    { name: 'Chinese Bombs', audio: './musicas/chinesebombs.mp4' },
+    { name: 'Im Just a Killer for Your Love', audio: './musicas/imjustakiller.mp4' },
+    { name: 'Look Inside America', audio: './musicas/lookinsideamerica.mp4' },
+    { name: 'Strange News from Another Star', audio: './musicas/strangenews.mp4' },
+    { name: 'Movin On', audio: './musicas/movinon.mp4' },
+    { name: 'Essex Dogs', audio: './musicas/essexdogs.mp4' }
+  ];
+
+  const list = document.querySelector(".music-blur");
+
+  blur.forEach(musica => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-blur");
+    tr.dataset.audio = musica.audio;
+    tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+    if (list) list.appendChild(tr);
+  });
+});
+
+// Album rumours - Fleetwood Mac
+
+document.addEventListener('DOMContentLoaded', () => {
+  const rumours = [
+    { name: 'Second Hand News', audio: './musicas/secondhandnews.mp4' },
+    { name: 'Dreams', audio: './musicas/dreams.mp4' },
+    { name: 'Never Going Back Again', audio: './musicas/nevergoingbackagain.mp4' },
+    { name: 'Dont Stop', audio: './musicas/dontstop.mp4' },
+    { name: 'Go Your Own Way', audio: './musicas/goyourownway.mp4' },
+    { name: 'Songbird', audio: './musicas/songbird.mp4' },
+    { name: 'The Chain', audio: './musicas/thechain.mp4' },
+    { name: 'You Make Loving Fun', audio: './musicas/youmakelovingfun.mp4' },
+    { name: 'I Dont Want to Know', audio: './musicas/idontwanttoknow.mp4' },
+    { name: 'Oh Daddy', audio: './musicas/ohdaddy.mp4' },
+    { name: 'Gold Dust Woman', audio: './musicas/golddustwoman.mp4' }
+  ];
+
+  const list = document.querySelector(".music-rumours");
+
+  rumours.forEach(musica => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-rumours");
+    tr.dataset.audio = musica.audio;
+    tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+    if (list) list.appendChild(tr);
+  });
+});
+
+// Album the colour and the shape - Foo Fighters
+
+document.addEventListener('DOMContentLoaded', () => {
+  const colornshape = [
+    { name: 'Doll', audio: './musicas/doll.mp4' },
+    { name: 'Monkey Wrench', audio: './musicas/monkeywrench.mp4' },
+    { name: 'Hey Johnny Park', audio: './musicas/heyjohnnypark.mp4' },
+    { name: 'My Poor Brain', audio: './musicas/mypoorbrain.mp4' },
+    { name: 'Wind Up', audio: './musicas/windup.mp4' },
+    { name: 'Up in Arms', audio: './musicas/upinarms.mp4' },
+    { name: 'My Hero', audio: './musicas/myhero.mp4' },
+    { name: 'See You', audio: './musicas/seeyou.mp4' },
+    { name: 'Enough Space', audio: './musicas/enoughspace.mp4' },
+    { name: 'February Stars', audio: './musicas/februarystars.mp4' },
+    { name: 'Everlong', audio: './musicas/everlong.mp4' },
+    { name: 'Walking After You', audio: './musicas/walkingafteryou.mp4' },
+    { name: 'New Way Home', audio: './musicas/newwayhome.mp4' }
+  ];
+
+  const list = document.querySelector(".music-colornshape");
+
+  colornshape.forEach(musica => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-colornshape");
+    tr.dataset.audio = musica.audio;
+    tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+    if (list) list.appendChild(tr);
+  });
+});
+
+// Album use your illusion - Guns N' Roses
+document.addEventListener('DOMContentLoaded', () => {
+  const gnraillusion = [
+    { name: 'Right Next Door to Hell', audio: './musicas/rightnextdoorthell.mp4' },
+    { name: 'Dust N Bones', audio: './musicas/dustnbones.mp4' },
+    { name: 'Live and Let Die', audio: './musicas/liveandletdie.mp4' },
+    { name: 'Dont Cry', audio: './musicas/dontcry.mp4' },
+    { name: 'Perfect Crime', audio: './musicas/perfectcrime.mp4' },
+    { name: 'November Rain', audio: './musicas/novemberrain.mp4' },
+    { name: 'Garden of Eden', audio: './musicas/gardenofeden.mp4' },
+    { name: 'Dead Horse', audio: './musicas/deadhorse.mp4' },
+    { name: 'Coma', audio: './musicas/coma.mp4' }
+  ];
+
+  const list = document.querySelector(".music-gnraillusion");
+
+  gnraillusion.forEach(musica => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-gnraillusion");
+    tr.dataset.audio = musica.audio;
+    tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+    if (list) list.appendChild(tr);
+  });
+});
+
+// Album grace - Jeff Buckley
+document.addEventListener('DOMContentLoaded', () => {
+  const grace = [
+    { name: 'Mojo Pin', audio: './musicas/mojopin.mp4' },
+    { name: 'Grace', audio: './musicas/grace.mp4' },
+    { name: 'Last Goodbye', audio: './musicas/lastgoodbye.mp4' },
+    { name: 'Lilac Wine', audio: './musicas/lilacwine.mp4' },
+    { name: 'So Real', audio: './musicas/soreal.mp4' },
+    { name: 'Hallelujah', audio: './musicas/hallelujah.mp4' },
+    { name: 'Lover You Shouldve Come Over', audio: './musicas/loveryoushouldvecomeover.mp4' },
+    { name: 'Corpus Christi Carol', audio: './musicas/corpuschristicarol.mp4' },
+    { name: 'Eternal Life', audio: './musicas/eternallife.mp4' },
+    { name: 'Dream Brother', audio: './musicas/dreambrother.mp4' }
+  ];
+
+  const list = document.querySelector(".music-grace");
+
+  grace.forEach(musica => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-grace");
+    tr.dataset.audio = musica.audio;
+    tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+    if (list) list.appendChild(tr);
+  });
+});
+
+// Album the bends - Radiohead
+document.addEventListener('DOMContentLoaded', () => {
+  const thebends = [
+    { name: 'Planet Telex', audio: './musicas/planettelex.mp4' },
+    { name: 'The Bends', audio: './musicas/thebends.mp4' },
+    { name: 'High and Dry', audio: './musicas/highanddry.mp4' },
+    { name: 'Fake Plastic Trees', audio: './musicas/fakeplastictrees.mp4' },
+    { name: 'Bones', audio: './musicas/bones.mp4' },
+    { name: 'Nice Dream', audio: './musicas/nicedream.mp4' },
+    { name: 'Just', audio: './musicas/just.mp4' },
+    { name: 'My Iron Lung', audio: './musicas/myironlung.mp4' },
+    { name: 'Bullet Proof I Wish I Was', audio: './musicas/bulletproof.mp4' },
+    { name: 'Black Star', audio: './musicas/blackstar.mp4' },
+    { name: 'Sulk', audio: './musicas/sulk.mp4' },
+    { name: 'Street Spirit Fade Out', audio: './musicas/streetspiritfadeout.mp4' }
+  ];
+
+  const list = document.querySelector(".music-thebends");
+
+  thebends.forEach(musica => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-thebends");
+    tr.dataset.audio = musica.audio;
+    tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+    if (list) list.appendChild(tr);
+  });
+});
+
+
+// Album the queen is dead - The Smiths
+document.addEventListener('DOMContentLoaded', () => {
+  const thesmithsqueen = [
+    { name: 'The Queen Is Dead', audio: './musicas/thequeenisdead.mp4' },
+    { name: 'Frankly Mr Shankly', audio: './musicas/franklymrshankly.mp4' },
+    { name: 'I Know Its Over', audio: './musicas/iknowitsover.mp4' },
+    { name: 'Never Had No One Ever', audio: './musicas/neverhadnooneever.mp4' },
+    { name: 'Cemetry Gates', audio: './musicas/cemetrygates.mp4' },
+    { name: 'Bigmouth Strikes Again', audio: './musicas/bigmouthstrikesagain.mp4' },
+    { name: 'The Boy with the Thorn in His Side', audio: './musicas/theboywiththethorn.mp4' },
+    { name: 'There Is a Light That Never Goes Out', audio: './musicas/thereisalightthatnevergoesout.mp4' },
+    { name: 'Some Girls Are Bigger Than Others', audio: './musicas/somegirlsarebiggerthanothers.mp4' }
+  ];
+
+  const list = document.querySelector(".music-thesmithsqueen");
+
+  thesmithsqueen.forEach(musica => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-thesmithsqueen");
+    tr.dataset.audio = musica.audio;
+    tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+    if (list) list.appendChild(tr);
+  });
+});
+
+
+
+
 // PLAYER DE MÚSICAS (GIT HUB Copilot)
 let audio = new Audio();
 let tocando = false;
