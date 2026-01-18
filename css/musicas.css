@@ -347,8 +347,9 @@ margin-bottom: 40px;
 .music-linkinpark div, .music-radiohead div, .music-katebush div, .music-elliott div, .music-queen div {
     size: 10px 10px;
 }
-.music-linkinpark td, .music-radiohead td, .music-katebush td, .music-elliott td, .music-queen td, .music-meteora td, .music-inrainbows td {
-  padding: 8px 8px   
+
+.music-linkinpark td, .music-radiohead td, .music-katebush td, .music-elliott td, .music-queen td, .music-meteora td, .music-inrainbows td, .music-doisdemais td, .music-blur td, .music-construcao td, .music-falsobrilhante td, .music-rumours td, .music-colornshape td, .music-gnraillusion td, .music-ideologia td, .music-grace td, .music-thebends td, .music-revolucoesporminuto td, .music-tabuaesmeralda td, .music-thesmithsqueen td {
+  padding: 8px 8px;
 }
 
 
