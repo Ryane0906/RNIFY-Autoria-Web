@@ -17,9 +17,9 @@ const artistDataclassic = [
 
 const albumsDataclassic = [
     { name: 'Stories From The City, Stories From The Sea', artist: 'Pj Harvey', Image: './img/albuns/pjharveystories.jpg', link:'storiespjharvey.html'},
-    { name: 'The Colour And The Shape', artist: 'Foo Fighters', Image: './img/albuns/foofighterscolornshape.jpg', link:'thecolourandtheshapealbum.html'},
+    { name: 'The Colour And The Shape', artist: 'Foo Fighters', Image: './img/albuns/foofighterscolornshape.jpg', link:'thecolour.html'},
     { name: 'Use Your Illusion I', artist: 'Guns N Roses', Image: './img/albuns/gnraillusion.jpg', link:'useryourillusioni.html'},
-    { name: 'Blur', artist: 'Blur', Image: './img/albuns/blur.jpg', link:'bluralbum.html'},
+    { name: 'Blur', artist: 'Blur', Image: './img/albuns/blur.jpg', link:'blur.html'},
     { name: 'The Queen Is Dead', artist: 'The Smiths', Image: './img/albuns/thequeen.jpg', link:'thequeenisdead.html'},
     { name: 'Grace', artist: 'Jeff Buckley', Image: './img/albuns/jeffbuckleygrace.jpg', link:'grace.html'},
     { name: 'In Rainbows', artist: 'Radiohead', Image: './img/radiohead/inrainbows.jpg', link:'inrainbows.html'},
@@ -328,34 +328,33 @@ document.addEventListener('DOMContentLoaded', () => {
 // TOP 5 ELLIOTT SMITH
 
 
-const albumsData = [
-  { name: 'Roman Candle', Image: './img/katebush/houndsoflove.jpg', year: 1994 },
-  { name: 'Elliott Smith', Image: './img/katebush/thesensualworld.jpg', year: 1995 },
-  { name: 'Either/Or', Image: './img/katebush/thekickinside.jpg', year: 1997 },
-  { name: 'XO', Image: './img/katebush/neverforever.jpg', year: 1998 },
-  { name: 'Figure 8', Image: './img/katebush/lionheart.jpg', year: 2000 },
-  { name: 'From a Basement on the Hill', Image: './img/katebush/thedreaming.jpg', year: 2004 },
-  { name: 'New Moon', Image: './img/katebush/theredshoes.jpg', year: 2007 }
+const elliott5 = [
+  { name: 'Between the Bars', Image: './img/elliott/betweenthebars.jpg', audio: './musicas/betweenthebars.mp3' },
+  { name: 'Angeles', Image: './img/elliott/angeles.jpg', audio: './musicas/angeles.mp3' },
+  { name: 'Waltz #2', Image: './img/elliott/waltz2.jpg', audio: './musicas/waltz2.mp3' },
+  { name: 'Miss Misery', Image: './img/elliott/missmisery.jpg', audio: './musicas/missmisery.mp3' },
+  { name: 'Say Yes', Image: './img/elliott/sayyes.jpg', audio: './musicas/sayyes.mp3' }
 ];
-
 
 const listelliott = document.querySelector(".music-elliott");
 
-elliott5.forEach((musica, i) => {
+if (listelliott) {
+  elliott5.forEach(musica => {
     const tr = document.createElement("tr");
-    tr.classList.add("music-item", "music-item-elliott"); 
-    tr.dataset.audio = musica.audio;
-    tr.style.cursor = "pointer";
+    tr.classList.add("music-item", "music-item-elliott");
 
     tr.innerHTML = `
-    <td>
-    <img src="${musica.Image}" alt="Imagem da música ${musica.name}"> <span>${musica.name}</span>
-    </td>
+      <td>
+        <img src="${musica.Image}" alt="${musica.name}">
+        <span>${musica.name}</span>
+      </td>
     `;
 
-    if (listelliott) listelliott.appendChild(tr);
-});
-});
+    listelliott.appendChild(tr);
+  });
+}
+
+
 
 // DISCOGRAFIA ELLIOTT SMITH
 
@@ -460,7 +459,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Album in rainbows - Radiohead
 document.addEventListener('DOMContentLoaded', () => {
   const inrainbows = [
-    { name: '15 Step', audio: './musicas/15step.mp4' },
+    { name: '15 Step', audio: './musicas/15steps.mp3' },
     { name: 'Bodysnatchers', audio: './musicas/bodysnatchers.mp4' },
     { name: 'Nude', audio: './musicas/nude.mp4' },
     { name: 'Weird Fishes Arpeggi', audio: './musicas/weirdfishesarpeggi.mp4' },
@@ -679,6 +678,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// PJ HARVEY — Stories from the City, Stories from the Sea
+
+document.addEventListener('DOMContentLoaded', () => {
+  const pjharveyalbum = [
+    { name: 'Big Exit', audio: './musicas/pjharvey/bigexit.mp3' },
+    { name: 'Good Fortune', audio: './musicas/pjharvey/goodfortune.mp3' },
+    { name: 'A Place Called Home', audio: './musicas/pjharvey/aplacecalledhome.mp3' },
+    { name: 'One Line', audio: './musicas/pjharvey/oneline.mp3' },
+    { name: 'Beautiful Feeling', audio: './musicas/pjharvey/beautifulfeeling.mp3' },
+    { name: 'The Whores Hustle and the Hustlers Whore', audio: './musicas/pjharvey/thewhores.mp3' },
+    { name: 'This Is Love', audio: './musicas/pjharvey/thisislove.mp3' },
+    { name: 'You Said Something', audio: './musicas/pjharvey/yousaidsomething.mp3' },
+    { name: 'Kamikaze', audio: './musicas/pjharvey/kamikaze.mp3' },
+    { name: 'This Mess We’re In', audio: './musicas/pjharvey/thismess.mp3' },
+    { name: 'Horses in My Dreams', audio: './musicas/pjharvey/horsesinmydreams.mp3' },
+    { name: 'We Float', audio: './musicas/pjharvey/wefloat.mp3' }
+  ];
+
+  const list = document.querySelector(".music-pjharvey");
+
+  pjharveyalbum.forEach(musica => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-pjharvey");
+    tr.dataset.audio = musica.audio;
+    tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+    if (list) list.appendChild(tr);
+  });
+});
 
 
 
