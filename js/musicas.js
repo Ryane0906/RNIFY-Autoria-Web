@@ -11,6 +11,9 @@ const artistDataclassic = [
   {name: 'Linkin Park', Image: './img/artistas/linkinpark.jpg', link: 'linkinpark.html'},
   {name: 'Pink Floyd', Image: './img/artistas/pinkfloyd.jpg', link: 'pinkfloyd.html'},
   {name: 'Tame Impala', Image: './img/artistas/tameimpala.jpg', link: 'tameimpala.html'},
+  {name: 'Pj Harvey', Image: './img/artistas/pjharvey.jpg', link: 'tameimpala.html'},
+  {name: 'Bjork', Image: './img/artistas/bjork.jpg', link: 'tameimpala.html'},
+  {name: 'Tori Amos', Image: './img/artistas/toriamos.jpg', link: 'tameimpala.html'},
   {name: 'The beatles', Image: './img/artistas/thebeatles.jpg', link: 'thebeatles.html'}
 ];
 
@@ -25,7 +28,11 @@ const albumsDataclassic = [
     { name: 'In Rainbows', artist: 'Radiohead', Image: './img/radiohead/inrainbows.jpg', link:'inrainbows.html'},
     { name: 'Meteora', artist: 'Linkin Park', Image: './img/albuns/linkinparkmeteora.jpg', link:'meteora.html'},
     { name: 'The Bends', artist: 'Radiohead', Image: './img/albuns/radioheadthebends.jpg', link:'thebends.html'},
-    { name: 'Rumours', artist: 'Fleetwood Mac', Image: './img/albuns/rumours.jpg', link:'rumours.html'}
+    { name: 'Rumours', artist: 'Fleetwood Mac', Image: './img/albuns/rumours.jpg', link:'rumours.html'},
+    { name: 'The New Abnormal', artist: 'The Strokes', Image: './img/albuns/thenewabnormal.jpg', link:'rumours.html'},
+    { name: 'In Utero', artist: 'Nirnava', Image: './img/albuns/inutero.jpg', link:'rumours.html'},
+    { name: 'Figure 8', artist: 'Elliott Smith', Image: './img/albuns/figure8.jpg', link:'rumours.html'},
+    { name: 'Ultraviolence', artist: 'Lana Del Rey', Image: './img/albuns/rumours.jpg', link:'rumours.html'}
     
 ];
 
@@ -81,7 +88,13 @@ const artistDatampb = [
   {name: 'Angela Ro Ro', Image: './img/artistas/angelaroro.jpg'},
   {name: 'Belchior', Image: './img/artistas/belchior.jpg'},
   {name: 'Rita Lee', Image: './img/artistas/ritalee.jpg'},
-  {name: 'Caetano Veloso', Image: './img/artistas/caetanoveloso.jpg'}
+  {name: 'Caetano Veloso', Image: './img/artistas/caetanoveloso.jpg'},
+  {name: 'Elis Regina', Image: './img/artistas/elisregina.jpg'},
+  {name: 'Tim Maia', Image: './img/artistas/caetanoveloso.jpg'},
+  {name: 'Marisa Monte', Image: './img/artistas/caetanoveloso.jpg'},
+  {name: 'Gal Costa', Image: './img/artistas/caetanoveloso.jpg'},
+  {name: 'Maria Bethânia', Image: './img/artistas/caetanoveloso.jpg'}
+
 ];
 
 
