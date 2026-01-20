@@ -20,11 +20,12 @@ const albumsDataclassic = [
     { name: 'The Colour And The Shape', artist: 'Foo Fighters', Image: './img/albuns/foofighterscolornshape.jpg', link:'thecolour.html'},
     { name: 'Use Your Illusion I', artist: 'Guns N Roses', Image: './img/albuns/gnraillusion.jpg', link:'useryourillusioni.html'},
     { name: 'Blur', artist: 'Blur', Image: './img/albuns/blur.jpg', link:'blur.html'},
-    { name: 'The Queen Is Dead', artist: 'The Smiths', Image: './img/albuns/thequeen.jpg', link:'thequeenisdead.html'},
+    { name: 'The Queen Is Dead', artist: 'The Smiths', Image: './img/albuns/thesmithsqueen.jpg', link:'thequeen.html'},
     { name: 'Grace', artist: 'Jeff Buckley', Image: './img/albuns/jeffbuckleygrace.jpg', link:'grace.html'},
     { name: 'In Rainbows', artist: 'Radiohead', Image: './img/radiohead/inrainbows.jpg', link:'inrainbows.html'},
     { name: 'Meteora', artist: 'Linkin Park', Image: './img/albuns/linkinparkmeteora.jpg', link:'meteora.html'},
     { name: 'The Bends', artist: 'Radiohead', Image: './img/albuns/radioheadthebends.jpg', link:'thebends.html'},
+    { name: 'Rumours', artist: 'Fleetwood Mac', Image: './img/albuns/rumours.jpg', link:'rumours.html'}
     
 ];
 

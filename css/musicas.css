@@ -394,6 +394,36 @@ margin-bottom: 40px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
+.album-gnraillusion-header {
+    background: linear-gradient(180deg, #650000FF 0%, #121212 80%);
+    padding: 40px 32px;
+    color: #fff;
+}
+.album-rumours-header {
+    background: linear-gradient(180deg, #f2f1e6 0%, #121212 80%);
+    padding: 40px 32px;
+    color: #fff;
+}
+.album-thebends-header {
+    background: linear-gradient(180deg, #E00808FF 0%, #121212 80%);
+    padding: 40px 32px;
+    color: #fff;
+}
+.album-grace-header {
+    background: linear-gradient(180deg, #19294f 0%, #121212 80%);
+    padding: 40px 32px;
+    color: #fff;
+}
+.album-thesmithsqueen-header {
+    background: linear-gradient(180deg, #293931FF 0%, #121212 80%);
+    padding: 40px 32px;
+    color: #fff;
+}
+.album-colornshape-header {
+    background: linear-gradient(180deg, #0D3756FF 0%, #121212 80%);
+    padding: 40px 32px;
+    color: #fff;
+}
 .album-pjharvey-header {
     background: linear-gradient(180deg, #9c1f21 0%, #121212 80%);
     padding: 40px 32px;
@@ -405,7 +435,7 @@ margin-bottom: 40px;
     color: #fff;
   }
 .album-meteora-header {
-  background: linear-gradient(180deg, #3a3a3a 0%, #121212 80%);
+  background: linear-gradient(180deg, #85785b 0%, #121212 80%);
   padding: 40px 32px;
   color: #fff;
 }
