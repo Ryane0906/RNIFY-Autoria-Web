@@ -334,6 +334,204 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// TOP 5 PJ HARVEY
+
+const pjharvey5 = [
+  {name: 'Down by the Water', Image: './img/pjharvey/tothecity.jpg', audio: './musicas/downbythewater.mp3'},
+  {name: 'This Is Love', Image: './img/pjharvey/stories.jpg', audio: './musicas/thisislove.mp3'},
+  {name: 'Dress', Image: './img/pjharvey/dry.jpg', audio: './musicas/dress.mp3'},
+  {name: 'Rid of Me', Image: './img/pjharvey/ridofme.jpg', audio: './musicas/ridofme.mp3'},
+  {name: 'Good Fortune', Image: './img/pjharvey/stories.jpg', audio: './musicas/goodfortune.mp3'}
+];
+
+const listPJ = document.querySelector(".music-pjharvey");
+
+if (listPJ) {
+  pjharvey5.forEach(musica => {
+      const tr = document.createElement("tr");
+      tr.classList.add("music-item");
+      tr.dataset.audio = musica.audio;
+      tr.style.cursor = "pointer";
+
+      tr.innerHTML = `
+      <td>
+      <img src="${musica.Image}"> <span>${musica.name}</span>
+      </td>
+      `;
+      listPJ.appendChild(tr);
+  });
+}
+
+// TOP 5 TORI AMOS
+
+const toriamos5 = [
+  {name: 'Cornflake Girl', Image: './img/toriamos/underpink.jpg', audio: './musicas/cornflakegirl.mp3'},
+  {name: 'Silent All These Years', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/silent.mp3'},
+  {name: 'Winter', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/winter.mp3'},
+  {name: 'Crucify', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/crucify.mp3'},
+  {name: 'God', Image: './img/toriamos/underpink.jpg', audio: './musicas/god.mp3'}
+];
+
+const listTori = document.querySelector(".music-toriamos");
+
+if (listTori) {
+  toriamos5.forEach(musica => {
+      const tr = document.createElement("tr");
+      tr.classList.add("music-item");
+      tr.dataset.audio = musica.audio;
+      tr.style.cursor = "pointer";
+
+      tr.innerHTML = `
+      <td>
+      <img src="${musica.Image}"> <span>${musica.name}</span>
+      </td>
+      `;
+      listTori.appendChild(tr);
+  });
+}
+
+// TOP 5 PINK FLOYD
+
+const pinkfloyd5 = [
+  {name: 'Wish You Were Here', Image: './img/pinkfloyd/wywh.jpg', audio: './musicas/wywh.mp3'},
+  {name: 'Comfortably Numb', Image: './img/pinkfloyd/thewall.jpg', audio: './musicas/comfortablynumb.mp3'},
+  {name: 'Time', Image: './img/pinkfloyd/dsotm.jpg', audio: './musicas/time.mp3'},
+  {name: 'Money', Image: './img/pinkfloyd/dsotm.jpg', audio: './musicas/money.mp3'},
+  {name: 'Shine On You Crazy Diamond', Image: './img/pinkfloyd/wywh.jpg', audio: './musicas/shineon.mp3'}
+];
+
+const listFloyd = document.querySelector(".music-pinkfloyd");
+
+if (listFloyd) {
+  pinkfloyd5.forEach(musica => {
+      const tr = document.createElement("tr");
+      tr.classList.add("music-item");
+      tr.dataset.audio = musica.audio;
+      tr.style.cursor = "pointer";
+
+      tr.innerHTML = `
+      <td>
+      <img src="${musica.Image}"> <span>${musica.name}</span>
+      </td>
+      `;
+      listFloyd.appendChild(tr);
+  });
+}
+
+// TOP 5 THE SMITHS
+
+const thesmiths5 = [
+  {name: 'There Is a Light That Never Goes Out', Image: './img/thesmiths/queen.jpg', audio: './musicas/thereisalight.mp3'},
+  {name: 'This Charming Man', Image: './img/thesmiths/charming.jpg', audio: './musicas/charming.mp3'},
+  {name: 'How Soon Is Now?', Image: './img/thesmiths/meat.jpg', audio: './musicas/howsoon.mp3'},
+  {name: 'Heaven Knows I\'m Miserable Now', Image: './img/thesmiths/hatful.jpg', audio: './musicas/heavenknows.mp3'},
+  {name: 'Bigmouth Strikes Again', Image: './img/thesmiths/queen.jpg', audio: './musicas/bigmouth.mp3'}
+];
+
+const listSmiths = document.querySelector(".music-thesmiths");
+
+if (listSmiths) {
+  thesmiths5.forEach(musica => {
+      const tr = document.createElement("tr");
+      tr.classList.add("music-item");
+      tr.dataset.audio = musica.audio;
+      tr.style.cursor = "pointer";
+
+      tr.innerHTML = `
+      <td>
+      <img src="${musica.Image}"> <span>${musica.name}</span>
+      </td>
+      `;
+      listSmiths.appendChild(tr);
+  });
+}
+
+// TOP 5 TAME IMPALA
+
+const tameimpala5 = [
+  {name: 'The Less I Know the Better', Image: './img/tameimpala/currents.jpg', audio: './musicas/thelessiknow.mp3'},
+  {name: 'Feels Like We Only Go Backwards', Image: './img/tameimpala/lonerism.jpg', audio: './musicas/feelslike.mp3'},
+  {name: 'Let It Happen', Image: './img/tameimpala/currents.jpg', audio: './musicas/letithappen.mp3'},
+  {name: 'Elephant', Image: './img/tameimpala/lonerism.jpg', audio: './musicas/elephant.mp3'},
+  {name: 'Eventually', Image: './img/tameimpala/currents.jpg', audio: './musicas/eventually.mp3'}
+];
+
+const listTame = document.querySelector(".music-tameimpala");
+
+if (listTame) {
+  tameimpala5.forEach(musica => {
+      const tr = document.createElement("tr");
+      tr.classList.add("music-item");
+      tr.dataset.audio = musica.audio;
+      tr.style.cursor = "pointer";
+
+      tr.innerHTML = `
+      <td>
+      <img src="${musica.Image}"> <span>${musica.name}</span>
+      </td>
+      `;
+      listTame.appendChild(tr);
+  });
+}
+
+// TOP 5 MICHAEL JACKSON
+
+const michaeljackson5 = [
+  { name: 'Billie Jean', Image: './img/michaeljackson/thriller.jpg', audio: './musicas/billiejean.mp3' },
+  { name: 'Beat It', Image: './img/michaeljackson/thriller.jpg', audio: './musicas/beatit.mp3' },
+  { name: 'Thriller', Image: './img/michaeljackson/thriller.jpg', audio: './musicas/thriller.mp3' },
+  { name: 'Smooth Criminal', Image: './img/michaeljackson/bad.jpg', audio: './musicas/smoothcriminal.mp3' },
+  { name: 'Man in the Mirror', Image: './img/michaeljackson/bad.jpg', audio: './musicas/maninthemirror.mp3' }
+];
+
+const listMichaelJackson = document.querySelector('.music-michaeljackson');
+
+if (listMichaelJackson) {
+  michaeljackson5.forEach(musica => {
+    const tr = document.createElement('tr');
+    tr.classList.add('music-item');
+    tr.dataset.audio = musica.audio;
+    tr.style.cursor = 'pointer';
+
+    tr.innerHTML = `
+      <td>
+        <img src="${musica.Image}" alt="Imagem da música ${musica.name}">
+        <span>${musica.name}</span>
+      </td>
+    `;
+
+    listMichaelJackson.appendChild(tr);
+  });
+}
+
+
+// TOP 5 THE BEATLES
+
+const beatles5 = [
+  {name: 'Hey Jude', Image: './img/beatles/heyjude.jpg', audio: './musicas/heyjude.mp3'},
+  {name: 'Let It Be', Image: './img/beatles/letitbe.jpg', audio: './musicas/letitbe.mp3'},
+  {name: 'Come Together', Image: './img/beatles/abbeyroad.jpg', audio: './musicas/cometogether.mp3'},
+  {name: 'Yesterday', Image: './img/beatles/help.jpg', audio: './musicas/yesterday.mp3'},
+  {name: 'Something', Image: './img/beatles/abbeyroad.jpg', audio: './musicas/something.mp3'}
+];
+
+const listBeatles = document.querySelector(".music-beatles");
+
+if (listBeatles) {
+  beatles5.forEach(musica => {
+      const tr = document.createElement("tr");
+      tr.classList.add("music-item");
+      tr.dataset.audio = musica.audio;
+      tr.style.cursor = "pointer";
+
+      tr.innerHTML = `
+      <td>
+      <img src="${musica.Image}"> <span>${musica.name}</span>
+      </td>
+      `;
+      listBeatles.appendChild(tr);
+  });
+}
 
 
 //TOP 5 KATE BUSH
