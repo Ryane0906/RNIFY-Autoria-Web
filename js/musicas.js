@@ -32,7 +32,7 @@ const albumsDataclassic = [
     { name: 'The New Abnormal', artist: 'The Strokes', Image: './img/albuns/thenewabnormal.jpg', link:'rumours.html'},
     { name: 'In Utero', artist: 'Nirnava', Image: './img/albuns/inutero.jpg', link:'rumours.html'},
     { name: 'Figure 8', artist: 'Elliott Smith', Image: './img/albuns/figure8.jpg', link:'rumours.html'},
-    { name: 'Ultraviolence', artist: 'Lana Del Rey', Image: './img/albuns/rumours.jpg', link:'rumours.html'}
+    { name: 'Ultraviolence', artist: 'Lana Del Rey', Image: './img/albuns/ultraviolence.jpg', link:'rumours.html'}
     
 ];
 
@@ -86,7 +86,7 @@ const artistDatampb = [
   {name: 'Adoniran Barbosa', Image: './img/artistas/adoniranbarbosa.jpg'},
   {name: 'Ney Matogrosso', Image: './img/artistas/neymatogrosso.jpg'},
   {name: 'Angela Ro Ro', Image: './img/artistas/angelaroro.jpg'},
-  {name: 'Belchior', Image: './img/artistas/belchior.jpg'},
+  {name: 'Seu Jorge', Image: './img/artistas/seujorge.jpg'},
   {name: 'Rita Lee', Image: './img/artistas/ritalee.jpg'},
   {name: 'Caetano Veloso', Image: './img/artistas/caetanoveloso.jpg'},
   {name: 'Elis Regina', Image: './img/artistas/elisregina.jpg'},
@@ -277,6 +277,64 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// TOP 5 JEFF BUCKLEY
+
+const jeffbuckley5 = [
+  {name: 'Grace', Image: './img/jeffbuckley/grace.jpg', audio: './musicas/grace.mp3'},
+  {name: 'Hallelujah', Image: './img/jeffbuckley/grace.jpg', audio: './musicas/hallelujah.mp3'},
+  {name: 'Last Goodbye', Image: './img/jeffbuckley/grace.jpg', audio: './musicas/lastgoodbye.mp3'},
+  {name: 'Lover, You Should\'ve Come Over', Image: './img/jeffbuckley/grace.jpg', audio: './musicas/lover.mp3'},
+  {name: 'So Real', Image: './img/jeffbuckley/grace.jpg', audio: './musicas/soreal.mp3'}
+];
+
+const listJeff = document.querySelector(".music-jeffbuckley");
+
+if (listJeff) {
+  jeffbuckley5.forEach(musica => {
+      const tr = document.createElement("tr");
+      tr.classList.add("music-item");
+      tr.dataset.audio = musica.audio;
+      tr.style.cursor = "pointer";
+
+      tr.innerHTML = `
+      <td>
+      <img src="${musica.Image}"> <span>${musica.name}</span>
+      </td>
+      `;
+      listJeff.appendChild(tr);
+  });
+}
+
+
+// DISCOGRAFIA JEFF BUCKLEY
+
+document.addEventListener('DOMContentLoaded', () => {
+  const albumsData = [
+    { name: 'Grace', Image: './img/albuns/rumours.jpg', year: 1994 },
+    { name: 'Sketches for My Sweetheart the Drunk', Image: './img/jeffbuckley/sketches.jpg', year: 1998 }
+  ];
+
+  const albumsGridjeffbuckley = document.querySelector('.albums-gridjeffbuckley');
+
+  if (albumsGridjeffbuckley) {
+    albumsData.forEach(albums => {
+      const albumsCardjeffbuckley = document.createElement('div');
+      albumsCardjeffbuckley.classList.add('albums-cardjeffbuckley');
+
+      albumsCardjeffbuckley.innerHTML = `
+        <img src="${albums.Image}" alt="Álbum ${albums.name}">
+        <div>
+          <h3>${albums.name}</h3>
+          <p>${albums.year}</p>
+        </div>
+      `;
+      albumsGridjeffbuckley.appendChild(albumsCardjeffbuckley);
+    });
+  }
+});
+
+
 
 //TOP 5 KATE BUSH
 
