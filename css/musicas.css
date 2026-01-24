@@ -451,6 +451,24 @@ margin-bottom: 40px;
   color: #fff;
 }
 
+.album-thenewabnormal-header {
+  background: linear-gradient(180deg, #2095e3 0%, #121212 90%);
+  padding: 40px 32px;
+  color: #fff;
+}
+
+.album-inutero-header {
+  background: linear-gradient(180deg, #fcf3e3 0%, #121212 90%);
+  padding: 40px 32px;
+  color: #fff;
+}
+
+.album-ultraviolence-header {
+  background: linear-gradient(180deg, #bdbec7 0%, #121212 90%);
+  padding: 40px 32px;
+  color: #fff;
+}
+
 .album-content {
   display: flex;
   align-items: flex-end;
