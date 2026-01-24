@@ -31,7 +31,7 @@ const albumsDataclassic = [
     { name: 'Rumours', artist: 'Fleetwood Mac', Image: './img/albuns/rumours.jpg', link:'rumours.html'},
     { name: 'The New Abnormal', artist: 'The Strokes', Image: './img/albuns/thenewabnormal.jpg', link:'rumours.html'},
     { name: 'In Utero', artist: 'Nirnava', Image: './img/albuns/inutero.jpg', link:'rumours.html'},
-    { name: 'Figure 8', artist: 'Elliott Smith', Image: './img/albuns/figure8.jpg', link:'rumours.html'},
+    { name: 'Figure 8', artist: 'Elliott Smith', Image: './img/albuns/figure8.jpg', link:'figure8.html'},
     { name: 'Ultraviolence', artist: 'Lana Del Rey', Image: './img/albuns/ultraviolence.jpg', link:'rumours.html'}
     
 ];
