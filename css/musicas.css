@@ -434,6 +434,11 @@ margin-bottom: 40px;
     padding: 40px 32px;
     color: #fff;
   }
+.album-figure8-header {
+    background: linear-gradient(180deg, #edd9ff 0%, #121212 80%);
+    padding: 40px 32px;
+    color: #fff;
+  }
 .album-meteora-header {
   background: linear-gradient(180deg, #85785b 0%, #121212 80%);
   padding: 40px 32px;
