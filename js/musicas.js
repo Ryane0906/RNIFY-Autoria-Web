@@ -11,9 +11,9 @@ const artistDataclassic = [
   {name: 'Linkin Park', Image: './img/artistas/linkinpark.jpg', link: 'linkinpark.html'},
   {name: 'Pink Floyd', Image: './img/artistas/pinkfloyd.jpg', link: 'pinkfloyd.html'},
   {name: 'Tame Impala', Image: './img/artistas/tameimpala.jpg', link: 'tameimpala.html'},
-  {name: 'Pj Harvey', Image: './img/artistas/pjharvey.jpg', link: 'tameimpala.html'},
-  {name: 'The Strokes', Image: './img/artistas/bjork.jpg', link: 'tameimpala.html'},
-  {name: 'Tori Amos', Image: './img/artistas/toriamos.jpg', link: 'tameimpala.html'},
+  {name: 'Pj Harvey', Image: './img/artistas/pjharvey.jpg', link: 'pjharvey.html'},
+  {name: 'The Strokes', Image: './img/artistas/bjork.jpg', link: 'thestrokes.html'},
+  {name: 'Tori Amos', Image: './img/artistas/toriamos.jpg', link: 'toriamos.html'},
   {name: 'The beatles', Image: './img/artistas/thebeatles.jpg', link: 'thebeatles.html'}
 ];
 
