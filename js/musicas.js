@@ -747,16 +747,18 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Videotape', audio: './musicas/videotape.mp4' }
   ];
 
-  const list = document.querySelector(".music-inrainbows");
+const listInRainbows = document.querySelector(".music-inrainbows");
 
+if (listInRainbows) {
   inrainbows.forEach(musica => {
     const tr = document.createElement("tr");
     tr.classList.add("music-item", "music-item-inrainbows");
     tr.dataset.audio = musica.audio;
     tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-    if (list) list.appendChild(tr);
+    listInRainbows.appendChild(tr);
   });
-});
+}
+
 
 
 
@@ -780,16 +782,18 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Essex Dogs', audio: './musicas/essexdogs.mp4' }
   ];
 
-  const list = document.querySelector(".music-blur");
+  const listBlur = document.querySelector(".music-blur");
 
+if (listBlur) {
   blur.forEach(musica => {
     const tr = document.createElement("tr");
     tr.classList.add("music-item", "music-item-blur");
     tr.dataset.audio = musica.audio;
     tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-    if (list) list.appendChild(tr);
+    listBlur.appendChild(tr);
   });
-});
+}
+
 
 // Album rumours - Fleetwood Mac
 
