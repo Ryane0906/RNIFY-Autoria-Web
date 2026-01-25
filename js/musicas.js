@@ -80,20 +80,20 @@ if (albumsGridclassic) {
 
 document.addEventListener('DOMContentLoaded', () => {
 const artistDatampb = [
-  {name: 'Chico Buarque', Image: './img/artistas/chicobuarque.jpg'},
-  {name: 'Djavan', Image: './img/artistas/djavan.jpg'},
-  {name: 'Raul Seixas', Image: './img/artistas/raulseixas.jpg'},
-  {name: 'Adoniran Barbosa', Image: './img/artistas/adoniranbarbosa.jpg'},
-  {name: 'Ney Matogrosso', Image: './img/artistas/neymatogrosso.jpg'},
-  {name: 'Angela Ro Ro', Image: './img/artistas/angelaroro.jpg'},
-  {name: 'Seu Jorge', Image: './img/artistas/seujorge.jpg'},
-  {name: 'Rita Lee', Image: './img/artistas/ritalee.jpg'},
-  {name: 'Caetano Veloso', Image: './img/artistas/caetanoveloso.jpg'},
-  {name: 'Elis Regina', Image: './img/artistas/elisregina.jpg'},
-  {name: 'Tim Maia', Image: './img/artistas/caetanoveloso.jpg'},
-  {name: 'Marisa Monte', Image: './img/artistas/caetanoveloso.jpg'},
-  {name: 'Gal Costa', Image: './img/artistas/caetanoveloso.jpg'},
-  {name: 'Maria Bethânia', Image: './img/artistas/caetanoveloso.jpg'}
+  {name: 'Chico Buarque', Image: './img/artistas/chicobuarque.jpg', link: 'chicobuarque.html'},
+  {name: 'Djavan', Image: './img/artistas/djavan.jpg', link: 'djavan.html'},
+  {name: 'Raul Seixas', Image: './img/artistas/raulseixas.jpg', link: 'raulseixas.html'},
+  {name: 'Adoniran Barbosa', Image: './img/artistas/adoniranbarbosa.jpg', link: 'adoniranbarbosa.html'},
+  {name: 'Ney Matogrosso', Image: './img/artistas/neymatogrosso.jpg', link: 'neymatogrosso.html'},
+  {name: 'Angela Ro Ro', Image: './img/artistas/angelaroro.jpg' link: 'angelaroro.html'},
+  {name: 'Seu Jorge', Image: './img/artistas/seujorge.jpg', link: 'seujorge.html'},
+  {name: 'Rita Lee', Image: './img/artistas/ritalee.jpg', link: 'ritalee.html'},
+  {name: 'Caetano Veloso', Image: './img/artistas/caetanoveloso.jpg', link: 'caetanoveloso.html'},
+  {name: 'Elis Regina', Image: './img/artistas/elisregina.jpg', link: 'elisregina.html'},
+  {name: 'Tim Maia', Image: './img/artistas/caetanoveloso.jpg', link: 'timmaia.html'},
+  {name: 'Marisa Monte', Image: './img/artistas/caetanoveloso.jpg', link: 'marisamonte.html'},
+  {name: 'Gal Costa', Image: './img/artistas/caetanoveloso.jpg', link: 'galcosta.html'},
+  {name: 'Maria Bethânia', Image: './img/artistas/caetanoveloso.jpg', link: 'maria.bethania.html'}
 
 ];
 
