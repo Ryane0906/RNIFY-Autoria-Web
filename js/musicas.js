@@ -231,23 +231,24 @@ const radio5 = [
     {name: '15 Steps', Image: './img/radiohead/inrainbows.jpg', audio: './musicas/15steps.mp3', time: '3:56'}
 ];
 
-const listRadio = document.querySelector(".music-radiohead");
+const listRadiohead = document.querySelector(".music-radiohead");
 
-radio5.forEach((musica, i) => {
+if (listRadiohead) {
+  radio5.forEach((musica) => {
     const tr = document.createElement("tr");
     tr.classList.add("music-item", "music-item-radiohead"); 
     tr.dataset.audio = musica.audio;
-    tr.style.cursor = "pointer";
 
     tr.innerHTML = `
-    <td>
-    <img src="${musica.Image}" alt="Imagem da música ${musica.name}"> <span>${musica.name}</span>
-    </td>
+      <td>
+        <img src="${musica.Image}"> <span>${musica.name}</span>
+      </td>
     `;
 
-    if (listRadio) listRadio.appendChild(tr);
-});
-});
+    listRadiohead.appendChild(tr);
+  });
+}
+
 
 // DISCOGRAFIA RADIOHEAD
 
