@@ -891,14 +891,14 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Dream Brother', audio: './musicas/dreambrother.mp4' }
   ];
 
-  const list = document.querySelector(".music-grace");
+  const listgrace = document.querySelector(".music-grace");
 
   grace.forEach(musica => {
     const tr = document.createElement("tr");
     tr.classList.add("music-item", "music-item-grace");
     tr.dataset.audio = musica.audio;
     tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-    if (list) list.appendChild(tr);
+    if (listgrace) listgrace.appendChild(tr);
   });
 });
 
@@ -920,14 +920,14 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Street Spirit Fade Out', audio: './musicas/streetspiritfadeout.mp4' }
   ];
 
-  const list = document.querySelector(".music-thebends");
+  const listthebends = document.querySelector(".music-thebends");
 
   thebends.forEach(musica => {
     const tr = document.createElement("tr");
     tr.classList.add("music-item", "music-item-thebends");
     tr.dataset.audio = musica.audio;
     tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-    if (list) list.appendChild(tr);
+    if (listthebends) listthebends.appendChild(tr);
   });
 });
 
@@ -947,14 +947,14 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Some Girls Are Bigger Than Others', audio: './musicas/somegirlsarebiggerthanothers.mp4' }
   ];
 
-  const list = document.querySelector(".music-thesmithsqueen");
+  const listthequeen = document.querySelector(".music-thesmithsqueen");
 
   thesmithsqueen.forEach(musica => {
     const tr = document.createElement("tr");
     tr.classList.add("music-item", "music-item-thesmithsqueen");
     tr.dataset.audio = musica.audio;
     tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-    if (list) list.appendChild(tr);
+    if (listthequeen) listthequeen.appendChild(tr);
   });
 });
 
@@ -976,14 +976,14 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'We Float', audio: './musicas/pjharvey/wefloat.mp3' }
   ];
 
-  const list = document.querySelector(".music-storiespjharvey");
+  const liststoriespj = document.querySelector(".music-storiespjharvey");
 
   pjharveyalbum.forEach(musica => {
     const tr = document.createElement("tr");
     tr.classList.add("music-item", "music-item-storiespjharvey");
     tr.dataset.audio = musica.audio;
     tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-    if (list) list.appendChild(tr);
+    if (liststoriespj) liststoriespj.appendChild(tr);
   });
 });
 
