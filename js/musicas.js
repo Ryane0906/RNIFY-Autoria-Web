@@ -218,6 +218,68 @@ if (albumsGridlinkin) {
 }
 })
 
+// TOP 5 THE STROKES
+
+const thestrokes5 = [ 
+    {name: 'Last Nite', Image: './img/the-strokes/isthisit.jpg', audio: './musicas/lastnite.mp3'}, 
+    {name: 'Someday', Image: './img/the-strokes/isthisit.jpg', audio: './musicas/someday.mp3'}, 
+    {name: 'Reptilia', Image: './img/the-strokes/roomonfire.jpg', audio: './musicas/reptilia.mp3'}, 
+    {name: 'Juicebox', Image: './img/the-strokes/firstimpressions.jpg', audio: './musicas/juicebox.mp3'}, 
+    {name: 'The Adults Are Talking', Image: './img/the-strokes/thenewabnormal.jpg', audio: './musicas/theadultsaretalking.mp3'}
+];
+
+const list = document.querySelector(".music-the-strokes");
+
+if (list) {
+    thestrokes5.forEach((musica, i) => {
+        const tr = document.createElement("tr");
+        tr.classList.add("music-item"); 
+        tr.dataset.audio = musica.audio;
+        tr.style.cursor = "pointer";
+
+        tr.innerHTML = `
+        <td>
+        <img src="${musica.Image}" alt="Imagem da música ${musica.name}"> <span>${musica.name}</span>
+        </td>
+        `;
+
+        list.appendChild(tr);
+    });
+}
+
+
+// DISCOGRAFIA THE STROKES
+
+document.addEventListener('DOMContentLoaded', () => {
+const albumsData = [
+    { name: 'Is This It', Image: './img/the-strokes/isthisit.jpg', year: 2001, link:'isthisit.html'},
+    { name: 'Room On Fire', Image: './img/the-strokes/roomonfire.jpg', year: 2003, link:'roomonfire.html'}, 
+    { name: 'First Impressions of Earth', Image: './img/the-strokes/firstimpressions.jpg', year: 2006, link:'firstimpressions.html'},
+    { name: 'Angles', Image: './img/the-strokes/angles.jpg', year: 2011, link:'angles.html'},
+    { name: 'Comedown Machine', Image: './img/the-strokes/comedownmachine.jpg', year: 2013, link:'comedownmachine.html'},
+    { name: 'The New Abnormal', Image: './img/the-strokes/thenewabnormal.jpg', year: 2020, link:'thenewabnormal.html'},
+];
+
+const albumsGridthestrokes = document.querySelector('.albums-gridthe-strokes')
+
+if (albumsGridthestrokes) {
+    albumsData.forEach(albums => {
+        const albumsCardthestrokes = document.createElement('div')
+        albumsCardthestrokes.classList.add('albums-cardthe-strokes')
+
+        albumsCardthestrokes.innerHTML = `
+        <a href="${albums.link}">
+        <img src="${albums.Image}" alt="Álbum ${albums.name}">
+        <div>
+            <h3>${albums.name}</h3>
+            <p>${albums.year}</p>
+        </div>
+        `
+        albumsGridthestrokes.appendChild(albumsCardthestrokes)
+    })
+}
+})
+
 
 //TOP 5 RADIOHEAD
 
