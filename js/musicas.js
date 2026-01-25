@@ -80,12 +80,12 @@ if (albumsGridclassic) {
 
 document.addEventListener('DOMContentLoaded', () => {
 const artistDatampb = [
-  {name: 'Chico Buarque', Image: './img/artistas/chicobuarque.jpg', link: 'chicobuarque.html'},
+  {name: 'Chico Buarque', Image: './img/artistas/chicobuarque.jpg', link: 'radiohead.html'},
   {name: 'Djavan', Image: './img/artistas/djavan.jpg', link: 'djavan.html'},
   {name: 'Raul Seixas', Image: './img/artistas/raulseixas.jpg', link: 'raulseixas.html'},
   {name: 'Adoniran Barbosa', Image: './img/artistas/adoniranbarbosa.jpg', link: 'adoniranbarbosa.html'},
   {name: 'Ney Matogrosso', Image: './img/artistas/neymatogrosso.jpg', link: 'neymatogrosso.html'},
-  {name: 'Angela Ro Ro', Image: './img/artistas/angelaroro.jpg' link: 'angelaroro.html'},
+  {name: 'Angela Ro Ro', Image: './img/artistas/angelaroro.jpg', link: 'angelaroro.html'},
   {name: 'Seu Jorge', Image: './img/artistas/seujorge.jpg', link: 'seujorge.html'},
   {name: 'Rita Lee', Image: './img/artistas/ritalee.jpg', link: 'ritalee.html'},
   {name: 'Caetano Veloso', Image: './img/artistas/caetanoveloso.jpg', link: 'caetanoveloso.html'},
@@ -120,11 +120,13 @@ if (artistGridmpb) {
                 artistCardmpb.classList.add('artist-cardmpb')
 
                 artistCardmpb.innerHTML = `
+                 <a href="${artist.link}">
                  <img src="${artist.Image}" alt= "imagem do ${artist.name}">
                  <div>
                      <h3>${artist.name}</h3>
                      <p>Artista</p>
                  </div>
+                 </a>
                 `
 
                 artistGridmpb.appendChild(artistCardmpb)
@@ -137,6 +139,7 @@ if (albumsGridmpb) {
                 albumsCardmpb.classList.add('albums-cardmpb')
 
                 albumsCardmpb.innerHTML = `
+                 <a href="${albums.link}">
                  <img src="${albums.Image}" alt= "imagem do ${albums.name}">
                  <div>
                  <h3>${albums.name}</h3>
