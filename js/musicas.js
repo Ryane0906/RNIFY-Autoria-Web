@@ -759,6 +759,7 @@ if (listInRainbows) {
   });
 }
 
+});
 
 
 
