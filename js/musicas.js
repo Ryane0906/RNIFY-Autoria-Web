@@ -844,6 +844,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Album use your illusion - Guns N' Roses
+
 document.addEventListener('DOMContentLoaded', () => {
   const gnraillusion = [
     { name: 'Right Next Door to Hell', audio: './musicas/rightnextdoorthell.mp4' },
@@ -869,6 +870,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Album grace - Jeff Buckley
+
 document.addEventListener('DOMContentLoaded', () => {
   const grace = [
     { name: 'Mojo Pin', audio: './musicas/mojopin.mp4' },
@@ -895,6 +897,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Album the bends - Radiohead
+
 document.addEventListener('DOMContentLoaded', () => {
   const thebends = [
     { name: 'Planet Telex', audio: './musicas/planettelex.mp4' },
@@ -924,6 +927,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Album the queen is dead - The Smiths
+
 document.addEventListener('DOMContentLoaded', () => {
   const thesmithsqueen = [
     { name: 'The Queen Is Dead', audio: './musicas/thequeenisdead.mp4' },
@@ -966,11 +970,11 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'We Float', audio: './musicas/pjharvey/wefloat.mp3' }
   ];
 
-  const list = document.querySelector(".music-pjharvey");
+  const list = document.querySelector(".music-storiespjharvey");
 
   pjharveyalbum.forEach(musica => {
     const tr = document.createElement("tr");
-    tr.classList.add("music-item", "music-item-pjharvey");
+    tr.classList.add("music-item", "music-item-storiespjharvey");
     tr.dataset.audio = musica.audio;
     tr.innerHTML = `<td><span>${musica.name}</span></td>`;
     if (list) list.appendChild(tr);
