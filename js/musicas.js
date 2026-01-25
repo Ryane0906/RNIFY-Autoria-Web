@@ -366,10 +366,10 @@ if (listPJ) {
 
 const toriamos5 = [
   {name: 'Cornflake Girl', Image: './img/toriamos/underpink.jpg', audio: './musicas/cornflakegirl.mp3'},
-  {name: 'Silent All These Years', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/silent.mp3'},
-  {name: 'Winter', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/winter.mp3'},
-  {name: 'Crucify', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/crucify.mp3'},
-  {name: 'God', Image: './img/toriamos/underpink.jpg', audio: './musicas/god.mp3'}
+  {name: 'Winter', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/silent.mp3'},
+  {name: 'Me And a Gun', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/winter.mp3'},
+  {name: 'Girl', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/crucify.mp3'},
+  {name: 'Blood Roses', Image: './img/toriamos/underpink.jpg', audio: './musicas/god.mp3'}
 ];
 
 const listTori = document.querySelector(".music-toriamos");
