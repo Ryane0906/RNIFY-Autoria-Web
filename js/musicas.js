@@ -864,16 +864,17 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Coma', audio: './musicas/coma.mp4' }
   ];
 
-  const list = document.querySelector(".music-gnraillusion");
+  const listGnR = document.querySelector(".music-gnraillusion");
 
+if (listGnR) {
   gnraillusion.forEach(musica => {
     const tr = document.createElement("tr");
     tr.classList.add("music-item", "music-item-gnraillusion");
     tr.dataset.audio = musica.audio;
     tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-    if (list) list.appendChild(tr);
+    listGnR.appendChild(tr);
   });
-});
+}
 
 // Album grace - Jeff Buckley
 
