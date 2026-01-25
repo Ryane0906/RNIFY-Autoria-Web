@@ -162,23 +162,23 @@ const linkin5 = [
     {name: 'Heavy Is The Crown', Image: './img/linkinpark/fromzero.jpg', audio: './musicas/heavyisthecrown.mp3'}
 ];
 
-const list = document.querySelector(".music-linkinpark");
+const listLinkinPark = document.querySelector(".music-linkinpark");
 
-if (list) {
-    linkin5.forEach((musica, i) => {
-        const tr = document.createElement("tr");
-        tr.classList.add("music-item"); 
-        tr.dataset.audio = musica.audio;
-        tr.style.cursor = "pointer";
+if (listLinkinPark) {
+  linkin5.forEach((musica) => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item"); 
+    tr.dataset.audio = musica.audio;
+    tr.style.cursor = "pointer";
 
-        tr.innerHTML = `
-        <td>
-        <img src="${musica.Image}" alt="Imagem da música ${musica.name}"> <span>${musica.name}</span>
-        </td>
-        `;
+    tr.innerHTML = `
+      <td>
+        <img src="${musica.Image}"> <span>${musica.name}</span>
+      </td>
+    `;
 
-        list.appendChild(tr);
-    });
+    listLinkinPark.appendChild(tr);
+  });
 }
 
 
