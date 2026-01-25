@@ -794,6 +794,8 @@ if (listBlur) {
     listBlur.appendChild(tr);
   });
 }
+});
+
 
 
 // Album rumours - Fleetwood Mac
