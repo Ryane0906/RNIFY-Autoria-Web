@@ -338,11 +338,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // TOP 5 PJ HARVEY
 
 const pjharvey5 = [
-  { name: 'Down by the Water', Image: './img/pjharvey/tothecity.jpg', audio: './musicas/downbythewater.mp3' },
-  { name: 'This Is Love', Image: './img/pjharvey/stories.jpg', audio: './musicas/thisislove.mp3' },
-  { name: 'Dress', Image: './img/pjharvey/dry.jpg', audio: './musicas/dress.mp3' },
-  { name: 'Rid of Me', Image: './img/pjharvey/ridofme.jpg', audio: './musicas/ridofme.mp3' },
-  { name: 'Good Fortune', Image: './img/pjharvey/stories.jpg', audio: './musicas/goodfortune.mp3' }
+  { name: 'Down by the Water', Image: './img/albuns/pjharveystories.jpg', audio: './musicas/downbythewater.mp3' },
+  { name: 'This Is Love', Image: './img/albuns/pjharveystories.jpg', audio: './musicas/thisislove.mp3' },
+  { name: 'Dress', Image: './img/albuns/pjharveystories.jpg', audio: './musicas/dress.mp3' },
+  { name: 'Rid of Me', Image: './img/albuns/bringyou.jpg', audio: './musicas/ridofme.mp3' },
+  { name: 'Good Fortune', Image: './img/albuns/bringyou.jpg', audio: './musicas/goodfortune.mp3' }
 ];
 
 const listPJ = document.querySelector(".music-pjharvey");
