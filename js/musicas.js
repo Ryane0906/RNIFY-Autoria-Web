@@ -159,11 +159,11 @@ document.addEventListener('DOMContentLoaded', () => {
 //TOP 5 LINKIN PARK
 
 const linkin5 = [
-  { name: 'In The End', Image: './img/linkinpark/hybridtheory.jpg', audio: './musicas/intheend.mp3' },
-  { name: 'Numb', Image: './img/linkinpark/meteora.jpg', audio: './musicas/numb.mp3' },
-  { name: 'Somewhere I Belong', Image: './img/linkinpark/meteora.jpg', audio: './musicas/somewhereibelong.mp3' },
-  { name: 'Faint', Image: './img/linkinpark/meteora.jpg', audio: './musicas/faint.mp3' },
-  { name: 'Heavy Is The Crown', Image: './img/linkinpark/fromzero.jpg', audio: './musicas/heavyisthecrown.mp3' }
+  { name: 'In The End', Image: './img/albuns/meteora.jpg', audio: './musicas/intheend.mp3' },
+  { name: 'Numb', Image: './img/albuns/meteora.jpg', audio: './musicas/numb.mp3' },
+  { name: 'Somewhere I Belong', Image: './img/albuns/meteora.jpg', audio: './musicas/somewhereibelong.mp3' },
+  { name: 'Faint', Image: './img/albuns/meteora.jpg', audio: './musicas/faint.mp3' },
+  { name: 'Heavy Is The Crown', Image: './img/albuns/fromzero.jpg', audio: './musicas/heavyisthecrown.mp3' }
 ];
 
 const listLinkinPark = document.querySelector(".music-linkinpark");
@@ -365,6 +365,33 @@ if (listPJ) {
 
 // Discografia Pj Harvey
 
+document.addEventListener('DOMContentLoaded', () => {
+  const albumsData = [
+    { name: 'Stories From The City, Stories From The Sea', Image: './img/albuns/pjharveystories.jpg', year: 1997, link: 'storiespjharvey.html' },
+    { name: 'To Bring You My Love', Image: './img/albuns/bringyou.jpg', year: 1995, link: 'darkside.html' }
+  ];
+
+  const albumsGridpjharvey = document.querySelector('.albums-gridpjharvey');
+
+  if (albumsGridpjharvey) {
+    albumsData.forEach(albums => {
+      const albumsCardpjharvey = document.createElement('div');
+      albumsCardpjharvey.classList.add('albums-cardpjharvey');
+
+      albumsCardpjharvey.innerHTML = `
+      <a href="${albums.link}">
+      <img src="${albums.Image}" alt= "Álbum ${albums.name}">
+      <div>
+          <h3>${albums.name}</h3>
+          <p>${albums.year}</p>
+      </div>
+      `
+      albumsGridpjharvey.appendChild(albumsCardpjharvey);
+    });
+  }
+});
+
+
 
 // TOP 5 TORI AMOS
 
@@ -510,11 +537,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // TOP 5 TAME IMPALA
 
 const tameimpala5 = [
-  { name: 'The Less I Know the Better', Image: './img/tameimpala/currents.jpg', audio: './musicas/thelessiknow.mp3' },
-  { name: 'Feels Like We Only Go Backwards', Image: './img/tameimpala/lonerism.jpg', audio: './musicas/feelslike.mp3' },
-  { name: 'Let It Happen', Image: './img/tameimpala/currents.jpg', audio: './musicas/letithappen.mp3' },
-  { name: 'Elephant', Image: './img/tameimpala/lonerism.jpg', audio: './musicas/elephant.mp3' },
-  { name: 'Eventually', Image: './img/tameimpala/currents.jpg', audio: './musicas/eventually.mp3' }
+  { name: 'The Less I Know the Better', Image: './img/albuns/currents.jpg', audio: './musicas/thelessiknow.mp3' },
+  { name: 'Dracula', Image: './img/albuns/deadbeat.jpg', audio: './musicas/feelslike.mp3' },
+  { name: 'Let It Happen', Image: './img/albuns/currents.jpg', audio: './musicas/letithappen.mp3' },
+  { name: 'Elephant', Image: './img/albuns/deadbeat.jpg', audio: './musicas/elephant.mp3' },
+  { name: 'New Person Same Old Mistakes', Image: './img/albuns/currents.jpg', audio: './musicas/eventually.mp3' }
 ];
 
 const listTame = document.querySelector(".music-tameimpala");
@@ -534,6 +561,34 @@ if (listTame) {
     listTame.appendChild(tr);
   });
 }
+
+// DiSCOGRAFIA TAME IMPALA
+
+document.addEventListener('DOMContentLoaded', () => {
+  const albumsData = [
+    { name: 'Dead Beat', Image: './img/albuns/deadbeat.jpg', year: 1997, link: 'deadbeat.html' },
+    { name: 'Currents', Image: './img/albuns/currents.jpg', year: 1995, link: 'currents.html' }
+  ];
+
+  const albumsGridtameimpala = document.querySelector('.albums-gridtameimpala');
+
+  if (albumsGridtameimpala) {
+    albumsData.forEach(albums => {
+      const albumsCardtameimpala = document.createElement('div');
+      albumsCardtameimpala.classList.add('albums-cardtameimpala');
+
+      albumsCardtameimpala.innerHTML = `
+      <a href="${albums.link}">
+      <img src="${albums.Image}" alt= "Álbum ${albums.name}">
+      <div>
+          <h3>${albums.name}</h3>
+          <p>${albums.year}</p>
+      </div>
+      `
+      albumsGridtameimpala.appendChild(albumsCardtameimpala);
+    });
+  }
+});
 
 // TOP 5 MICHAEL JACKSON
 
