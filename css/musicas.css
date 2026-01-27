@@ -352,7 +352,21 @@ margin-bottom: 40px;
   padding: 8px 8px;
 }
 
+.queen-header {
+    background-image: url(../img/banners/queen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
 
+.jeff-header {
+    background-image: url(../img/jeff.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
 
 .linkin-header {
     background-image: url(../img/banners/linkinpark.jpg);

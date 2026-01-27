@@ -186,14 +186,8 @@ if (listLinkinPark) {
 
 document.addEventListener('DOMContentLoaded', () => {
 const albumsData = [
-    { name: 'Meteora', Image: './img/linkinpark/meteora.jpg', year: 2003, link:'meteora.html'},
-    { name: 'Reanimation', Image: './img/linkinpark/reanimation.jpg', year: 2002, link:'reanimation.html'}, 
-    { name: 'A Thousand Suns', Image: './img/linkinpark/athousandsuns.jpg', year: 2010, link:'athousandsuns.html'},
-    { name: 'Hybrid Theory', Image: './img/linkinpark/hybridtheory.jpg', year: 2000, link:'hybridtheory.html'},
-    { name: 'One More Light', Image: './img/linkinpark/onemorelight.jpg', year: 2017, link:'onemorelight.html'},
-    { name: 'Minutes To Midnight', Image: './img/linkinpark/minutestomidnight.jpg', year: 2007, link:'minutestomidnight.html'},
-    { name: 'From Zero', Image: './img/linkinpark/fromzero.jpg', year: 2024, link:'fromzero.html'},
-    { name: 'Living Things', Image: './img/linkinpark/livingthings.jpg', year: 2012, link:'livingthings.html'},
+    { name: 'Meteora', Image: './img/albuns/meteora.jpg', year: 2003, link:'meteora.html'},
+    { name: 'From Zero', Image: './img/albuns/fromzero.jpg', year: 2024, link:'fromzero.html'}
 ];
 
 
@@ -255,14 +249,9 @@ if (listRadiohead) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const albumsData = [
-    { name: 'Ok Computer', Image: './img/radiohead/okcomputer.jpg', year: 1997},
-    { name: 'Pablo Honey', Image: './img/radiohead/pablohoney.jpg', year: 1993}, 
+
     { name: 'The Bends', Image: './img/radiohead/thebends.jpg', year: 1995},
-    { name: 'In Rainbows', Image: './img/radiohead/inrainbows.jpg', year: 2007},
-    { name: 'Kid A', Image: './img/radiohead/kida.jpg', year: 2000},
-    { name: 'Amnesiac', Image: './img/radiohead/amnesiac.jpg', year: 2001},
-    { name: 'Hail to the Thief', Image: './img/radiohead/hailtothethief.jpg', year: 2003},
-    { name: 'Ok Computer OKNOTOK', Image: './img/radiohead/okcomputeroknotok.jpg', year: 2017},
+    { name: 'In Rainbows', Image: './img/radiohead/inrainbows.jpg', year: 2007}
   ];
 
   const albumsGridradiohead = document.querySelector('.albums-gridradiohead');
@@ -287,11 +276,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // TOP 5 JEFF BUCKLEY
 
 const jeffbuckley5 = [
-  {name: 'Grace', Image: './img/jeffbuckley/grace.jpg', audio: './musicas/grace.mp3'},
-  {name: 'Hallelujah', Image: './img/jeffbuckley/grace.jpg', audio: './musicas/hallelujah.mp3'},
-  {name: 'Last Goodbye', Image: './img/jeffbuckley/grace.jpg', audio: './musicas/lastgoodbye.mp3'},
-  {name: 'Lover, You Should\'ve Come Over', Image: './img/jeffbuckley/grace.jpg', audio: './musicas/lover.mp3'},
-  {name: 'So Real', Image: './img/jeffbuckley/grace.jpg', audio: './musicas/soreal.mp3'}
+  {name: 'Grace', Image: './img/albuns/grace.jpg', audio: './musicas/grace.mp3'},
+  {name: 'Everybody Here Wants You', Image: './img/albuns/mysweetheart.jpg', audio: './musicas/hallelujah.mp3'},
+  {name: 'Last Goodbye', Image: './img/albuns/grace.jpg', audio: './musicas/lastgoodbye.mp3'},
+  {name: 'Lover, You Should\'ve Come Over', Image: './img/albuns/grace.jpg', audio: './musicas/lover.mp3'},
+  {name: 'So Real', Image: './img/albuns/grace.jpg', audio: './musicas/soreal.mp3'}
 ];
 
 const listJeff = document.querySelector(".music-jeffbuckley");
@@ -317,8 +306,8 @@ if (listJeff) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const albumsData = [
-    { name: 'Grace', Image: './img/albuns/rumours.jpg', year: 1994 },
-    { name: 'Sketches for My Sweetheart the Drunk', Image: './img/jeffbuckley/sketches.jpg', year: 1998 }
+    { name: 'Grace', Image: './img/albuns/grace.jpg', year: 1994 },
+    { name: 'Sketches for My Sweetheart the Drunk', Image: './img/albuns/mysweetheart.jpg', year: 1998 }
   ];
 
   const albumsGridjeffbuckley = document.querySelector('.albums-gridjeffbuckley');
@@ -367,6 +356,9 @@ if (listPJ) {
       listPJ.appendChild(tr);
   });
 }
+
+// Discografia Pj Harvey
+
 
 // TOP 5 TORI AMOS
 
@@ -574,12 +566,8 @@ katebush5.forEach((musica, i) => {
 document.addEventListener('DOMContentLoaded', () => {
   const albumsData = [
     { name: 'Hounds of Love', Image: './img/katebush/houndsoflove.jpg', year: 1997},
-    { name: 'The Sensual World', Image: './img/katebush/thesensualworld.jpg', year: 1993}, 
-    { name: 'The Kick Inside', Image: './img/katebush/thekickinside.jpg', year: 1987},
-    { name: 'Never For ever', Image: './img/katebush/neverforever.jpg', year: 1991},
-    { name: 'Lion Heart', Image: './img/katebush/lionheart.jpg', year: 1995 },
-    { name: 'The Dreaming', Image: './img/katebush/thedreaming.jpg', year: 2001},
-    { name: 'The Red Shoes', Image: './img/katebush/theredshoes.jpg', year: 2003}
+    { name: 'The Dreaming', Image: './img/katebush/thedreaming.jpg', year: 2001}
+ 
   ];
 
   const albumsGridkatebush = document.querySelector('.albums-gridkatebush');
@@ -637,11 +625,6 @@ if (listelliott) {
 document.addEventListener('DOMContentLoaded', () => {
   const albumsData = [
     { name: '?????', Image: './img/katebush/houndsoflove.jpg', year: 1997},
-    { name: '?????', Image: './img/katebush/thesensualworld.jpg', year: 1993}, 
-    { name: '?????', Image: './img/katebush/thekickinside.jpg', year: 1987},
-    { name: '?????', Image: './img/katebush/neverforever.jpg', year: 1991},
-    { name: '?????', Image: './img/katebush/lionheart.jpg', year: 1995 },
-    { name: '?????', Image: './img/katebush/thedreaming.jpg', year: 2001},
     { name: '?????', Image: './img/katebush/theredshoes.jpg', year: 2003}
   ];
 
@@ -668,11 +651,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const queen5 = [ 
-    {name: 'Bohemian Rhapsody', Image: './img/queen/anightattheopera.jpg', audio: './musicas/queen/bohemianrhapsody.mp3'},
-    {name: 'Don\'t Stop Me Now', Image: './img/queen/jazz.jpg', audio: './musicas/queen/dontstopmenow.mp3'},
-    {name: 'Another One Bites the Dust', Image: './img/queen/thegame.jpg',audio: './musicas/queen/anotheronebitesthedust.mp3'},
-    {name: 'We Will Rock You', Image: './img/queen/newssoftheworld.jpg', audio: './musicas/queen/wewillrockyou.mp3'},
-    {name: 'Somebody to Love', Image: './img/queen/anightattheopera.jpg', audio: './musicas/queen/somebodytolove.mp3'}
+    {name: 'Bohemian Rhapsody', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/queen/bohemianrhapsody.mp3'},
+    {name: 'Dont Stop Me Now', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/queen/dontstopmenow.mp3'},
+    {name: 'Another One Bites the Dust', Image: './img/albuns/theworks.jpg',audio: './musicas/queen/anotheronebitesthedust.mp3'},
+    {name: 'We Will Rock You', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/queen/wewillrockyou.mp3'},
+    {name: 'Somebody to Love', Image: './img/albuns/theworks.jpg', audio: './musicas/queen/somebodytolove.mp3'}
   ];
 
   const listQueen = document.querySelector('.music-queen');
@@ -694,6 +677,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// DISCOGRAFIA QUEEN
+
+document.addEventListener('DOMContentLoaded', () => {
+  const albumsData = [
+    { name: 'Bohemian Rhapsody', Image: './img/albuns/bohemianrhapsody.jpg', year: 2003, link:'bohemianrhapsody.html'},
+    { name: 'The Works', Image: './img/albuns/theworks.jpg', year: 2024, link:'theworks.html'}
+  ];
+
+  const albumsGridqueen = document.querySelector('.albums-gridqueen');
+
+  if (albumsGridqueen) {
+    albumsData.forEach(album => {
+      const albumCard = document.createElement('div');
+      albumCard.classList.add('albums-cardqueen');
+      albumCard.innerHTML = `
+        <a href="${album.link}">
+          <img src="${album.Image}" alt="Álbum ${album.name}">
+          <div>
+            <h3>${album.name}</h3>
+            <p>${album.year}</p>
+          </div>
+        </a>
+      `;
+
+      albumsGridqueen.appendChild(albumCard);
+    });
+  }
+});
 
 // Album meteora - Linkin Park
 
@@ -1169,4 +1180,5 @@ document.addEventListener('mousemove', (e) => {
 
   progress.style.width = (offsetX / rect.width) * 100 + '%';
   audio.currentTime = (offsetX / rect.width) * audio.duration;
+});
 });
