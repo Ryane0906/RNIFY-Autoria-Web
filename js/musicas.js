@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Pink Floyd', Image: './img/artistas/pinkfloyd.jpg', link: 'pinkfloyd.html' },
     { name: 'Tame Impala', Image: './img/artistas/tameimpala.jpg', link: 'tameimpala.html' },
     { name: 'Pj Harvey', Image: './img/artistas/pjharvey.jpg', link: 'pjharvey.html' },
-    { name: 'The Strokes', Image: './img/artistas/bjork.jpg', link: 'thestrokes.html' },
+    { name: 'The Strokes', Image: './img/artistas/thestrokes.jpg', link: 'thestrokes.html' },
     { name: 'Tori Amos', Image: './img/artistas/toriamos.jpg', link: 'toriamos.html' },
     { name: 'The beatles', Image: './img/artistas/thebeatles.jpg', link: 'thebeatles.html' }
   ];
@@ -77,84 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 })
-
-// Albuns/artistas MPB
-
-document.addEventListener('DOMContentLoaded', () => {
-  const artistDatampb = [
-    { name: 'Chico Buarque', Image: './img/artistas/chicobuarque.jpg', link: 'radiohead.html' },
-    { name: 'Djavan', Image: './img/artistas/djavan.jpg', link: 'djavan.html' },
-    { name: 'Raul Seixas', Image: './img/artistas/raulseixas.jpg', link: 'raulseixas.html' },
-    { name: 'Adoniran Barbosa', Image: './img/artistas/adoniranbarbosa.jpg', link: 'adoniranbarbosa.html' },
-    { name: 'Ney Matogrosso', Image: './img/artistas/neymatogrosso.jpg', link: 'neymatogrosso.html' },
-    { name: 'Angela Ro Ro', Image: './img/artistas/angelaroro.jpg', link: 'angelaroro.html' },
-    { name: 'Seu Jorge', Image: './img/artistas/seujorge.jpg', link: 'seujorge.html' },
-    { name: 'Rita Lee', Image: './img/artistas/ritalee.jpg', link: 'ritalee.html' },
-    { name: 'Caetano Veloso', Image: './img/artistas/caetanoveloso.jpg', link: 'caetanoveloso.html' },
-    { name: 'Elis Regina', Image: './img/artistas/elisregina.jpg', link: 'elisregina.html' },
-    { name: 'Tim Maia', Image: './img/artistas/caetanoveloso.jpg', link: 'timmaia.html' },
-    { name: 'Marisa Monte', Image: './img/artistas/caetanoveloso.jpg', link: 'marisamonte.html' },
-    { name: 'Gal Costa', Image: './img/artistas/caetanoveloso.jpg', link: 'galcosta.html' },
-    { name: 'Maria Bethânia', Image: './img/artistas/caetanoveloso.jpg', link: 'maria.bethania.html' }
-
-  ];
-
-
-  const albumsDatampb = [
-    { name: '2 É Demais', artist: 'Elis Regina', Image: './img/albuns/2edemais.jpg' },
-    { name: 'Rita Lee', artist: 'Rita Lee', Image: './img/albuns/ritalee.jpg' },
-    { name: 'O Que Você Quer Saber de Verdade', artist: 'Marisa Monte', Image: './img/albuns/oquevocequersaber.jpg' },
-    { name: 'Ideologia', artist: 'Cazuza', Image: './img/albuns/ideologia.jpg' },
-    { name: 'Falso Brilhante', artist: 'Elis Regina', Image: './img/albuns/falsobrilhante.jpg' },
-    { name: 'Construção', artist: 'Chico Buarque', Image: './img/albuns/construcao.jpg' },
-    { name: 'Me Chama de Gato Que Eu Sou Sua', artist: 'Ana Frango Elétrico', Image: './img/albuns/mechamadegato.jpg' },
-    { name: 'Samba Esquema Novo', artist: 'Jorge Ben Jor', Image: './img/albuns/esquemanovo.jpg' },
-    { name: 'Rita Lee', artist: 'Rita Lee', Image: './img/albuns/ritalee2.jpg' },
-    { name: 'A Tábua De Esmeralda', artist: 'Jorge Ben Jor', Image: './img/albuns/tabuaesmeralda.jpg' },
-    { name: 'Revoluções Por Minuto', artist: 'RPM', Image: './img/albuns/revolucoesporminuto.jpg' }
-  ];
-
-
-  const artistGridmpb = document.querySelector('.artist-gridmpb')
-  const albumsGridmpb = document.querySelector('.albums-gridmpb')
-
-  if (artistGridmpb) {
-    artistDatampb.forEach(artist => {
-      const artistCardmpb = document.createElement('div')
-      artistCardmpb.classList.add('artist-cardmpb')
-
-      artistCardmpb.innerHTML = `
-                 <a href="${artist.link}">
-                 <img src="${artist.Image}" alt= "imagem do ${artist.name}">
-                 <div>
-                     <h3>${artist.name}</h3>
-                     <p>Artista</p>
-                 </div>
-                 </a>
-                `
-
-      artistGridmpb.appendChild(artistCardmpb)
-    })
-  }
-
-  if (albumsGridmpb) {
-    albumsDatampb.forEach(albums => {
-      const albumsCardmpb = document.createElement('div')
-      albumsCardmpb.classList.add('albums-cardmpb')
-
-      albumsCardmpb.innerHTML = `
-                 <a href="${albums.link}">
-                 <img src="${albums.Image}" alt= "imagem do ${albums.name}">
-                 <div>
-                 <h3>${albums.name}</h3>
-                 <p>${albums.artist}</p>
-                 </div>
-                `
-      albumsGridmpb.appendChild(albumsCardmpb)
-    })
-  }
-})
-
 
 //TOP 5 LINKIN PARK
 
@@ -363,6 +285,8 @@ if (listPJ) {
   });
 }
 
+
+
 // Discografia Pj Harvey
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -391,6 +315,62 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// TOP 5 THE STROKES
+
+const thestrokes5 = [
+  { name: 'The Adults Are Talking', Image: './img/albuns/thenewabnormal.jpg', audio: './musicas/downbythewater.mp3' },
+  { name: 'Reptilia', Image: './img/albuns/thenewabnormal.jpg', audio: './musicas/thisislove.mp3' },
+  { name: 'Someday', Image:'./img/albuns/isthisit.jpg', audio: './musicas/dress.mp3' },
+  { name: 'Last Nite', Image: './img/albuns/isthisit.jpg', audio: './musicas/ridofme.mp3' },
+  { name: 'Soma', Image: './img/albuns/isthisit.jpg', audio: './musicas/goodfortune.mp3' }
+];
+
+const listthestrokes = document.querySelector(".music-thestrokes");
+
+if (listthestrokes) {
+  thestrokes5.forEach(musica => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item");
+    tr.dataset.audio = musica.audio;
+    tr.style.cursor = "pointer";
+
+    tr.innerHTML = `
+      <td>
+      <img src="${musica.Image}"> <span>${musica.name}</span>
+      </td>
+      `;
+    listthestrokes.appendChild(tr);
+  });
+}
+
+// Discografia THE STROKES
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const albumsData = [
+    { name: 'The New Abnormal', Image: './img/albuns/thenewabnormal.jpg', year: 1997, link: 'storiespjharvey.html' },
+    { name: 'Is This It', Image: './img/albuns/isthisit.jpg', year: 1995, link: 'darkside.html' }
+  ];
+
+  const albumsGridthestrokes = document.querySelector('.albums-gridthestrokes');
+
+  if (albumsGridthestrokes) {
+    albumsData.forEach(albums => {
+      const albumsCardthestrokes = document.createElement('div');
+      albumsCardthestrokes.classList.add('albums-cardthestrokes');
+
+      albumsCardthestrokes.innerHTML = `
+      <a href="${albums.link}">
+      <img src="${albums.Image}" alt= "Álbum ${albums.name}">
+      <div>
+          <h3>${albums.name}</h3>
+          <p>${albums.year}</p>
+      </div>
+      `
+      albumsGridthestrokes.appendChild(albumsCardthestrokes);
+    });
+  }
+});
 
 
 // TOP 5 TORI AMOS
@@ -420,6 +400,33 @@ if (listTori) {
     listTori.appendChild(tr);
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const albumsData = [
+    { name: 'From The Choir Hotel', Image: './img/albuns/choirgirl.jpg', year: 1997, link: 'storiespjharvey.html' },
+    { name: 'Little Earthquakes', Image: './img/albuns/isthisit.jpg', year: 1995, link: 'darkside.html' }
+  ];
+
+  const albumsGridtoriamos = document.querySelector('.albums-gridtoriamos');
+
+  if (albumsGridtoriamos) {
+    albumsData.forEach(albums => {
+      const albumsCardtoriamos = document.createElement('div');
+      albumsCardtoriamos.classList.add('albums-cardtoriamos');
+
+      albumsCardtoriamos.innerHTML = `
+      <a href="${albums.link}">
+      <img src="${albums.Image}" alt= "Álbum ${albums.name}">
+      <div>
+          <h3>${albums.name}</h3>
+          <p>${albums.year}</p>
+      </div>
+      `
+      albumsGridtoriamos.appendChild(albumsCardtoriamos);
+    });
+  }
+});
+
 
 // TOP 5 PINK FLOYD
 

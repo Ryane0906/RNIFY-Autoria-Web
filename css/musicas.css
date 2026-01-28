@@ -268,7 +268,7 @@ main {
 }
 
 
-.albums-cardclassic img, .albums-cardmpb img, .albums-cardlinkin img, .albums-gridradiohead img, .albums-gridkatebush img, .albums-gridelliott img, .albums-gridqueen img, .albums-gridjeffbuckley img, .albums-gridmichael img, .albums-gridthesmiths img, .albums-gridpinkfloyd img, .albums-gridtameimpala img, .albums-gridpjharvey img {
+.albums-cardclassic img, .albums-cardmpb img, .albums-cardlinkin img, .albums-gridradiohead img, .albums-gridkatebush img, .albums-gridelliott img, .albums-gridqueen img, .albums-gridjeffbuckley img, .albums-gridmichael img, .albums-gridthesmiths img, .albums-gridpinkfloyd img, .albums-gridtameimpala img, .albums-gridpjharvey img, .albums-gridthestrokes img, .albums-gridtoriamos img {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -276,14 +276,14 @@ main {
     display: flex;
 }
 
-.artist-gridclassic, .albums-gridclassic, .artist-gridmpb, .albums-gridmpb, .albums-gridlinkin, .albums-gridradiohead, .albums-gridkatebush, .albums-gridelliott, .albums-gridqueen, .albums-gridjeffbuckley, .albums-gridmichael, .albums-gridthesmiths, .albums-gridpinkfloyd, .albums-gridtameimpala, .albums-gridpjharvey {
+.artist-gridclassic, .albums-gridclassic, .artist-gridmpb, .albums-gridmpb, .albums-gridlinkin, .albums-gridradiohead, .albums-gridkatebush, .albums-gridelliott, .albums-gridqueen, .albums-gridjeffbuckley, .albums-gridmichael, .albums-gridthesmiths, .albums-gridpinkfloyd, .albums-gridtameimpala, .albums-gridpjharvey, .albums-gridthestrokes, .albums-gridtoriamos {
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 gap: 24px;
 margin-bottom: 40px;
 }
 
-.artist-cardclassic, .albums-cardclassic, .artist-cardmpb, .albums-cardmpb, .albums-cardlinkin, .albums-cardradiohead, .albums-cardkatebush, .albums-cardelliott, .albums-cardqueen, .albums-cardjeffbuckley, .albums-cardmichael, .albums-cardthesmiths, .albums-cardpinkfloyd, .albums-cardtameimpala, .albums-cardpjharvey {
+.artist-cardclassic, .albums-cardclassic, .artist-cardmpb, .albums-cardmpb, .albums-cardlinkin, .albums-cardradiohead, .albums-cardkatebush, .albums-cardelliott, .albums-cardqueen, .albums-cardjeffbuckley, .albums-cardmichael, .albums-cardthesmiths, .albums-cardpinkfloyd, .albums-cardtameimpala, .albums-cardpjharvey, .albums-cardthestrokes, .albums-cardtoriamos {
     background-color: #111111;
     padding: 16px;
     border-radius: 8px;
@@ -295,7 +295,7 @@ margin-bottom: 40px;
     justify-content: space-between;
 }
 
-.artist-cardclassic:hover,.albums-cardclassic:hover, .artist-cardmpb:hover, .albums-cardmpb:hover, .albums-cardlinkin:hover, .albums-cardradiohead:hover, .albums-cardkatebush:hover, .albums-cardelliott:hover, .albums-cardqueen:hover, .albums-cardjeffbuckley:hover, .albums-cardmichael:hover, .albums-cardthesmiths:hover, .albums-cardpinkfloyd:hover, .albums-cardtameimpala:hover, .albums-cardpjharvey:hover {
+.artist-cardclassic:hover,.albums-cardclassic:hover, .artist-cardmpb:hover, .albums-cardmpb:hover, .albums-cardlinkin:hover, .albums-cardradiohead:hover, .albums-cardkatebush:hover, .albums-cardelliott:hover, .albums-cardqueen:hover, .albums-cardjeffbuckley:hover, .albums-cardmichael:hover, .albums-cardthesmiths:hover, .albums-cardpinkfloyd:hover, .albums-cardtameimpala:hover, .albums-cardpjharvey:hover, .albumscard-thestrokes:hover, .albums-cardtoriamos{
     background-color: #151515;
 }
 
@@ -310,7 +310,7 @@ margin-bottom: 40px;
     
 }
 .artist-cardclassic h3, .albums-cardclassic h3,
-.artist-cardmpb h3, .albums-cardmpb h3, .albums-cardlinkin h3, .albums-cardradiohead h3, .albums-cardkatebush h3, .albums-cardelliott h3, .albums-cardqueen h3, .albums-cardjeffbuckley h3, .albums-cardmichael h3, .albums-cardthesmiths h3, .albums-cardpinkfloyd h3, .albums-cardtameimpala h3, .albums-cardpjharvey h3 {
+.artist-cardmpb h3, .albums-cardmpb h3, .albums-cardlinkin h3, .albums-cardradiohead h3, .albums-cardkatebush h3, .albums-cardelliott h3, .albums-cardqueen h3, .albums-cardjeffbuckley h3, .albums-cardmichael h3, .albums-cardthesmiths h3, .albums-cardpinkfloyd h3, .albums-cardtameimpala h3, .albums-cardpjharvey h3, .albums-cardthestrokes h3, .albums-cardtoriamos h3 {
     margin: 0;
     font-size: 18px;
     color: #8c041c;
@@ -318,13 +318,13 @@ margin-bottom: 40px;
 }
 
 .artist-cardclassic p, .albums-cardclassic p,
-.artist-cardmpb p, .albums-cardmpb p, .albums-cardlinkin p, .albums-cardradiohead p, .albums-cardkatebush p, .albums-cardelliott p, .albums-cardqueen p, .albums-cardjeffbuckley p, .albums-cardmichael p, .albums-cardthesmiths p, .albums-cardpinkfloyd p, .albums-cardtameimpala p, .albums-cardpjharvey p {
+.artist-cardmpb p, .albums-cardmpb p, .albums-cardlinkin p, .albums-cardradiohead p, .albums-cardkatebush p, .albums-cardelliott p, .albums-cardqueen p, .albums-cardjeffbuckley p, .albums-cardmichael p, .albums-cardthesmiths p, .albums-cardpinkfloyd p, .albums-cardtameimpala p, .albums-cardpjharvey p, .albums-cardthestrokes p, .albums-cardtoriamos p {
     margin: 4px 0 0 0;
     font-size: 14px;
     color: #b7b3b6;
 }
 
-.music-linkinpark button, .music-radiohead button, .music-katebush button, .music-elliott button, .music-queen button, .music-jeffbuckley button, .music-michaeljackson button, .music-cardthesmiths button, .music-pinkfloyd button, .music-tameimpala button, .albums-cardpjharvey button {
+.music-linkinpark button, .music-radiohead button, .music-katebush button, .music-elliott button, .music-queen button, .music-jeffbuckley button, .music-michaeljackson button, .music-cardthesmiths button, .music-pinkfloyd button, .music-tameimpala button, .music-thestrokes button, .albums-cardpjharvey button, .albums-cardtoriamos button {
     background: none;
     border: none;
     color: #b7b3b6;
@@ -335,24 +335,38 @@ margin-bottom: 40px;
     width: 100%;
 
 }   
-.music-linkinpark span:hover, .music-radiohead span:hover, .music-katebush span:hover, .music-elliott span:hover, .music-queen span:hover, .music-jeffbuckley span:hover, .albums-cardthesmiths span:hover, .music-pinkfloyd span:hover, .music-michaeljackson span:hover, .music-tameimpala span:hover, .music-meteora span:hover, .music-inrainbows span:hover, .music-doisdemais span:hover, .music-blur span:hover, .music-construcao span:hover, .music-falsobrilhante span:hover, .music-rumours span:hover, .music-colornshape span:hover, .music-gnraillusion span:hover, .music-ideologia span:hover, .music-grace span:hover, .music-thebends span:hover, .music-revolucoesporminuto span:hover, .music-tabuaesmeralda span:hover, .music-storiespjharvey span:hover  {
+.music-linkinpark span:hover, .music-radiohead span:hover, .music-katebush span:hover, .music-elliott span:hover, .music-queen span:hover, .music-jeffbuckley span:hover, .albums-cardthesmiths span:hover, .music-pinkfloyd span:hover, .music-michaeljackson span:hover, .music-tameimpala span:hover, .music-meteora span:hover, .music-inrainbows span:hover, .music-doisdemais span:hover, .music-blur span:hover, .music-construcao span:hover, .music-falsobrilhante span:hover, .music-rumours span:hover, .music-colornshape span:hover, .music-gnraillusion span:hover, .music-ideologia span:hover, .music-grace span:hover, .music-thebends span:hover, .music-revolucoesporminuto span:hover, .music-tabuaesmeralda span:hover, .music-storiespjharvey span:hover, .music-thestrokes span:hover, .music-toriamos span:hover  {
   color: #8c041c;
   text-decoration: underline;
 }
 
-.music-item-linkinpark td, .music-item-radiohead td, .music-item-katebush td, .music-item-elliott td .music-item-queen td, .music-item-queen td, .music-item-pjharvey {
+.music-item-linkinpark td, .music-item-radiohead td, .music-item-katebush td, .music-item-elliott td .music-item-queen td {
     padding: 10px 8px;
 }
 
-.music-linkinpark div, .music-radiohead div, .music-katebush div, .music-pjharvey .music-elliott div, .music-queen div, .music-jeffbuckley div, .music-michaeljackson div, .music-cardthesmiths div, .music-pinkfloyd div {
+.music-linkinpark div, .music-radiohead div, .music-thestrokes div, .music-katebush div, .music-pjharvey .music-elliott div, .music-queen div, .music-jeffbuckley div, .music-michaeljackson div, .music-cardthesmiths div, .music-pinkfloyd div, .music-toriamos div {
     size: 10px 10px;
 }
 
-.music-linkinpark td, .music-radiohead td, .music-katebush td, .music-elliott td, .music-queen td, .music-jeffbuckley td, .music-thesmiths td, .music-tameimpala td, .music-meteora td, .music-inrainbows td, .music-doisdemais td, .music-blur td, .music-construcao td, .music-falsobrilhante td, .music-rumours td, .music-colornshape td, .music-gnraillusion td, .music-ideologia td, .music-grace td, .music-thebends td, .music-revolucoesporminuto td, .music-tabuaesmeralda td, .music-thesmithsqueen td, .music-storiespjharvey td, .music-michaeljackson td, .music-pinkfloyd td, .music-pjharvey {
+.music-linkinpark td, .music-radiohead td, .music-katebush td, .music-elliott td, .music-queen td, .music-jeffbuckley td, .music-thesmiths td, .music-tameimpala td, .music-meteora td, .music-inrainbows td, .music-doisdemais td, .music-blur td, .music-construcao td, .music-falsobrilhante td, .music-rumours td, .music-colornshape td, .music-gnraillusion td, .music-ideologia td, .music-grace td, .music-thebends td, .music-revolucoesporminuto td, .music-tabuaesmeralda td, .music-thesmithsqueen td, .music-storiespjharvey td, .music-michaeljackson td, .music-pinkfloyd td, .music-pjharvey td, .music-thestrokes td, .music-toriamos {
   padding: 8px 8px;
 }
 
+.toriamos-header {
+    background-image: url(../img/banners/toriamos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
 
+.thestrokes-header {
+    background-image: url(../img/banners/thestrokes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
 
 .tameimpala-header {
     background-image: url(../img/banners/tameimpala.jpg);
