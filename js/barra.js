@@ -1,4 +1,3 @@
-// 🔹 1. ARRAY NO TOPO DO ARQUIVO (FORA DE TUDO)
 const artistDataclassic = [
     { name: 'Kate Bush', link: 'katebush.html' },
     { name: 'Jeff Buckley', link: 'jeffbuckley.html' },
@@ -43,7 +42,7 @@ const artistDataclassic = [
       link.href = artista.link;
       link.textContent = artista.name;
   
-      //  faz o link ocupar tudo
+
       link.classList.add("d-block", "p-3", "text-decoration-none", "text-dark");
   
       li.appendChild(link);
