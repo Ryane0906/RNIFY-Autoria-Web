@@ -114,8 +114,8 @@ if (listLinkinPark) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const albumsData = [
-    { name: 'Meteora', Image: './img/albuns/meteora.jpg', year: 2003, link: 'meteora.html' },
-    { name: 'From Zero', Image: './img/albuns/fromzero.jpg', year: 2024, link: 'fromzero.html' }
+    { name: 'Meteora', Image: './img/albuns/meteora.jpg', year: 2003 },
+    { name: 'From Zero', Image: './img/albuns/fromzero.jpg', year: 2024 }
   ];
 
 
@@ -293,7 +293,7 @@ if (listPJ) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const albumsData = [
-    { name: 'Stories From The City, Stories From The Sea', Image: './img/albuns/pjharveystories.jpg' },
+    { name: 'Stories From The City, Stories From The Sea', Image: './img/albuns/pjharveystories.jpg', year: 2000},
     { name: 'To Bring You My Love', Image: './img/albuns/bringyou.jpg', year: 1995 }
   ];
 
@@ -320,11 +320,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // TOP 5 THE STROKES
 
 const thestrokes5 = [
-  { name: 'The Adults Are Talking', Image: './img/albuns/thenewabnormal.jpg', audio: './musicas/downbythewater.mp3' },
-  { name: 'Reptilia', Image: './img/albuns/thenewabnormal.jpg', audio: './musicas/thisislove.mp3' },
-  { name: 'Someday', Image:'./img/albuns/isthisit.jpg', audio: './musicas/dress.mp3' },
-  { name: 'Last Nite', Image: './img/albuns/isthisit.jpg', audio: './musicas/ridofme.mp3' },
-  { name: 'Soma', Image: './img/albuns/isthisit.jpg', audio: './musicas/goodfortune.mp3' }
+  { name: 'The Adults Are Talking', Image: './img/albuns/thenewabnormal.jpg', audio: './musicas/adultsaretalking.mp3' },
+  { name: 'Reptilia', Image: './img/albuns/thenewabnormal.jpg', audio: './musicas/reptilia.mp3' },
+  { name: 'Someday', Image:'./img/albuns/isthisit.jpg', audio: './musicas/someday.mp3' },
+  { name: 'Last Nite', Image: './img/albuns/isthisit.jpg', audio: './musicas/lastnite.mp3' },
+  { name: 'Soma', Image: './img/albuns/isthisit.jpg', audio: './musicas/soma.mp3' }
 ];
 
 const listthestrokes = document.querySelector(".music-thestrokes");
@@ -378,11 +378,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // TOP 5 TORI AMOS
 
 const toriamos5 = [
-  { name: 'Cornflake Girl', Image: './img/toriamos/underpink.jpg', audio: './musicas/cornflakegirl.mp3' },
-  { name: 'Winter', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/silent.mp3' },
-  { name: 'Me And a Gun', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/winter.mp3' },
-  { name: 'Girl', Image: './img/toriamos/littleearthquakes.jpg', audio: './musicas/crucify.mp3' },
-  { name: 'Blood Roses', Image: './img/toriamos/underpink.jpg', audio: './musicas/god.mp3' }
+  { name: 'Cornflake Girl', Image: './img/albuns/little.jpg', audio: './musicas/cornflakegirl.mp3' },
+  { name: 'Winter', Image: './img/albuns/little.jpg', audio: './musicas/winter.mp3' },
+  { name: 'Me And a Gun', Image: './img/albuns/choirgirl.jpg', audio: './musicas/meandagun.mp3' },
+  { name: 'Girl', Image: './img/albuns/choirgirl.jpg', audio: './musicas/girl.mp3' },
+  { name: 'Blood Roses', Image: './img/albuns/little.jpg', audio: './musicas/bloodroses.mp3' }
 ];
 
 const listTori = document.querySelector(".music-toriamos");
@@ -405,8 +405,8 @@ if (listTori) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const albumsData = [
-    { name: 'From The Choir Hotel', Image: './img/albuns/choirgirl.jpg', year: 1997, link: 'storiespjharvey.html' },
-    { name: 'Little Earthquakes', Image: './img/albuns/isthisit.jpg', year: 1995, link: 'darkside.html' }
+    { name: 'From The Choir Hotel', Image: './img/albuns/choirgirl.jpg', year: 1997 },
+    { name: 'Little Earthquakes', Image: './img/albuns/little.jpg', year: 1995 }
   ];
 
   const albumsGridtoriamos = document.querySelector('.albums-gridtoriamos');
@@ -633,8 +633,8 @@ if (listMichaelJackson) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const albumsData = [
-    { name: 'Bad', Image: './img/albuns/Bad.jpg', year: 2003, link: 'meteora.html' },
-    { name: 'Thriller', Image: './img/albuns/Thriller.jpg', year: 2024, link: 'fromzero.html' }
+    { name: 'Bad', Image: './img/albuns/Bad.jpg', year: 2003 },
+    { name: 'Thriller', Image: './img/albuns/Thriller.jpg', year: 2024 }
   ];
 
 
@@ -663,11 +663,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // TOP 5 THE BEATLES
 
 const beatles5 = [
-  { name: 'Hey Jude', Image: './img/beatles/heyjude.jpg', audio: './musicas/heyjude.mp3' },
-  { name: 'Let It Be', Image: './img/beatles/letitbe.jpg', audio: './musicas/letitbe.mp3' },
-  { name: 'Come Together', Image: './img/beatles/abbeyroad.jpg', audio: './musicas/cometogether.mp3' },
-  { name: 'Yesterday', Image: './img/beatles/help.jpg', audio: './musicas/yesterday.mp3' },
-  { name: 'Something', Image: './img/beatles/abbeyroad.jpg', audio: './musicas/something.mp3' }
+  { name: 'Dont Let Me Down', Image: './img/albuns/abbeyroad.jpg', audio: './musicas/dontletmedown.mp3' },
+  { name: 'In My Life', Image: './img/albuns/letitbe.jpg', audio: './musicas/inmylife.mp3' },
+  { name: 'Come Together', Image: './img/albuns/abbeyroad.jpg', audio: './musicas/cometogether.mp3' },
+  { name: 'Here Comes The Sun', Image: './img/albuns/abbeyroad.jpg', audio: './musicas/herecomes.mp3' },
+  { name: 'Something', Image: './img/albuns/abbeyroad.jpg', audio: './musicas/something.mp3' }
 ];
 
 const listBeatles = document.querySelector(".music-beatles");
@@ -688,6 +688,33 @@ if (listBeatles) {
   });
 }
 
+//DISCOGRAFIA THE BEATLES
+
+document.addEventListener('DOMContentLoaded', () => {
+  const albumsData = [
+    { name: 'Abbey Road', Image: './img/albuns/abbeyroad.jpg', year: 1969 },
+    { name: 'Let It Be', Image: './img/albuns/letitbe.jpg', year: 1970 }
+
+  ];
+
+  const albumsGridthebeatles = document.querySelector('.albums-gridthebeatles');
+
+  if (albumsGridthebeatles) {
+    albumsData.forEach(albums => {
+      const albumsCardthebeatles = document.createElement('div');
+      albumsCardthebeatles.classList.add('albums-cardthebeatles');
+
+      albumsCardthebeatles.innerHTML = `
+        <img src="${albums.Image}" alt="Álbum ${albums.name}">
+        <div>
+          <h3>${albums.name}</h3>
+          <p>${albums.year}</p>
+        </div>
+      `;
+      albumsGridthebeatles.appendChild(albumsCardthebeatles);
+    });
+  }
+});
 
 
 //TOP 5 KATE BUSH
