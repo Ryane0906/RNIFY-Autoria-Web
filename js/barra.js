@@ -50,3 +50,4 @@ const artistDataclassic = [
       ul.appendChild(li);
     });
   }
+  
