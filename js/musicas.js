@@ -1,4 +1,6 @@
 // ALBUNS E ARTISTAS (Ryane de Azevedo Alves)
+console.log("musicas.js carregou");
+
 document.addEventListener('DOMContentLoaded', () => {
   const artistDataclassic = [
     { name: 'Kate Bush', Image: './img/artistas/katebush2.jpg', link: 'katebush.html' },
@@ -26,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'The Queen Is Dead', artist: 'The Smiths', Image: './img/albuns/thesmithsqueen.jpg', link: 'thequeen.html' },
     { name: 'Grace', artist: 'Jeff Buckley', Image: './img/albuns/jeffbuckleygrace.jpg', link: 'grace.html' },
     { name: 'In Rainbows', artist: 'Radiohead', Image: './img/radiohead/inrainbows.jpg', link: 'inrainbows.html' },
-    { name: 'Meteora', artist: 'Linkin Park', Image: './img/albuns/linkinparkmeteora.jpg', link: 'meteora.html' },
+    { name: 'Meteora', artist: 'Linkin Park', Image: './img/albuns/meteora.jpg', link: 'meteora.html' },
     { name: 'The Bends', artist: 'Radiohead', Image: './img/albuns/radioheadthebends.jpg', link: 'thebends.html' },
     { name: 'Rumours', artist: 'Fleetwood Mac', Image: './img/albuns/rumours.jpg', link: 'rumours.html' },
     { name: 'The New Abnormal', artist: 'The Strokes', Image: './img/albuns/thenewabnormal.jpg', link: 'thenewabnormal.html' },
@@ -1111,59 +1113,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Album the queen is dead - The Smiths
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const thesmithsqueen = [
-      { name: 'The Queen Is Dead', audio: './musicas/thequeenisdead.mp4' },
-      { name: 'Frankly Mr Shankly', audio: './musicas/franklymrshankly.mp4' },
-      { name: 'I Know Its Over', audio: './musicas/iknowitsover.mp4' },
-      { name: 'Never Had No One Ever', audio: './musicas/neverhadnooneever.mp4' },
-      { name: 'Cemetry Gates', audio: './musicas/cemetrygates.mp4' },
-      { name: 'Bigmouth Strikes Again', audio: './musicas/bigmouthstrikesagain.mp4' },
-      { name: 'The Boy with the Thorn in His Side', audio: './musicas/theboywiththethorn.mp4' },
-      { name: 'There Is a Light That Never Goes Out', audio: './musicas/thereisalightthatnevergoesout.mp4' },
-      { name: 'Some Girls Are Bigger Than Others', audio: './musicas/somegirlsarebiggerthanothers.mp4' }
-    ];
 
-    const listthequeen = document.querySelector(".music-thesmithsqueen");
+// Album The Queen Is Dead (The Smiths) - popula a tabela correta
+(function() {
+  const thesmithsqueen = [
+    { name: 'The Queen Is Dead', audio: './musicas/thequeenisdead.mp4' },
+    { name: 'Frankly Mr Shankly', audio: './musicas/franklymrshankly.mp4' },
+    { name: 'I Know Its Over', audio: './musicas/iknowitsover.mp4' },
+    { name: 'Never Had No One Ever', audio: './musicas/neverhadnooneever.mp4' },
+    { name: 'Cemetry Gates', audio: './musicas/cemetrygates.mp4' },
+    { name: 'Bigmouth Strikes Again', audio: './musicas/bigmouthstrikesagain.mp4' },
+    { name: 'The Boy with the Thorn in His Side', audio: './musicas/theboywiththethorn.mp4' },
+    { name: 'There Is a Light That Never Goes Out', audio: './musicas/thereisalightthatnevergoesout.mp4' },
+    { name: 'Some Girls Are Bigger Than Others', audio: './musicas/somegirlsarebiggerthanothers.mp4' }
+  ];
 
+  function populateSmiths() {
+    const listTheSmiths = document.querySelector('.music-thesmithsqueen');
+    if (!listTheSmiths) return;
     thesmithsqueen.forEach(musica => {
-      const tr = document.createElement("tr");
-      tr.classList.add("music-item", "music-item-thesmithsqueen");
+      const tr = document.createElement('tr');
+      tr.classList.add('music-item', 'music-item-thesmithsqueen');
       tr.dataset.audio = musica.audio;
       tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-      if (listthequeen) listthequeen.appendChild(tr);
+      listTheSmiths.appendChild(tr);
     });
-  });
+  }
 
-  // PJ HARVEY — Stories from the City, Stories from the Sea
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const pjharveyalbum = [
-      { name: 'Big Exit', audio: './musicas/pjharvey/bigexit.mp3' },
-      { name: 'Good Fortune', audio: './musicas/pjharvey/goodfortune.mp3' },
-      { name: 'A Place Called Home', audio: './musicas/pjharvey/aplacecalledhome.mp3' },
-      { name: 'One Line', audio: './musicas/pjharvey/oneline.mp3' },
-      { name: 'Beautiful Feeling', audio: './musicas/pjharvey/beautifulfeeling.mp3' },
-      { name: 'The Whores Hustle and the Hustlers Whore', audio: './musicas/pjharvey/thewhores.mp3' },
-      { name: 'This Is Love', audio: './musicas/pjharvey/thisislove.mp3' },
-      { name: 'You Said Something', audio: './musicas/pjharvey/yousaidsomething.mp3' },
-      { name: 'Kamikaze', audio: './musicas/pjharvey/kamikaze.mp3' },
-      { name: 'This Mess We’re In', audio: './musicas/pjharvey/thismess.mp3' },
-      { name: 'Horses in My Dreams', audio: './musicas/pjharvey/horsesinmydreams.mp3' },
-      { name: 'We Float', audio: './musicas/pjharvey/wefloat.mp3' }
-    ];
-
-    const liststoriespj = document.querySelector(".music-storiespjharvey");
-
-    pjharveyalbum.forEach(musica => {
-      const tr = document.createElement("tr");
-      tr.classList.add("music-item", "music-item-storiespjharvey");
-      tr.dataset.audio = musica.audio;
-      tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-      if (liststoriespj) liststoriespj.appendChild(tr);
-    });
-  });
-
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', populateSmiths);
+  } else {
+    populateSmiths();
+  }
+})();
 
 
   // PLAYER DE MÚSICAS (GIT HUB Copilot)
