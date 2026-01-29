@@ -246,3 +246,29 @@
     width: 150px;
     height: 150px;
 }
+#resultadopesquisa {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    background-color: maroon;
+    border-radius 8px;
+    border: 1px solid #333;
+    width: 50%;
+}
+
+#resultadopesquisa li {
+    padding: 10px;
+    color: #f2f2f2;
+    cursor: pointer;
+    font-family: 'arial', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5;
+}
+
+#resultadopesquisa li:hover {
+   background-color: darkgrey;
+   color: black;
+
+}
+
