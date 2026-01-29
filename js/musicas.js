@@ -293,7 +293,7 @@ if (listPJ) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const albumsData = [
-    { name: 'Stories From The City, Stories From The Sea', Image: './img/albuns/pjharveystories.jpg', year: 2000},
+    { name: 'Stories From The City, Stories From The Sea', Image: './img/albuns/pjharveystories.jpg', year: 2000 },
     { name: 'To Bring You My Love', Image: './img/albuns/bringyou.jpg', year: 1995 }
   ];
 
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const thestrokes5 = [
   { name: 'The Adults Are Talking', Image: './img/albuns/thenewabnormal.jpg', audio: './musicas/adultsaretalking.mp3' },
   { name: 'Reptilia', Image: './img/albuns/thenewabnormal.jpg', audio: './musicas/reptilia.mp3' },
-  { name: 'Someday', Image:'./img/albuns/isthisit.jpg', audio: './musicas/someday.mp3' },
+  { name: 'Someday', Image: './img/albuns/isthisit.jpg', audio: './musicas/someday.mp3' },
   { name: 'Last Nite', Image: './img/albuns/isthisit.jpg', audio: './musicas/lastnite.mp3' },
   { name: 'Soma', Image: './img/albuns/isthisit.jpg', audio: './musicas/soma.mp3' }
 ];
@@ -785,24 +785,24 @@ const elliott5 = [
   { name: 'Say Yes', Image: './img/albuns/figure8.jpg', audio: './musicas/sayyes.mp3' }
 ];
 
- const listelliott = document.querySelector(".music-elliott");
+const listelliott = document.querySelector(".music-elliott");
 
-  if (listelliott) {
-    elliott5.forEach((musica, i) => {
-      const tr = document.createElement("tr");
-      tr.classList.add("music-item", "music-item-elliott");
-      tr.dataset.audio = musica.audio;
-      tr.style.cursor = "pointer";
+if (listelliott) {
+  elliott5.forEach((musica, i) => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-elliott");
+    tr.dataset.audio = musica.audio;
+    tr.style.cursor = "pointer";
 
-      tr.innerHTML = `
+    tr.innerHTML = `
       <td>
       <img src="${musica.Image}" alt="Imagem da música ${musica.name}"> <span>${musica.name}</span>
       </td>
       `;
 
-      listelliott.appendChild(tr);
-    });
-  }
+    listelliott.appendChild(tr);
+  });
+}
 
 
 
@@ -836,34 +836,34 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // TOP 5 QUEEN
-  const queen5 = [
-    { name: 'Bohemian Rhapsody', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/bohemianrhapsody.mp3' },
-    { name: 'Dont Stop Me Now', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/dontstopmenow.mp3' },
-    { name: 'Another One Bites the Dust', Image: './img/albuns/theworks.jpg', audio: './musicas/anotherbitestodust.mp3' },
-    { name: 'We Will Rock You', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/wewillrockyou.mp3' },
-    { name: 'Somebody to Love', Image: './img/albuns/theworks.jpg', audio: './musicas/somebodytolove.mp3' }
-  ];
+const queen5 = [
+  { name: 'Bohemian Rhapsody', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/bohemianrhapsody.mp3' },
+  { name: 'Dont Stop Me Now', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/dontstopmenow.mp3' },
+  { name: 'Another One Bites the Dust', Image: './img/albuns/theworks.jpg', audio: './musicas/anotherbitestodust.mp3' },
+  { name: 'We Will Rock You', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/wewillrockyou.mp3' },
+  { name: 'Somebody to Love', Image: './img/albuns/theworks.jpg', audio: './musicas/somebodytolove.mp3' }
+];
 
- const listqueen = document.querySelector(".music-queen");
+const listqueen = document.querySelector(".music-queen");
 
 
 
-  if (listqueen) {
-    queen5.forEach((musica, i) => {
-      const tr = document.createElement("tr");
-      tr.classList.add("music-item", "music-item-queen");
-      tr.dataset.audio = musica.audio;
-      tr.style.cursor = "pointer";
+if (listqueen) {
+  queen5.forEach((musica, i) => {
+    const tr = document.createElement("tr");
+    tr.classList.add("music-item", "music-item-queen");
+    tr.dataset.audio = musica.audio;
+    tr.style.cursor = "pointer";
 
-      tr.innerHTML = `
+    tr.innerHTML = `
       <td>
       <img src="${musica.Image}" alt="Imagem da música ${musica.name}"> <span>${musica.name}</span>
       </td>
       `;
 
-      listqueen.appendChild(tr);
-    });
-  }
+    listqueen.appendChild(tr);
+  });
+}
 
 // DISCOGRAFIA QUEEN
 
@@ -935,15 +935,11 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const inrainbows = [
     { name: '15 Step', audio: './musicas/15steps.mp3' },
-    { name: 'Bodysnatchers', audio: './musicas/bodysnatchers.mp4' },
-    { name: 'Nude', audio: './musicas/nude.mp4' },
-    { name: 'Weird Fishes Arpeggi', audio: './musicas/weirdfishesarpeggi.mp4' },
-    { name: 'All I Need', audio: './musicas/allineed.mp4' },
-    { name: 'Faust Arp', audio: './musicas/faustarp.mp4' },
-    { name: 'Reckoner', audio: './musicas/reckoner.mp4' },
-    { name: 'House of Cards', audio: './musicas/houseofcards.mp4' },
-    { name: 'Jigsaw Falling Into Place', audio: './musicas/jigsawfallingintoplace.mp4' },
-    { name: 'Videotape', audio: './musicas/videotape.mp4' }
+    { name: 'Bodysnatchers', audio: './musicas/bodysnatchers.mp3' },
+    { name: 'Weird Fishes Arpeggi', audio: './musicas/weirdfishes.mp3' },
+    { name: 'All I Need', audio: './musicas/allineed.mp3' },
+    { name: 'House of Cards', audio: './musicas/houseofcards.mp3' },
+    { name: 'Jigsaw Falling Into Place', audio: './musicas/jigsawfalling.mp3' }
   ];
 
   const listInRainbows = document.querySelector(".music-inrainbows");
@@ -966,20 +962,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const blur = [
-    { name: 'Beetlebum', audio: './musicas/beetlebum.mp4' },
-    { name: 'Song 2', audio: './musicas/song2.mp4' },
-    { name: 'Country Sad Ballad Man', audio: './musicas/countrysadballadman.mp4' },
-    { name: 'M O R', audio: './musicas/mor.mp4' },
-    { name: 'On Your Own', audio: './musicas/onyourown.mp4' },
-    { name: 'Theme from Retro', audio: './musicas/themefromretro.mp4' },
-    { name: 'Youre So Great', audio: './musicas/youresogreat.mp4' },
-    { name: 'Death of a Party', audio: './musicas/deathofaparty.mp4' },
-    { name: 'Chinese Bombs', audio: './musicas/chinesebombs.mp4' },
-    { name: 'Im Just a Killer for Your Love', audio: './musicas/imjustakiller.mp4' },
-    { name: 'Look Inside America', audio: './musicas/lookinsideamerica.mp4' },
-    { name: 'Strange News from Another Star', audio: './musicas/strangenews.mp4' },
-    { name: 'Movin On', audio: './musicas/movinon.mp4' },
-    { name: 'Essex Dogs', audio: './musicas/essexdogs.mp4' }
+    { name: 'Beetlebum', audio: './musicas/beetlebum.mp3' },
+    { name: 'Song 2', audio: './musicas/song2.mp3' },
+    { name: 'Country Sad Ballad Man', audio: './musicas/countrysad.mp3' },
+    { name: 'M O R', audio: './musicas/mor.mp3' },
+    { name: 'On Your Own', audio: './musicas/onyourown.mp3' },
+    { name: 'Essex Dogs', audio: './musicas/essexdogs.mp3' }
   ];
 
   const listBlur = document.querySelector(".music-blur");
@@ -1030,19 +1018,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const colornshape = [
-    { name: 'Doll', audio: './musicas/doll.mp4' },
-    { name: 'Monkey Wrench', audio: './musicas/monkeywrench.mp4' },
-    { name: 'Hey Johnny Park', audio: './musicas/heyjohnnypark.mp4' },
-    { name: 'My Poor Brain', audio: './musicas/mypoorbrain.mp4' },
-    { name: 'Wind Up', audio: './musicas/windup.mp4' },
-    { name: 'Up in Arms', audio: './musicas/upinarms.mp4' },
-    { name: 'My Hero', audio: './musicas/myhero.mp4' },
-    { name: 'See You', audio: './musicas/seeyou.mp4' },
-    { name: 'Enough Space', audio: './musicas/enoughspace.mp4' },
-    { name: 'February Stars', audio: './musicas/februarystars.mp4' },
-    { name: 'Everlong', audio: './musicas/everlong.mp4' },
-    { name: 'Walking After You', audio: './musicas/walkingafteryou.mp4' },
-    { name: 'New Way Home', audio: './musicas/newwayhome.mp4' }
+    { name: 'Wind Up', audio: './musicas/windup.mp3' },
+    { name: 'See You', audio: './musicas/seeyou.mp3' },
+    { name: 'Enough Space', audio: './musicas/enoughspace.mp3' },
+    { name: 'February Stars', audio: './musicas/february.mp3' },
+    { name: 'My Hero', audio: './musicas/myhero.mp3' },
+    { name: 'Everlong', audio: './musicas/everlong.mp3' }
   ];
 
   const list = document.querySelector(".music-colornshape");
@@ -1060,15 +1041,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const gnraillusion = [
-    { name: 'Right Next Door to Hell', audio: './musicas/rightnextdoorthell.mp4' },
-    { name: 'Dust N Bones', audio: './musicas/dustnbones.mp4' },
-    { name: 'Live and Let Die', audio: './musicas/liveandletdie.mp4' },
-    { name: 'Dont Cry', audio: './musicas/dontcry.mp4' },
-    { name: 'Perfect Crime', audio: './musicas/perfectcrime.mp4' },
-    { name: 'November Rain', audio: './musicas/novemberrain.mp4' },
-    { name: 'Garden of Eden', audio: './musicas/gardenofeden.mp4' },
-    { name: 'Dead Horse', audio: './musicas/deadhorse.mp4' },
-    { name: 'Coma', audio: './musicas/coma.mp4' }
+    { name: 'Right Next Door to Hell', audio: './musicas/nextdoor.mp3' },
+    { name: 'Dust N Bones', audio: './musicas/dustnbones.mp3' },
+    { name: 'Dont Cry', audio: './musicas/dontcry.mp3' },
+    { name: 'November Rain', audio: './musicas/novemberrain.mp3' },
+    { name: 'Garden of Eden', audio: './musicas/gardenofeden.mp3' },
+    { name: 'Coma', audio: './musicas/coma.mp3' }
   ];
 
   const listGnR = document.querySelector(".music-gnraillusion");
@@ -1085,30 +1063,68 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Album grace - Jeff Buckley
 
-  document.addEventListener('DOMContentLoaded', () => {
+  (function () {
+
     const grace = [
-      { name: 'Mojo Pin', audio: './musicas/mojopin.mp4' },
-      { name: 'Grace', audio: './musicas/grace.mp4' },
-      { name: 'Last Goodbye', audio: './musicas/lastgoodbye.mp4' },
-      { name: 'Lilac Wine', audio: './musicas/lilacwine.mp4' },
-      { name: 'So Real', audio: './musicas/soreal.mp4' },
-      { name: 'Hallelujah', audio: './musicas/hallelujah.mp4' },
-      { name: 'Lover You Shouldve Come Over', audio: './musicas/loveryoushouldvecomeover.mp4' },
-      { name: 'Corpus Christi Carol', audio: './musicas/corpuschristicarol.mp4' },
-      { name: 'Eternal Life', audio: './musicas/eternallife.mp4' },
-      { name: 'Dream Brother', audio: './musicas/dreambrother.mp4' }
+      { name: 'Mojo Pin', audio: './musicas/mojopin.mp3' },
+      { name: 'Grace', audio: './musicas/grace.mp3' },
+      { name: 'Last Goodbye', audio: './musicas/lastgoodbye.mp3' },
+      { name: 'Lover You Shouldve Come Over', audio: './musicas/lover.mp3' },
+      { name: 'So Real', audio: './musicas/soreal.mp3' },
+      { name: 'Hallelujah', audio: './musicas/hallelujah.mp3' },
     ];
 
-    const listgrace = document.querySelector(".music-grace");
+    function populategrace() {
+      const listGrace = document.querySelector('.music-grace');
+      if (!listGrace) return;
+      grace.forEach(musica => {
+        const tr = document.createElement('tr');
+        tr.classList.add('music-item', 'music-item-grace');
+        tr.dataset.audio = musica.audio;
+        tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+        listGrace.appendChild(tr);
+      });
+    }
 
-    grace.forEach(musica => {
-      const tr = document.createElement("tr");
-      tr.classList.add("music-item", "music-item-grace");
-      tr.dataset.audio = musica.audio;
-      tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-      if (listgrace) listgrace.appendChild(tr);
-    });
-  });
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', populategrace);
+    } else {
+      populategrace();
+    }
+  })();
+
+
+  // album the queen is dead - the smiths
+
+  (function () {
+    const thequeenisdead = [
+      { name: 'The Queen Is Dead', audio: './musicas/thequeenisdead.mp3' },
+      { name: 'Frankly, Mr. Shankly', audio: './musicas/frankly.mp3' },
+      { name: 'I Know Its Over', audio: './musicas/itsover.mp3' },
+      { name: 'Cemetry Gates', audio: './musicas/cemetrygates.mp3' },
+      { name: 'Bigmouth Strikes Again', audio: './musicas/bigmouth.mp3' },
+      { name: 'There Is a Light That Never Goes Out', audio: './musicas/thereisalight.mp3' }
+    ];
+
+    function populateTheQueenIsDead() {
+      const listTheQueenIsDead = document.querySelector('.music-thesqueenisdead');
+      if (!listTheQueenIsDead) return;
+      thequeenisdead.forEach(musica => {
+        const tr = document.createElement('tr');
+        tr.classList.add('music-item', 'music-item-thequeenisdead');
+        tr.dataset.audio = musica.audio;
+        tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+        listTheQueenIsDead.appendChild(tr);
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', populateTheQueenIsDead);
+    } else {
+      populateTheQueenIsDead();
+    }
+  })();
+
 
   // Album the bends - Radiohead
 
@@ -1141,38 +1157,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Album The Queen Is Dead (The Smiths)
-(function() {
-  const storiespjharvey = [
-    { name: 'The Queen Is Dead', audio: './musicas/thequeenisdead.mp4' },
-    { name: 'Frankly Mr Shankly', audio: './musicas/franklymrshankly.mp4' },
-    { name: 'I Know Its Over', audio: './musicas/iknowitsover.mp4' },
-    { name: 'Never Had No One Ever', audio: './musicas/neverhadnooneever.mp4' },
-    { name: 'Cemetry pica assda Gates', audio: './musicas/cemetrygates.mp4' },
-    { name: 'Bigmouth Strikes Again', audio: './musicas/bigmouthstrikesagain.mp4' },
-    { name: 'The Boy with the Thorn in His Side', audio: './musicas/theboywiththethorn.mp4' },
-    { name: 'There Is a Light That Never Goes Out', audio: './musicas/thereisalightthatnevergoesout.mp4' },
-    { name: 'Some Girls Are Bigger Than Others', audio: './musicas/somegirlsarebiggerthanothers.mp4' }
-  ];
+  // Album Stories From The City Stories From The Sea PJ Harvey 
 
-  function populateStories() {
-    const listStories = document.querySelector('.music-storiespjharvey');
-    if (!listStories) return;
-    storiespjharvey.forEach(musica => {
-      const tr = document.createElement('tr');
-      tr.classList.add('music-item', 'music-item-storiespjharvey');
-      tr.dataset.audio = musica.audio;
-      tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-      listStories.appendChild(tr);
-    });
-  }
+  (function () {
+    const storiespjharvey = [
+      { name: 'Big Exit', audio: './musicas/bigexit.mp3' },
+      { name: 'Good Fortune', audio: './musicas/goodfortune.mp3' },
+      { name: 'A Place Called Home', audio: './musicas/aplace.mp3' },
+      { name: 'One Line', audio: './musicas/oneline.mp3' },
+      { name: 'Beautiful Feeling', audio: './musicas/beautifulfeeling.mp3' },
+      { name: 'This Mess Were In', audio: './musicas/thismess.mp3' }
+    ];
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', populateStories);
-  } else {
-    populateStories();
-  }
-})();
+    function populateStories() {
+      const listStories = document.querySelector('.music-storiespjharvey');
+      if (!listStories) return;
+      storiespjharvey.forEach(musica => {
+        const tr = document.createElement('tr');
+        tr.classList.add('music-item', 'music-item-storiespjharvey');
+        tr.dataset.audio = musica.audio;
+        tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+        listStories.appendChild(tr);
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', populateStories);
+    } else {
+      populateStories();
+    }
+  })();
 
 
   // PLAYER DE MÚSICAS (GIT HUB Copilot)
