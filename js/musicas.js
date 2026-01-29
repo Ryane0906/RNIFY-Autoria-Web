@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'The Bends', artist: 'Radiohead', Image: './img/albuns/radioheadthebends.jpg', link: 'thebends.html' },
     { name: 'Rumours', artist: 'Fleetwood Mac', Image: './img/albuns/rumours.jpg', link: 'rumours.html' },
     { name: 'The New Abnormal', artist: 'The Strokes', Image: './img/albuns/thenewabnormal.jpg', link: 'thenewabnormal.html' },
-    { name: 'In Utero', artist: 'Nirnava', Image: './img/albuns/inutero.jpg', link: 'rumours.html' },
+    { name: 'In Utero', artist: 'Nirnava', Image: './img/albuns/inutero.jpg', link: 'inutero.html' },
     { name: 'Figure 8', artist: 'Elliott Smith', Image: './img/albuns/figure8.jpg', link: 'figure8.html' },
     { name: 'Ultraviolence', artist: 'Lana Del Rey', Image: './img/albuns/ultraviolence.jpg', link: 'ultraviolence.html' }
 
@@ -898,20 +898,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const meteora = [
-    { name: 'Foreword', audio: './musicas/foreword.mp3', time: '0:13' },
-    { name: "Don't Stay", audio: './musicas/dontstay.mp3', time: '3:07' },
-    { name: 'Somewhere I Belong', audio: './musicas/somewhereibelong.mp3', time: '3:33' },
-    { name: 'Lying From You', audio: './musicas/lyingfromyou.mp3', time: '2:55' },
-    { name: 'Hit the Floor', audio: './musicas/hitthefloor.mp3', time: '2:44' },
-    { name: 'Easier to Run', audio: './musicas/easiertorun.mp3', time: '3:24' },
-    { name: 'Faint', audio: './musicas/faint.mp3', time: '2:42' },
-    { name: 'Figure.09', audio: './musicas/figure09.mp3', time: '3:17' },
-    { name: 'Breaking the Habit', audio: './musicas/breakingthehabit.mp3', time: '3:16' },
-    { name: 'From the Inside', audio: './musicas/fromtheinside.mp3', time: '2:55' },
-    { name: "Nobody's Listening", audio: './musicas/nobodyslistening.mp3', time: '3:00' },
-    { name: 'Session', audio: './musicas/session.mp3', time: '2:23' },
-    { name: 'Numb', audio: './musicas/numb.mp3', time: '3:07' }
-  ];
+  { name: 'In The End', Image: './img/albuns/meteora.jpg', audio: './musicas/intheend.mp3' },
+  { name: 'Numb', Image: './img/albuns/meteora.jpg', audio: './musicas/numb.mp3' },
+  { name: 'Somewhere I Belong', Image: './img/albuns/meteora.jpg', audio: './musicas/somewhereibelong.mp3' },
+  { name: 'Faint', Image: './img/albuns/meteora.jpg', audio: './musicas/faint.mp3' },
+  { name: 'The Emptiness Machine', Image: './img/albuns/meteora.jpg', audio: './musicas/machine.mp3' },
+  { name: 'Heavy Is The Crown', Image: './img/albuns/fromzero.jpg', audio: './musicas/heavyisthecrown.mp3' }
+];
 
   const listMeteora = document.querySelector(".music-meteora");
 
@@ -990,17 +983,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const rumours = [
-    { name: 'Second Hand News', audio: './musicas/secondhandnews.mp4' },
-    { name: 'Dreams', audio: './musicas/dreams.mp4' },
-    { name: 'Never Going Back Again', audio: './musicas/nevergoingbackagain.mp4' },
-    { name: 'Dont Stop', audio: './musicas/dontstop.mp4' },
-    { name: 'Go Your Own Way', audio: './musicas/goyourownway.mp4' },
-    { name: 'Songbird', audio: './musicas/songbird.mp4' },
-    { name: 'The Chain', audio: './musicas/thechain.mp4' },
-    { name: 'You Make Loving Fun', audio: './musicas/youmakelovingfun.mp4' },
-    { name: 'I Dont Want to Know', audio: './musicas/idontwanttoknow.mp4' },
-    { name: 'Oh Daddy', audio: './musicas/ohdaddy.mp4' },
-    { name: 'Gold Dust Woman', audio: './musicas/golddustwoman.mp4' }
+    { name: 'Second Hand News', audio: './musicas/secondhand.mp3' },
+    { name: 'Dreams', audio: './musicas/dreams.mp3' },
+    { name: 'Dont Stop', audio: './musicas/dontstop.mp3' },
+    { name: 'Go Your Own Way', audio: './musicas/ownway.mp3' },
+    { name: 'The Chain', audio: './musicas/thechain.mp3' },
+    { name: 'I Dont Want to Know', audio: './musicas/dontwantknow.mp3' }
+
   ];
 
   const list = document.querySelector(".music-rumours");
@@ -1093,6 +1082,73 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })();
 
+  // Album The New Abnormal - The Strokes
+
+ (function () {
+
+  const newAbnormal = [
+    { name: 'The Adults Are Talking', audio: './musicas/adultsaretalking.mp3' },
+    { name: 'Selfless', audio: './musicas/selfless.mp3' },
+    { name: 'Brooklyn Bridge to Chorus', audio: './musicas/tochorus.mp3' },
+    { name: 'Bad Decisions', audio: './musicas/baddecisions.mp3' },
+    { name: 'At The Door', audio: './musicas/atthedoor.mp3' },
+    { name: 'Ode to the Mets', audio: './musicas/odetothemets.mp3' },
+  ];
+
+  function populateNewAbnormal() {
+    const listNewAbnormal = document.querySelector('.music-new-abnormal');
+    if (!listNewAbnormal) return;
+
+    newAbnormal.forEach(musica => {
+      const tr = document.createElement('tr');
+      tr.classList.add('music-item', 'music-item-new-abnormal');
+      tr.dataset.audio = musica.audio;
+      tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+      listNewAbnormal.appendChild(tr);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', populateNewAbnormal);
+  } else {
+    populateNewAbnormal();
+  }
+
+})();
+
+//Album in utero - Nirvana
+
+(function () {
+
+  const inUtero = [
+    { name: 'Serve the Servants', audio: './musicas/servetheservants.mp3' },
+    { name: 'Scentless Apprentice', audio: './musicas/scentlessapprentice.mp3' },
+    { name: 'Heart-Shaped Box', audio: './musicas/heartshapedbox.mp3' },
+    { name: 'Rape Me', audio: './musicas/rapeme.mp3' },
+    { name: 'Frances Farmer Will Have Her Revenge on Seattle', audio: './musicas/francesfarmer.mp3' },
+    { name: 'All Apologies', audio: './musicas/allapologies.mp3' },
+  ];
+
+  function populateInUtero() {
+    const listInUtero = document.querySelector('.music-in-utero');
+    if (!listInUtero) return;
+
+    inUtero.forEach(musica => {
+      const tr = document.createElement('tr');
+      tr.classList.add('music-item', 'music-item-in-utero');
+      tr.dataset.audio = musica.audio;
+      tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+      listInUtero.appendChild(tr);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', populateInUtero);
+  } else {
+    populateInUtero();
+  }
+
+})();
 
   // album the queen is dead - the smiths
 
@@ -1128,34 +1184,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Album the bends - Radiohead
 
-  document.addEventListener('DOMContentLoaded', () => {
+   (function () {
     const thebends = [
-      { name: 'Planet Telex', audio: './musicas/planettelex.mp4' },
-      { name: 'The Bends', audio: './musicas/thebends.mp4' },
-      { name: 'High and Dry', audio: './musicas/highanddry.mp4' },
-      { name: 'Fake Plastic Trees', audio: './musicas/fakeplastictrees.mp4' },
-      { name: 'Bones', audio: './musicas/bones.mp4' },
-      { name: 'Nice Dream', audio: './musicas/nicedream.mp4' },
-      { name: 'Just', audio: './musicas/just.mp4' },
-      { name: 'My Iron Lung', audio: './musicas/myironlung.mp4' },
-      { name: 'Bullet Proof I Wish I Was', audio: './musicas/bulletproof.mp4' },
-      { name: 'Black Star', audio: './musicas/blackstar.mp4' },
-      { name: 'Sulk', audio: './musicas/sulk.mp4' },
-      { name: 'Street Spirit Fade Out', audio: './musicas/streetspiritfadeout.mp4' }
+  
+      { name: 'The Bends', audio: './musicas/thebends.mp3' },
+      { name: 'High and Dry', audio: './musicas/highanddry.mp3' },
+      { name: 'Fake Plastic Trees', audio: './musicas/plasticstree.mp3' },
+      { name: 'Bones', audio: './musicas/bones.mp3' },
+      { name: 'Just', audio: './musicas/just.mp3' },
+      { name: 'My Iron Lung', audio: './musicas/ironlung.mp3' }
     ];
 
-    const listthebends = document.querySelector(".music-thebends");
+    function populateTheBends() {
+      const listTheBends = document.querySelector('.music-thebends');
+      if (!listTheBends) return;
+      thebends.forEach(musica => {
+        const tr = document.createElement('tr');
+        tr.classList.add('music-item', 'music-item-thebends');
+        tr.dataset.audio = musica.audio;
+        tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+        listTheBends.appendChild(tr);
+      });
+    }
 
-    thebends.forEach(musica => {
-      const tr = document.createElement("tr");
-      tr.classList.add("music-item", "music-item-thebends");
-      tr.dataset.audio = musica.audio;
-      tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-      if (listthebends) listthebends.appendChild(tr);
-    });
-  });
-
-
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', populateTheBends);
+    } else {
+      populateTheBends();
+    }
+  })();
+   
 
   // Album Stories From The City Stories From The Sea PJ Harvey 
 
