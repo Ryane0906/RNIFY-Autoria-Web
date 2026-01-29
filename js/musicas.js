@@ -262,9 +262,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // TOP 5 PJ HARVEY
 
 const pjharvey5 = [
-  { name: 'Down by the Water', Image: './img/albuns/pjharveystories.jpg', audio: './musicas/downbythewater.mp3' },
+  { name: 'Down by the Water', Image: './img/albuns/pjharveystories.jpg', audio: './musicas/bythewater.mp3' },
   { name: 'This Is Love', Image: './img/albuns/pjharveystories.jpg', audio: './musicas/thisislove.mp3' },
-  { name: 'Dress', Image: './img/albuns/pjharveystories.jpg', audio: './musicas/dress.mp3' },
+  { name: 'This Mess Were in', Image: './img/albuns/pjharveystories.jpg', audio: './musicas/thismess.mp3' },
   { name: 'Rid of Me', Image: './img/albuns/bringyou.jpg', audio: './musicas/ridofme.mp3' },
   { name: 'Good Fortune', Image: './img/albuns/bringyou.jpg', audio: './musicas/goodfortune.mp3' }
 ];
@@ -293,8 +293,8 @@ if (listPJ) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const albumsData = [
-    { name: 'Stories From The City, Stories From The Sea', Image: './img/albuns/pjharveystories.jpg', year: 1997, link: 'storiespjharvey.html' },
-    { name: 'To Bring You My Love', Image: './img/albuns/bringyou.jpg', year: 1995, link: 'darkside.html' }
+    { name: 'Stories From The City, Stories From The Sea', Image: './img/albuns/pjharveystories.jpg' },
+    { name: 'To Bring You My Love', Image: './img/albuns/bringyou.jpg', year: 1995 }
   ];
 
   const albumsGridpjharvey = document.querySelector('.albums-gridpjharvey');
@@ -433,11 +433,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // TOP 5 PINK FLOYD
 
 const pinkfloyd5 = [
-  { name: 'Wish You Were Here', Image: './img/artistas/pinkfloyd.jpg', audio: './musicas/wywh.mp3' },
+  { name: 'Wish You Were Here', Image: './img/artistas/pinkfloyd.jpg', audio: './musicas/wishyou.mp3' },
   { name: 'Comfortably Numb', Image: './img/albuns/thewall.jpg', audio: './musicas/comfortablynumb.mp3' },
   { name: 'Time', Image: './img/artistas/pinkfloyd.jpg', audio: './musicas/time.mp3' },
   { name: 'Money', Image: './img/artistas/pinkfloyd.jpg', audio: './musicas/money.mp3' },
-  { name: 'Shine On You Crazy Diamond', Image: './img/albuns/thewall.jpg', audio: './musicas/shineon.mp3' }
+  { name: 'Another Brick In The Wall', Image: './img/albuns/thewall.jpg', audio: './musicas/brick.mp3' }
 ];
 
 const listFloyd = document.querySelector(".music-pinkfloyd");
@@ -462,8 +462,8 @@ if (listFloyd) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const albumsData = [
-    { name: 'The Wall', Image: './img/albuns/thewall.jpg', year: 1997, link: 'thewall.html' },
-    { name: 'The Dark Side of The Moon', Image: './img/artistas/pinkfloyd.jpg', year: 1995, link: 'darkside.html' }
+    { name: 'The Wall', Image: './img/albuns/thewall.jpg', year: 1997 },
+    { name: 'The Dark Side of The Moon', Image: './img/artistas/pinkfloyd.jpg', year: 1995 }
   ];
 
   const albumsGridtpinkfloyd = document.querySelector('.albums-gridpinkfloyd');
@@ -547,10 +547,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const tameimpala5 = [
   { name: 'The Less I Know the Better', Image: './img/albuns/currents.jpg', audio: './musicas/thelessiknow.mp3' },
-  { name: 'Dracula', Image: './img/albuns/deadbeat.jpg', audio: './musicas/feelslike.mp3' },
+  { name: 'Dracula', Image: './img/albuns/deadbeat.jpg', audio: './musicas/dracula.mp3' },
   { name: 'Let It Happen', Image: './img/albuns/currents.jpg', audio: './musicas/letithappen.mp3' },
   { name: 'Elephant', Image: './img/albuns/deadbeat.jpg', audio: './musicas/elephant.mp3' },
-  { name: 'New Person Same Old Mistakes', Image: './img/albuns/currents.jpg', audio: './musicas/eventually.mp3' }
+  { name: 'New Person Same Old Mistakes', Image: './img/albuns/currents.jpg', audio: './musicas/oldmistakes.mp3' }
 ];
 
 const listTame = document.querySelector(".music-tameimpala");
