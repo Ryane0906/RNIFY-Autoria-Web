@@ -256,7 +256,7 @@
     width: 50%;
   }
   
-  /* SOBRESCREVE O BOOTSTRAP */
+
   #resultadopesquisa .list-group-item {
     background-color: darkgray!important;
     color: #f2f2f2;
@@ -264,14 +264,14 @@
     padding: 0;
   }
   
-  /* o link ocupa tudo */
+ 
   #resultadopesquisa .list-group-item a {
     display: block;
     padding: 10px;
     color: #f2f2f2;
   }
   
-  /* hover */
+
   #resultadopesquisa .list-group-item a:hover {
     background-color: gray;
     color: black;
