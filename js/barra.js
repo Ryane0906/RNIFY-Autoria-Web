@@ -43,7 +43,7 @@ const artistDataclassic = [
       link.href = artista.link;
       link.textContent = artista.name;
   
-      // 🔥 faz o link ocupar tudo
+      //  faz o link ocupar tudo
       link.classList.add("d-block", "p-3", "text-decoration-none", "text-dark");
   
       li.appendChild(link);
