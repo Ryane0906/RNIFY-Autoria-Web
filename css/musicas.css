@@ -335,7 +335,7 @@ margin-bottom: 40px;
     width: 100%;
 
 }   
-.music-linkinpark span:hover, .music-radiohead span:hover, .music-katebush span:hover, .music-elliott span:hover, .music-queen span:hover, .music-jeffbuckley span:hover, .albums-cardthesmiths span:hover, .music-pinkfloyd span:hover, .music-michaeljackson span:hover, .music-tameimpala span:hover, .music-meteora span:hover, .music-inrainbows span:hover, .music-doisdemais span:hover, .music-blur span:hover, .music-construcao span:hover, .music-falsobrilhante span:hover, .music-rumours span:hover, .music-colornshape span:hover, .music-gnraillusion span:hover, .music-ideologia span:hover, .music-grace span:hover, .music-thebends span:hover, .music-revolucoesporminuto span:hover, .music-tabuaesmeralda span:hover, .music-storiespjharvey span:hover, .music-thestrokes span:hover, .music-toriamos span:hover  {
+.music-linkinpark span:hover, .music-radiohead span:hover, .music-katebush span:hover, .music-elliott span:hover, .music-queen span:hover, .music-jeffbuckley span:hover, .music-thesmiths span:hover, .music-pinkfloyd span:hover, .music-michaeljackson span:hover, .music-tameimpala span:hover, .music-meteora span:hover, .music-inrainbows span:hover, .music-doisdemais span:hover, .music-blur span:hover, .music-construcao span:hover, .music-falsobrilhante span:hover, .music-rumours span:hover, .music-colornshape span:hover, .music-gnraillusion span:hover, .music-ideologia span:hover, .music-grace span:hover, .music-thebends span:hover, .music-revolucoesporminuto span:hover, .music-tabuaesmeralda span:hover, .music-storiespjharvey span:hover, .music-thestrokes span:hover, .music-toriamos span:hover  {
   color: #8c041c;
   text-decoration: underline;
 }
@@ -401,10 +401,9 @@ margin-bottom: 40px;
 
 .queen-header {
     background-image: url(../img/banners/queen.jpg);
+       background-position: 90% 10%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    position: relative;
 }
 
 .jeff-header {

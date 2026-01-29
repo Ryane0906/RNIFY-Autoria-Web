@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const jeffbuckley5 = [
   { name: 'Grace', Image: './img/albuns/grace.jpg', audio: './musicas/grace.mp3' },
-  { name: 'Everybody Here Wants You', Image: './img/albuns/mysweetheart.jpg', audio: './musicas/hallelujah.mp3' },
+  { name: 'Everybody Here Wants You', Image: './img/albuns/mysweetheart.jpg', audio: './musicas/everybodyhere.mp3' },
   { name: 'Last Goodbye', Image: './img/albuns/grace.jpg', audio: './musicas/lastgoodbye.mp3' },
   { name: 'Lover, You Should\'ve Come Over', Image: './img/albuns/grace.jpg', audio: './musicas/lover.mp3' },
   { name: 'So Real', Image: './img/albuns/grace.jpg', audio: './musicas/soreal.mp3' }
@@ -222,7 +222,7 @@ if (listJeff) {
     tr.style.cursor = "pointer";
 
     tr.innerHTML = `
-      <td>
+      <td>  
       <img src="${musica.Image}"> <span>${musica.name}</span>
       </td>
       `;
@@ -602,11 +602,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // TOP 5 MICHAEL JACKSON
 
 const michaeljackson5 = [
-  { name: 'Dirty Diana', Image: './img/albuns/bad.jpg', audio: './musicas/billiejean.mp3' },
+  { name: 'Dirty Diana', Image: './img/albuns/bad.jpg', audio: './musicas/dirtydiana.mp3' },
   { name: 'Beat It', Image: './img/albuns/bad.jpg', audio: './musicas/beatit.mp3' },
   { name: 'Thriller', Image: './img/albuns/thriller.jpg', audio: './musicas/thriller.mp3' },
   { name: 'Smooth Criminal', Image: './img/albuns/bad.jpg', audio: './musicas/smoothcriminal.mp3' },
-  { name: 'Rock With You', Image: './img/albuns/thriller.jpg', audio: './musicas/maninthemirror.mp3' }
+  { name: 'Rock With You', Image: './img/albuns/thriller.jpg', audio: './musicas/rockwithyou.mp3' }
 ];
 
 const listMichaelJackson = document.querySelector('.music-michaeljackson');
@@ -752,29 +752,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const elliott5 = [
   { name: 'Between the Bars', Image: './img/albuns/eitheror.jpg', audio: './musicas/betweenthebars.mp3' },
-  { name: 'Somebody That I Used To Know', Image: './img/albuns/figure8.jpg', audio: './musicas/angeles.mp3' },
-  { name: 'Son Of Sam', Image: './img/albuns/eitheror.jpg', audio: './musicas/waltz2.mp3' },
-  { name: 'Miss Misery', Image: './img/albuns/eitheror.jpg', audio: './musicas/missmisery.mp3' },
+  { name: 'Somebody That I Used To Know', Image: './img/albuns/figure8.jpg', audio: './musicas/somebodythat.mp3' },
+  { name: 'Son Of Sam', Image: './img/albuns/eitheror.jpg', audio: './musicas/sonofsam.mp3' },
+  { name: 'Clementine', Image: './img/albuns/eitheror.jpg', audio: './musicas/clementine.mp3' },
   { name: 'Say Yes', Image: './img/albuns/figure8.jpg', audio: './musicas/sayyes.mp3' }
 ];
 
-const listelliott = document.querySelector(".music-elliott");
+ const listelliott = document.querySelector(".music-elliott");
 
-if (listelliott) {
-  elliott5.forEach(musica => {
-    const tr = document.createElement("tr");
-    tr.classList.add("music-item", "music-item-elliott");
+  if (listelliott) {
+    elliott5.forEach((musica, i) => {
+      const tr = document.createElement("tr");
+      tr.classList.add("music-item", "music-item-elliott");
+      tr.dataset.audio = musica.audio;
+      tr.style.cursor = "pointer";
 
-    tr.innerHTML = `
-    <td>
-      <img src="${musica.Image}" alt="${musica.name}">
-      <span>${musica.name}</span>
-    </td>
-  `;
+      tr.innerHTML = `
+      <td>
+      <img src="${musica.Image}" alt="Imagem da música ${musica.name}"> <span>${musica.name}</span>
+      </td>
+      `;
 
-   listelliott.appendChild(tr);
-  });
-}
+      listelliott.appendChild(tr);
+    });
+  }
+
 
 
 
@@ -807,34 +809,34 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // TOP 5 QUEEN
-
-document.addEventListener('DOMContentLoaded', () => {
   const queen5 = [
-    { name: 'Bohemian Rhapsody', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/queen/bohemianrhapsody.mp3' },
-    { name: 'Dont Stop Me Now', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/queen/dontstopmenow.mp3' },
-    { name: 'Another One Bites the Dust', Image: './img/albuns/theworks.jpg', audio: './musicas/queen/anotheronebitesthedust.mp3' },
-    { name: 'We Will Rock You', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/queen/wewillrockyou.mp3' },
-    { name: 'Somebody to Love', Image: './img/albuns/theworks.jpg', audio: './musicas/queen/somebodytolove.mp3' }
+    { name: 'Bohemian Rhapsody', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/bohemianrhapsody.mp3' },
+    { name: 'Dont Stop Me Now', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/dontstopmenow.mp3' },
+    { name: 'Another One Bites the Dust', Image: './img/albuns/theworks.jpg', audio: './musicas/anotherbitestodust.mp3' },
+    { name: 'We Will Rock You', Image: './img/albuns/bohemianrhapsody.jpg', audio: './musicas/wewillrockyou.mp3' },
+    { name: 'Somebody to Love', Image: './img/albuns/theworks.jpg', audio: './musicas/somebodytolove.mp3' }
   ];
 
-  const listQueen = document.querySelector('.music-queen');
+ const listqueen = document.querySelector(".music-queen");
 
-  queen5.forEach((musica) => {
-    const tr = document.createElement('tr');
-    tr.classList.add('music-item', 'music-item-queen');
-    tr.dataset.audio = musica.audio;
-    tr.style.cursor = 'pointer';
 
-    tr.innerHTML = `
+
+  if (listqueen) {
+    queen5.forEach((musica, i) => {
+      const tr = document.createElement("tr");
+      tr.classList.add("music-item", "music-item-queen");
+      tr.dataset.audio = musica.audio;
+      tr.style.cursor = "pointer";
+
+      tr.innerHTML = `
       <td>
-        <img src="${musica.Image}" alt="Imagem da música ${musica.name}">
-        <span>${musica.name}</span>
+      <img src="${musica.Image}" alt="Imagem da música ${musica.name}"> <span>${musica.name}</span>
       </td>
-    `;
+      `;
 
-    if (listQueen) listQueen.appendChild(tr);
-  });
-});
+      listqueen.appendChild(tr);
+    });
+  }
 
 // DISCOGRAFIA QUEEN
 
@@ -1111,39 +1113,37 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // Album the queen is dead - The Smiths
 
-
-// Album The Queen Is Dead (The Smiths) - popula a tabela correta
+// Album The Queen Is Dead (The Smiths)
 (function() {
-  const thesmithsqueen = [
+  const storiespjharvey = [
     { name: 'The Queen Is Dead', audio: './musicas/thequeenisdead.mp4' },
     { name: 'Frankly Mr Shankly', audio: './musicas/franklymrshankly.mp4' },
     { name: 'I Know Its Over', audio: './musicas/iknowitsover.mp4' },
     { name: 'Never Had No One Ever', audio: './musicas/neverhadnooneever.mp4' },
-    { name: 'Cemetry Gates', audio: './musicas/cemetrygates.mp4' },
+    { name: 'Cemetry pica assda Gates', audio: './musicas/cemetrygates.mp4' },
     { name: 'Bigmouth Strikes Again', audio: './musicas/bigmouthstrikesagain.mp4' },
     { name: 'The Boy with the Thorn in His Side', audio: './musicas/theboywiththethorn.mp4' },
     { name: 'There Is a Light That Never Goes Out', audio: './musicas/thereisalightthatnevergoesout.mp4' },
     { name: 'Some Girls Are Bigger Than Others', audio: './musicas/somegirlsarebiggerthanothers.mp4' }
   ];
 
-  function populateSmiths() {
-    const listTheSmiths = document.querySelector('.music-thesmithsqueen');
-    if (!listTheSmiths) return;
-    thesmithsqueen.forEach(musica => {
+  function populateStories() {
+    const listStories = document.querySelector('.music-storiespjharvey');
+    if (!listStories) return;
+    storiespjharvey.forEach(musica => {
       const tr = document.createElement('tr');
-      tr.classList.add('music-item', 'music-item-thesmithsqueen');
+      tr.classList.add('music-item', 'music-item-storiespjharvey');
       tr.dataset.audio = musica.audio;
       tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-      listTheSmiths.appendChild(tr);
+      listStories.appendChild(tr);
     });
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', populateSmiths);
+    document.addEventListener('DOMContentLoaded', populateStories);
   } else {
-    populateSmiths();
+    populateStories();
   }
 })();
 
