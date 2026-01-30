@@ -1,4 +1,4 @@
-// ALBUNS E ARTISTAS (Ryane de Azevedo Alves)
+// ALBUNS E ARTISTAS (Ryane de Azevedo Alves e Nicolas Alexrande)
 console.log("musicas.js carregou");
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -1121,11 +1121,11 @@ document.addEventListener('DOMContentLoaded', () => {
 (function () {
 
   const inUtero = [
-    { name: 'Serve the Servants', audio: './musicas/servetheservants.mp3' },
-    { name: 'Scentless Apprentice', audio: './musicas/scentlessapprentice.mp3' },
+    { name: 'Serve the Servants', audio: './musicas/serve.mp3' },
+    { name: 'Scentless Apprentice', audio: './musicas/scentless.mp3' },
     { name: 'Heart-Shaped Box', audio: './musicas/heartshapedbox.mp3' },
-    { name: 'Rape Me', audio: './musicas/rapeme.mp3' },
-    { name: 'Frances Farmer Will Have Her Revenge on Seattle', audio: './musicas/francesfarmer.mp3' },
+    { name: 'Dumb', audio: './musicas/dumb.mp3' },
+    { name: 'Frances Farmer Will Have Her Revenge on Seattle', audio: './musicas/frances.mp3' },
     { name: 'All Apologies', audio: './musicas/allapologies.mp3' },
   ];
 
@@ -1146,6 +1146,39 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('DOMContentLoaded', populateInUtero);
   } else {
     populateInUtero();
+  }
+
+})();
+
+// Figure 8 - Elliott Smith
+
+(function () {
+  const figure8 = [
+    { name: 'Son of Sam', audio: './musicas/sonofsam.mp3' },
+    { name: 'Somebody That I Used to Know', audio: './musicas/somebodythat.mp3' },
+    { name: 'Junk Bond Trader', audio: './musicas/junk.mp3' },
+    { name: 'Everything Means Nothing to Me', audio: './musicas/everything.mp3' },
+    { name: 'L.A.', audio: './musicas/la.mp3' },
+    { name: 'Happiness', audio: './musicas/happiness.mp3' }
+  ];
+
+  function populateFigure8() {
+    const listFigure8 = document.querySelector('.music-figure8');
+    if (!listFigure8) return;
+
+    figure8.forEach(musica => {
+      const tr = document.createElement('tr');
+      tr.classList.add('music-item', 'music-item-figure8');
+      tr.dataset.audio = musica.audio;
+      tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+      listFigure8.appendChild(tr);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', populateFigure8);
+  } else {
+    populateFigure8();
   }
 
 })();
@@ -1214,6 +1247,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })();
    
+// Album Ultraviolence - Lana Del Rey
+
+(function () {
+  const ultraviolence = [
+    { name: 'Cruel World', audio: './musicas/cruelworld.mp3' },
+    { name: 'Ultraviolence', audio: './musicas/ultraviolence.mp3' },
+    { name: 'Shades of Cool', audio: './musicas/shadesofcool.mp3' },
+    { name: 'Brooklyn Baby', audio: './musicas/brooklynbaby.mp3' },
+    { name: 'West Coast', audio: './musicas/westcoast.mp3' },
+    { name: 'Sad Girl', audio: './musicas/sadgirl.mp3' },
+  ];
+
+    function populateUltraviolence() {
+      const listUltraviolence = document.querySelector('.music-ultraviolence');
+      if (!listUltraviolence) return;
+      ultraviolence.forEach(musica => {
+        const tr = document.createElement('tr');
+        tr.classList.add('music-item', 'music-item-ultraviolence');
+        tr.dataset.audio = musica.audio;
+        tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+        listUltraviolence.appendChild(tr);
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', populateUltraviolence);
+    } else {
+      populateUltraviolence();
+    }
+  })();
 
   // Album Stories From The City Stories From The Sea PJ Harvey 
 

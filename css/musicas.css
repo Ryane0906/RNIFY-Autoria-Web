@@ -335,12 +335,12 @@ margin-bottom: 40px;
     width: 100%;
 
 }   
-.music-linkinpark span:hover, .music-new-abnormal span:hover, .music-radiohead span:hover, .music-katebush span:hover, .music-elliott span:hover, .music-queen span:hover, .music-jeffbuckley span:hover, .music-thesmiths span:hover, .music-thesqueenisdead span:hover,  .music-pinkfloyd span:hover, .music-michaeljackson span:hover, .music-tameimpala span:hover, .music-meteora span:hover, .music-inrainbows span:hover, .music-blur span:hover, .music-rumours span:hover, .music-colornshape span:hover, .music-gnraillusion span:hover, .music-grace span:hover, .music-thebends span:hover, .music-storiespjharvey span:hover, .music-thestrokes span:hover, .music-toriamos span:hover, .music-pjharvey span:hover, .music-beatles span:hover, .music-blur span:hover {
+.music-linkinpark span:hover, .music-in-utero span:hover, .music-figure8 span:hover, .music-ultraviolence span:hover, .music-new-abnormal span:hover, .music-radiohead span:hover, .music-katebush span:hover, .music-elliott span:hover, .music-queen span:hover, .music-jeffbuckley span:hover, .music-thesmiths span:hover, .music-thesqueenisdead span:hover,  .music-pinkfloyd span:hover, .music-michaeljackson span:hover, .music-tameimpala span:hover, .music-meteora span:hover, .music-inrainbows span:hover, .music-blur span:hover, .music-rumours span:hover, .music-colornshape span:hover, .music-gnraillusion span:hover, .music-grace span:hover, .music-thebends span:hover, .music-storiespjharvey span:hover, .music-thestrokes span:hover, .music-toriamos span:hover, .music-pjharvey span:hover, .music-beatles span:hover, .music-blur span:hover {
   color: #8c041c;
   text-decoration: underline;
 }
 
-.music-item-linkinpark td, .music-item-radiohead td, .music-item-katebush td, .music-item-elliott td .music-item-queen td, .music-item-blur td, .music-thesqueenisdead td, .music-item-inrainbows td, .music-item-new-abnormal td {
+.music-item-linkinpark td, .music-item-radiohead td, .music-ultraviolence td, .music-figure8 td, .music-in-utero td, .music-item-katebush td, .music-item-elliott td .music-item-queen td, .music-item-blur td, .music-thesqueenisdead td, .music-item-inrainbows td, .music-item-new-abnormal td {
     padding: 10px 8px;
 }
 
