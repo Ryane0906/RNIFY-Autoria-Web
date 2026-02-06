@@ -309,7 +309,6 @@ margin-bottom: 40px;
 .artist-cardclassic:hover,.albums-cardclassic:hover, .artist-cardmpb:hover, .albums-cardmpb:hover, .albums-cardlinkin:hover, .albums-cardradiohead:hover, .albums-cardkatebush:hover, .albums-cardelliott:hover, .albums-cardqueen:hover {
 
 .artist-cardclassic:hover,.albums-cardclassic:hover, .artist-cardmpb:hover, .albums-cardmpb:hover, .albums-cardlinkin:hover, .albums-cardradiohead:hover, .albums-cardkatebush:hover, .albums-cardelliott:hover, .albums-cardqueen:hover, .albums-cardjeffbuckley:hover, .albums-cardmichael:hover, .albums-cardthesmiths:hover, .albums-cardpinkfloyd:hover, .albums-cardtameimpala:hover, .albums-cardpjharvey:hover, .albums-cardthestrokes:hover, .albums-cardtoriamos:hover, .albums-cardthebeatles:hover {
-
     background-color: #151515;
 }
 
@@ -328,7 +327,6 @@ margin-bottom: 40px;
 .artist-cardmpb h3, .albums-cardmpb h3, .albums-cardlinkin h3, .albums-cardradiohead h3, .albums-cardkatebush h3, .albums-cardelliott h3, .albums-cardqueen h3 {
 
 .artist-cardmpb h3, .albums-cardmpb h3, .albums-cardlinkin h3, .albums-cardradiohead h3, .albums-cardkatebush h3, .albums-cardelliott h3, .albums-cardqueen h3, .albums-cardjeffbuckley h3, .albums-cardmichael h3, .albums-cardthesmiths h3, .albums-cardpinkfloyd h3, .albums-cardtameimpala h3, .albums-cardpjharvey h3, .albums-cardthestrokes h3, .albums-cardtoriamos h3, .albums-cardthebeatles h3 {
-
     margin: 0;
     font-size: 18px;
     color: #8c041c;
@@ -350,7 +348,6 @@ margin-bottom: 40px;
 .music-linkinpark button, .music-radiohead button, .music-katebush button, .music-elliott button, .music-queen button {
 
 .music-linkinpark button, .music-radiohead button, .music-katebush button, .music-elliott button, .music-thequeen button, .music-queen button, .music-jeffbuckley button, .music-michaeljackson button, .music-cardthesmiths button, .music-pinkfloyd button, .music-tameimpala button, .music-thestrokes button, .albums-cardpjharvey button, .albums-cardtoriamos button, .albums-cardthebeatles button, .music-blur button {
-
     background: none;
     border: none;
     color: #b7b3b6;

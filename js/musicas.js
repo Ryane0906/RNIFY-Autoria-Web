@@ -56,76 +56,6 @@ if (albumsGridclassic) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-const artistDatampb = [
-  {name: 'Chico Buarque', Image: './img/artistas/chicobuarque.jpg'},
-  {name: 'Djavan', Image: './img/artistas/djavan.jpg'},
-  {name: 'Raul Seixas', Image: './img/artistas/raulseixas.jpg'},
-  {name: 'Adoniran Barbosa', Image: './img/artistas/adoniranbarbosa.jpg'},
-  {name: 'Ney Matogrosso', Image: './img/artistas/neymatogrosso.jpg'},
-  {name: 'Angela Ro Ro', Image: './img/artistas/angelaroro.jpg'},
-  {name: 'Belchior', Image: './img/artistas/belchior.jpg'},
-  {name: 'Rita Lee', Image: './img/artistas/ritalee.jpg'},
-  {name: 'Caetano Veloso', Image: './img/artistas/caetanoveloso.jpg'},
-  {name: 'Elis Regina', Image: './img/artistas/elisregina.jpg'},
-  {name: 'Tim Maia', Image: './img/artistas/caetanoveloso.jpg'},
-  {name: 'Marisa Monte', Image: './img/artistas/caetanoveloso.jpg'},
-  {name: 'Gal Costa', Image: './img/artistas/caetanoveloso.jpg'},
-  {name: 'Maria Bethânia', Image: './img/artistas/caetanoveloso.jpg'}
-
-];
-
-
-const albumsDatampb = [
-    { name: '2 É Demais', artist: 'Elis Regina', Image: './img/albuns/2edemais.jpg'},
-    { name: 'Rita Lee', artist: 'Rita Lee', Image: './img/albuns/ritalee.jpg'},
-    { name: 'O Que Você Quer Saber de Verdade', artist: 'Marisa Monte', Image: './img/albuns/oquevocequersaber.jpg'},
-    { name: 'Ideologia', artist: 'Cazuza', Image: './img/albuns/ideologia.jpg'},
-    { name: 'Falso Brilhante', artist: 'Elis Regina', Image: './img/albuns/falsobrilhante.jpg'},
-    { name: 'Construção', artist: 'Chico Buarque', Image: './img/albuns/construcao.jpg'},
-    { name: 'Me Chama de Gato Que Eu Sou Sua', artist: 'Ana Frango Elétrico', Image: './img/albuns/mechamadegato.jpg'},
-    { name: 'A Tábua De Esmeralda', artist: 'Jorge Ben Jor', Image: './img/albuns/tabuaesmeralda.jpg'},
-    { name: 'Revoluções Por Minuto', artist: 'RPM', Image: './img/albuns/revolucoesporminuto.jpg'}
-];
-
-
- const artistGridmpb = document.querySelector('.artist-gridmpb')
- const albumsGridmpb = document.querySelector('.albums-gridmpb')
-
-if (artistGridmpb) {
-        artistDatampb.forEach( artist => {
-                const artistCardmpb = document.createElement('div')
-                artistCardmpb.classList.add('artist-cardmpb')
-
-                artistCardmpb.innerHTML = `
-                 <img src="${artist.Image}" alt= "imagem do ${artist.name}">
-                 <div>
-                     <h3>${artist.name}</h3>
-                     <p>Artista</p>
-                 </div>
-                `
-
-                artistGridmpb.appendChild(artistCardmpb)
-        })
-}
-
-if (albumsGridmpb) {
-        albumsDatampb.forEach( albums => {
-                const albumsCardmpb = document.createElement('div')
-                albumsCardmpb.classList.add('albums-cardmpb')
-
-                albumsCardmpb.innerHTML = `
-                 <img src="${albums.Image}" alt= "imagem do ${albums.name}">
-                 <div>
-                 <h3>${albums.name}</h3>
-                 <p>${albums.artist}</p>
-                 </div>
-                `
-                albumsGridmpb.appendChild(albumsCardmpb)
-        })
-}
-})
-
 
  //TOP 5 LINKIN PARK
 
@@ -1317,37 +1247,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Album Stories From The City Stories From The Sea PJ Harvey 
 
-  (function () {
-    const storiespjharvey = [
-      { name: 'Big Exit', audio: './musicas/bigexit.mp3' },
-      { name: 'Good Fortune', audio: './musicas/goodfortune.mp3' },
-      { name: 'A Place Called Home', audio: './musicas/aplace.mp3' },
-      { name: 'One Line', audio: './musicas/oneline.mp3' },
-      { name: 'Beautiful Feeling', audio: './musicas/beautifulfeeling.mp3' },
-      { name: 'This Mess Were In', audio: './musicas/thismess.mp3' }
-    ];
+(function () {
+  const storiespjharvey = [
+    { name: 'Big Exit', audio: './musicas/bigexit.mp3' },
+    { name: 'Good Fortune', audio: './musicas/goodfortune.mp3' },
+    { name: 'A Place Called Home', audio: './musicas/aplace.mp3' },
+    { name: 'One Line', audio: './musicas/oneline.mp3' },
+    { name: 'Beautiful Feeling', audio: './musicas/beautifulfeeling.mp3' },
+    { name: 'This Mess Were In', audio: './musicas/thismess.mp3' }
+  ];
 
-    function populateStories() {
-      const listStories = document.querySelector('.music-storiespjharvey');
-      if (!listStories) return;
-      storiespjharvey.forEach(musica => {
-        const tr = document.createElement('tr');
-        tr.classList.add('music-item', 'music-item-storiespjharvey');
-        tr.dataset.audio = musica.audio;
-        tr.innerHTML = `<td><span>${musica.name}</span></td>`;
-        listStories.appendChild(tr);
-      });
-    }
+  function populateStories() {
+    const listStories = document.querySelector('.music-storiespjharvey');
+    if (!listStories) return;
 
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', populateStories);
-    } else {
-      populateStories();
-    }
-  })();
+    storiespjharvey.forEach(musica => {
+      const tr = document.createElement('tr');
+      tr.classList.add('music-item', 'music-item-storiespjharvey');
+      tr.dataset.audio = musica.audio;
+      tr.innerHTML = `<td><span>${musica.name}</span></td>`;
+      listStories.appendChild(tr);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', populateStories);
+  } else {
+    populateStories();
+  }
+})();
+
 
 
   // PLAYER DE MÚSICAS (GIT HUB Copilot)
+  (function () {
   let audio = new Audio();
   let tocando = false;
 
@@ -1490,4 +1423,4 @@ document.addEventListener('DOMContentLoaded', () => {
     progress.style.width = (offsetX / rect.width) * 100 + '%';
     audio.currentTime = (offsetX / rect.width) * audio.duration;
   });
-});
+})();
